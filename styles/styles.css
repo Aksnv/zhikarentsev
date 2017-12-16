@@ -1,0 +1,136 @@
+/* @font-face {
+  font-family: 'geometrialight';
+  src: url('../fonts/geometria-light-webfont.woff2') format('woff2'),
+       url('../fonts/geometria-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+ */
+
+/* *** All styles *** */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  /* font-family: 'geometriaregular', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; */
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  color: #fff;
+}
+
+ol, ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* h1 {
+  font-family: 'geometriabold';
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 44px;
+  margin-bottom: 20px;
+  padding-top: 33px;
+}
+
+h2 {
+  font-family: 'geometriabold';
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+
+article > h2 {
+  font-family: 'geometriaregular';
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+article p {
+  margin-bottom: 16px;
+} */
+
+img {
+  max-width: 100%;
+}
+
+button:focus,
+input[type="submit"]:focus {
+  outline: none;
+}
+
+/* .container {
+  position: relative;
+  width: 1175px;
+  margin: 0 auto;
+} */
+
+/* .inline-link {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-family: 'geometriamedium';
+  font-weight: 500;
+  text-decoration: none;
+  color: #fffeba;
+}
+
+.inline-link::after {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fffeba;
+} */
+
+/* .br {
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  padding-right: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  color: #fc2e4a;
+  background: #fc2e4a;
+} */
+
+/* *** Header *** */
+
+.main-menu li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* *** Main content *** */
+
+/* Home */
+
+.slider-pagination li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* *** Footer *** */
+
+.footer__links li,
+.footer__social-links li {
+  display: inline-block;
+  vertical-align: top;
+}
