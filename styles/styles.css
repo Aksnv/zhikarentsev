@@ -1,11 +1,42 @@
-/* @font-face {
+@font-face {
   font-family: 'geometrialight';
   src: url('../fonts/geometria-light-webfont.woff2') format('woff2'),
        url('../fonts/geometria-light-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
- */
+
+@font-face {
+  font-family: 'geometriaregular';
+  src: url('../fonts/geometria-webfont.woff2') format('woff2'),
+       url('../fonts/geometria-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'geometriabold';
+  src: url('../fonts/geometria-bold-webfont.woff2') format('woff2'),
+       url('../fonts/geometria-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bodoniboldcyrillic';
+  src: url('../fonts/Bodoni_Bold_Cyrillic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_cyrl100';
+  src: url('../fonts/museosanscyrl_100-webfont.woff2') format('woff2'),
+       url('../fonts/museosanscyrl_100-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 /* *** All styles *** */
 
@@ -15,14 +46,25 @@
   box-sizing: border-box;
 }
 
-body { 
+/* html, body {
+  height: 100%;
+} */
+
+body {
+  font-family: sans-serif;
   /* font-family: 'geometriaregular', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px; */
   background-image: url("../images/bg.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
+}
+
+.body--white-bg {
+  background-image: none;
+  color: #2a3a4b;
 }
 
 ol, ul {
@@ -113,24 +155,268 @@ input[type="submit"]:focus {
 
 /* *** Header *** */
 
+.header {
+  position: relative;
+  min-height: 200px;
+  font-family: 'geometriabold';
+}
+
+.main-menu {
+  text-align: center;
+  padding-top: 41px;
+}
+
+.main-menu ul,
 .main-menu li {
   display: inline-block;
   vertical-align: top;
 }
 
+.main-menu ul {
+  padding-left: 22px;
+}
+
+.main-menu li {
+  margin-right: 15px;
+}
+
+.main-menu li:nth-child(4) {
+  margin-right: 254px;
+}
+
+.main-menu li:last-child {
+  margin-right: 0;
+}
+
+.main-menu__item {
+  position: relative;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-menu__item:hover,
+.main-menu__item--active {
+  color: #f17a4d;
+}
+
+.main-menu__item--active::after {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 4px;
+  content: "";
+  background-color: #f17a4d;
+}
+
+.logo {
+  position: absolute;
+  top: 16px;
+  left: calc(50% - 158px);
+}
+
 /* *** Main content *** */
+
+/* .content {
+  height: 100%;
+} */
 
 /* Home */
 
-.slider-pagination li {
+.entry-button {
+  display: block;
+  width: 392px;
+  height: 60px;
+  font-family: 'geometriabold';
+  font-size: 13px;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 22px;
+  background-image: linear-gradient(158deg, #f79249 0%, #ef714f 100%);
+  background-color: #2a3a4b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slider {
+  position: absolute;
+  left: 0;
+  bottom: 131px;
+  width: 990px;
+  margin-left: 70px;
+}
+
+.slider-header p,
+.slider-header a {
   display: inline-block;
   vertical-align: top;
 }
 
+.slider-header p {
+  font-family: 'geometrialight';
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+
+.slider-header a {
+  position: relative;
+  top: -14px;
+  width: 164px;
+  height: 50px;
+  font-family: 'geometriaregular';
+  font-size: 13px;
+  line-height: 46px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #f79149;
+  border-radius: 25px;
+}
+
+.slider-header a:hover {
+  background-color: #f79149;
+}
+
+.slider-content {
+  margin-bottom: 34px;
+}
+
+.slider-content__item--2,
+.slider-content__item--3,
+.slider-content__item--4,
+.slider-content__item--5 {
+  display: none;
+}
+
+.slider-content__item a {
+  font-family: 'bodoniboldcyrillic';
+  font-size: 60px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.slider-content__item span {
+  display: block;
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.slider-pagination li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3px;
+}
+
+.slider-pagination a {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.slider-pagination a.slider-pagination__item--active {
+  background-image: linear-gradient(158deg, #f79249 0%, #ef714f 100%);
+  border: none;
+}
+
 /* *** Footer *** */
+
+.footer {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+  width: 100%;
+  font-family: 'museo_sans_cyrl100';
+  font-size: 15px;
+  padding-bottom: 50px;
+}
+
+.footer__copyrights,
+.footer__links {
+  float: left;
+}
+
+.footer__copyrights {
+  margin-left: 70px;
+  margin-right: 40px;
+}
+
+.footer__social-links {
+  float: right;
+  margin-right: 50px;
+}
 
 .footer__links li,
 .footer__social-links li {
   display: inline-block;
   vertical-align: top;
+}
+
+.footer__links li {
+  margin-right: 20px;
+}
+
+.footer__links a {
+  color: #fff;
+}
+
+.footer__social-links li {
+  margin-right: 15px;
+}
+
+.footer__social-links li:last-child {
+  margin-right: 0;
+}
+
+.social-links__item {
+  position: relative;
+  display: block;
+  font-size: 0;
+  background-image: url("../images/sprite.fw.png");
+}
+
+.social-links__item--ig {
+  width: 16px;
+  height: 16px;
+  background-position: -48px -1px;
+}
+
+.social-links__item--vk {
+  top: 2px;
+  left: 1px;
+  width: 19px;
+  height: 12px;
+  background-position: -25px -3px;
+}
+
+.social-links__item--tw {
+  top: 1px;
+  left: -1px;
+  width: 22px;
+  height: 15px;
+  background-position: -1px -1px;
+}
+
+.social-links__item--fb {
+  top: 1px;
+  left: -2px;
+  width: 8px;
+  height: 15px;
+  background-position: -92px -1px;
+}
+
+.social-links__item--yt {
+  width: 22px;
+  height: 16px;
+  background-position: -67px -1px;
 }
