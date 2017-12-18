@@ -9,11 +9,11 @@
   <link rel="stylesheet" type="text/css" href="../styles/styles.css">
 </head>
 <body class="body--white-bg">
-  <header class="header">
+  <header class="header header--image-bg">
     <nav class="main-menu">
       <ul>
         <li><a href="../index.html" class="main-menu__item main-menu__item--home">Главная</a></li>
-        <li><a href="#" class="main-menu__item main-menu__item--seminars">Семинары</a></li>
+        <li><a href="#" class="main-menu__item main-menu__item--seminars main-menu__item--active">Семинары</a></li>
         <li><a href="#" class="main-menu__item main-menu__item--forum">Форум</a></li>
         <li><a href="#" class="main-menu__item main-menu__item--schedule">Расписание</a></li>
         <li><a href="#" class="main-menu__item main-menu__item--people">Ведущие</a></li>
@@ -27,43 +27,34 @@
     </div>
   </header>
   <div class="content">
-    <button class="entry-button">Записаться на семинар или консультацию</button>
-    <div class="slider">
-      <div class="slider-header">
-        <p>Ближайшие семинары</p>
-        <a href="#" class="slider-button">Смотреть все</a>
+    <div class="container">
+      <div class="tabs-title">
+        <div class="tabs-title__item tabs-title__item--seminars">Наши семинары</div>
+        <div class="tabs-title__item tabs-title__item--consultations">Консультации</div>
       </div>
-      <div class="slider-content">
-        <ul>
-          <li class="slider-content__item slider-content__item--1">
-            <a href="#">Старославянский язык &ndash; знакомство с двойственным числом <span>23 - 24 сентября 2017, Москва</span></a>
-          </li>
-          <li class="slider-content__item slider-content__item--2">
-            <a href="#">Старославянский язык &ndash; знакомство с двойственным числом 2 <span>23 - 24 сентября 2017, Москва</span></a>
-          </li>
-          <li class="slider-content__item slider-content__item--3">
-            <a href="#">Старославянский язык &ndash; знакомство с двойственным числом 3 <span>23 - 24 сентября 2017, Москва</span></a>
-          </li>
-          <li class="slider-content__item slider-content__item--4">
-            <a href="#">Старославянский язык &ndash; знакомство с двойственным числом 4 <span>23 - 24 сентября 2017, Москва</span></a>
-          </li>
-          <li class="slider-content__item slider-content__item--5">
-            <a href="#">Старославянский язык &ndash; знакомство с двойственным числом 5 <span>23 - 24 сентября 2017, Москва</span></a>
-          </li>
-        </ul>
+      <div class="seminars--wrapper">
+        <p>Вы можете познакомиться с описанием предлагаемых семинаров Школы мира и выбрать тот, который вам более близок в данный момент времени.</p>
+        <div class="tabs-seminars">
+          <div class="tabs-seminars__item tabs-seminars__item--list">Показывать списком</div>
+          <div class="tabs-seminars__item tabs-seminars__item--tile">Показывать плиткой</div>
+        </div>
+        <section class="seminars-list">
+          <ul>
+            <li><a href="#">Обретение Внутренней Силы</a><button>Записаться на семинар</button></li>
+            <li><a href="#">Ключ к свободе. Типы характеров человека</a><button>Записаться на семинар</button></li>
+            <li><a href="#">Метод Единорог</a><button>Записаться на семинар</button></li>
+            <li><a href="#">Самоисцеление</a><button>Записаться на семинар</button></li>
+            <li><a href="#">Базовый Мастер-курс</a><button>Записаться на семинар</button></li>
+          </ul>
+        </section>
       </div>
-      <div class="slider-pagination">
-        <ul>
-          <li><a href="#" class="slider-pagination__item slider-pagination__item--1 slider-pagination__item--active"></a></li>
-          <li><a href="#" class="slider-pagination__item slider-pagination__item--2"></a></li>
-          <li><a href="#" class="slider-pagination__item slider-pagination__item--3"></a></li>
-          <li><a href="#" class="slider-pagination__item slider-pagination__item--4"></a></li>
-          <li><a href="#" class="slider-pagination__item slider-pagination__item--5"></a></li>
-        </ul>
+      <div class="consultations-wrapper">
+        
       </div>
     </div>
+    
   </div>
-  <footer class="footer">
+  <footer class="footer footer--white-bg">
     <div class="footer__copyrights">
       <p>&copy; Жикаренцев 2017. Все права защищены</p>
     </div>
@@ -84,6 +75,9 @@
       </ul>
     </div>
   </footer>
+  
+  <button class="back-to-top">Наверх</button>
+
   <script src="../scripts/jquery-3.2.1.min.js"></script>
   <script src="../scripts/scripts.js"></script>
 </body>
