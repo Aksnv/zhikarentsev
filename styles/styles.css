@@ -147,10 +147,8 @@ input[type="submit"]:focus {
   background-color: #fffeba;
 } */
 
-/* 
-
 ::-webkit-scrollbar {
-  width: 0;
+  width: 4px;
   padding-right: 9px;
 }
 
@@ -159,9 +157,9 @@ input[type="submit"]:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  color: #fc2e4a;
-  background: #fc2e4a;
-} */
+  color: #f17a4d;
+  background: #f17a4d;
+} 
 
 .br {
   display: block;
@@ -428,7 +426,7 @@ input[type="submit"]:focus {
 }
 
 .tabs-seminars__item--list {
-  padding-left: 12px;
+  padding-left: 20px;
   padding-right: 30px;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -482,6 +480,261 @@ input[type="submit"]:focus {
   background: -o-linear-gradient(-68deg, #fd5616 31%, #fa4c18 69%);
   background: -ms-linear-gradient(-68deg, #fd5616 31%, #fa4c18 69%);
   background: linear-gradient(158deg, #fd5616 31%, #fa4c18 69%);
+}
+
+.seminars-tile {
+  display: none;
+  margin-bottom: 55px;
+}
+
+.seminars-tile__block {
+  margin-bottom: 2px;
+}
+
+.seminars-tile__item {
+  position: relative;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-out;
+}
+
+.seminars-tile__item--horizontal,
+.seminars-tile__item--horizontal a {
+  display: block;
+  width: 778px;
+  height: 398px;
+}
+
+.seminars-tile__item--vertical,
+.seminars-tile__item--vertical a {
+  display: block;
+  width: 388px;
+  height: 798px;
+}
+
+.seminars-tile__block .seminars-tile__item:nth-child(2) {
+  margin-bottom: 4px;
+}
+
+.seminars-tile__block--right .seminars-tile__item--vertical {
+  float: right;
+}
+
+.seminars-tile__block--left .seminars-tile__item--vertical {
+  float: left;
+}
+
+.seminars-tile__block--left .seminars-tile__item--horizontal {
+  margin-left: 392px;
+}
+
+.seminars-tile__item span {
+  position: absolute;
+  bottom: 42px;
+  font-family: 'bodoniboldcyrillic';
+  font-size: 40px;
+  text-align: left;
+  color: #fefefe;
+}
+
+.seminars-tile__item--horizontal span {
+  left: 54px;
+  max-width: 655px;
+}
+
+.seminars-tile__item--vertical span {
+  left: 29px;
+}
+
+.seminars-tile__item--1 {
+  background-image: url("../images/tile/03.png");
+}
+
+.seminars-tile__item--1:hover {
+  background-image: url("../images/tile/03_hover.png");
+}
+
+.seminars-tile__item--2 {
+  background-image: url("../images/tile/01.png");
+}
+
+.seminars-tile__item--2:hover {
+  background-image: url("../images/tile/01_hover.png");
+}
+
+.seminars-tile__item--3 {
+  background-image: url("../images/tile/02.png");
+}
+
+.seminars-tile__item--3:hover {
+  background-image: url("../images/tile/02_hover.png");
+}
+
+.seminars-tile__item--4 {
+  background-image: url("../images/tile/04.png");
+}
+
+.seminars-tile__item--4:hover {
+  background-image: url("../images/tile/04_hover.png");
+}
+
+.seminars-tile__item--5 {
+  background-image: url("../images/tile/05.png");
+}
+
+.seminars-tile__item--5:hover {
+  background-image: url("../images/tile/05_hover.png");
+}
+
+.seminars-tile__item--6 {
+  background-image: url("../images/tile/06.png");
+}
+
+.seminars-tile__item--6:hover {
+  background-image: url("../images/tile/06_hover.png");
+}
+
+.seminars-tile__item--7 {
+  background-image: url("../images/tile/09.png");
+}
+
+.seminars-tile__item--7:hover {
+  background-image: url("../images/tile/09_hover.png");
+}
+
+.seminars-tile__item--8 {
+  background-image: url("../images/tile/07.png");
+}
+
+.seminars-tile__item--8:hover {
+  background-image: url("../images/tile/07_hover.png");
+}
+
+.seminars-tile__item--9 {
+  background-image: url("../images/tile/08.png");
+}
+
+.seminars-tile__item--9:hover {
+  background-image: url("../images/tile/08_hover.png");
+}
+
+.seminars-tile__item--10 {
+  background-image: url("../images/tile/10.png");
+}
+
+.seminars-tile__item--10:hover {
+  background-image: url("../images/tile/10_hover.png");
+}
+
+.seminars-tile__item--11 {
+  background-image: url("../images/tile/11.png");
+}
+
+.seminars-tile__item--11:hover {
+  background-image: url("../images/tile/11_hover.png");
+}
+
+.seminars-tile__item--12 {
+  background-image: url("../images/tile/12.png");
+}
+
+.seminars-tile__item--12:hover {
+  background-image: url("../images/tile/12_hover.png");
+}
+
+.seminars-tile__item--13 {
+  background-image: url("../images/tile/15.png");
+}
+
+.seminars-tile__item--13:hover {
+  background-image: url("../images/tile/15_hover.png");
+}
+
+.seminars-tile__item--14 {
+  background-image: url("../images/tile/13.png");
+}
+
+.seminars-tile__item--14:hover {
+  background-image: url("../images/tile/13_hover.png");
+}
+
+.seminars-tile__item--15 {
+  background-image: url("../images/tile/14.png");
+}
+
+.seminars-tile__item--15:hover {
+  background-image: url("../images/tile/14_hover.png");
+}
+
+.seminars-tile__item--16 {
+  background-image: url("../images/tile/16.png");
+}
+
+.seminars-tile__item--16:hover {
+  background-image: url("../images/tile/16_hover.png");
+}
+
+.seminars-tile__item--17 {
+  background-image: url("../images/tile/17.png");
+}
+
+.seminars-tile__item--17:hover {
+  background-image: url("../images/tile/17_hover.png");
+}
+
+.seminars-tile__item--18 {
+  background-image: url("../images/tile/18.png");
+}
+
+.seminars-tile__item--18:hover {
+  background-image: url("../images/tile/18_hover.png");
+}
+
+.seminars-tile__item--19 {
+  background-image: url("../images/tile/21.png");
+}
+
+.seminars-tile__item--19:hover {
+  background-image: url("../images/tile/21_hover.png");
+}
+
+.seminars-tile__item--20 {
+  background-image: url("../images/tile/19.png");
+}
+
+.seminars-tile__item--20:hover {
+  background-image: url("../images/tile/19_hover.png");
+}
+
+.seminars-tile__item--21 {
+  background-image: url("../images/tile/20.png");
+}
+
+.seminars-tile__item--21:hover {
+  background-image: url("../images/tile/20_hover.png");
+}
+
+.seminars-tile__item--22 {
+  background-image: url("../images/tile/22.png");
+}
+
+.seminars-tile__item--22:hover {
+  background-image: url("../images/tile/22_hover.png");
+}
+
+.seminars-tile__item--23 {
+  background-image: url("../images/tile/23.png");
+}
+
+.seminars-tile__item--23:hover {
+  background-image: url("../images/tile/23_hover.png");
+}
+
+.seminars-tile__item--24 {
+  background-image: url("../images/tile/24.png");
+}
+
+.seminars-tile__item--24:hover {
+  background-image: url("../images/tile/24_hover.png");
 }
 
 

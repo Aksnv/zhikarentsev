@@ -35,6 +35,23 @@ $(".slider-pagination__item").click(function(e) {
 });
 
 
+/* Seminars & Consultations tabs */
+
+$(".tabs-seminars__item--tile").click(function() {
+  $(this).addClass("tabs-seminars__item--active");
+  $(".tabs-seminars__item--list").removeClass("tabs-seminars__item--active");
+  $(".seminars-list").hide();
+  $(".seminars-tile").show();
+});
+
+$(".tabs-seminars__item--list").click(function() {
+  $(this).addClass("tabs-seminars__item--active");
+  $(".tabs-seminars__item--tile").removeClass("tabs-seminars__item--active");
+  $(".seminars-list").show();
+  $(".seminars-tile").hide();
+});
+
+
 /* Seminars list */
 
 $(".seminars-list__item").mouseover(function() {
