@@ -88,32 +88,11 @@ ol, ul {
   padding: 0;
 }
 
-/* h1 {
-  font-family: 'geometriabold';
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 44px;
-  margin-bottom: 20px;
-  padding-top: 33px;
+h1 {
+  font-family: 'bodoniboldcyrillic';
+  font-size: 60px;
+  color: #2a3a4b;
 }
-
-h2 {
-  font-family: 'geometriabold';
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 34px;
-  margin-bottom: 20px;
-}
-
-article > h2 {
-  font-family: 'geometriaregular';
-  font-weight: 400;
-  margin-bottom: 8px;
-}
-
-article p {
-  margin-bottom: 16px;
-} */
 
 img {
   max-width: 100%;
@@ -839,6 +818,63 @@ input[type="submit"]:focus {
 
 .consultations-contacts a {
   font-family: 'museo_sans_cyrl900';
+  color: #f0774e;
+}
+
+/* People */
+
+.people {
+  margin-bottom: 56px;
+}
+
+.people h1 {
+  margin-bottom: 67px;
+  padding-top: 106px;
+}
+
+.people-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 51px;
+  margin-right: 51px;
+  margin-bottom: 75px;
+}
+
+.people-item__photo,
+.people-item__name {
+  display: block;
+}
+
+.people-item__photo {
+  position: relative;
+  margin-bottom: 29px;
+}
+
+.people-item__photo:hover::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 254px;
+  height: 255px;
+  content: ""; 
+  background: -webkit-linear-gradient(-68deg, #f79249 8%, #ef714f 92%);
+  background: -moz-linear-gradient(-68deg, #f79249 8%, #ef714f 92%);
+  background: -o-linear-gradient(-68deg, #f79249 8%, #ef714f 92%);
+  background: -ms-linear-gradient(-68deg, #f79249 8%, #ef714f 92%);
+  background: linear-gradient(158deg, #f79249 8%, #ef714f 92%);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.people-item__name {
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.people-item__name:hover {
   color: #f0774e;
 }
 
