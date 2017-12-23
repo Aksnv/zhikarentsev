@@ -46,6 +46,14 @@
 }
 
 @font-face {
+  font-family: 'museo_sans_cyrl300';
+  src: url('../fonts/museosanscyrl_300-webfont.woff2') format('woff2'),
+       url('../fonts/museosanscyrl_300-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'museo_sans_cyrl900';
   src: url('../fonts/museosanscyrl_900-webfont.woff2') format('woff2'),
        url('../fonts/museosanscyrl_900-webfont.woff') format('woff');
@@ -133,6 +141,15 @@ input[type="submit"]:focus {
   height: 1px;
   background-color: #fffeba;
 } */
+
+.breadcrumbs {
+  font-family: 'museo_sans_cyrl300';
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding-top: 69px;
+  color: black;
+}
 
 ::-webkit-scrollbar {
   width: 4px;
@@ -875,6 +892,50 @@ input[type="submit"]:focus {
 }
 
 .people-item__name:hover {
+  color: #f0774e;
+}
+
+.people-about {
+  margin-bottom: 117px;
+}
+
+.people-about h1 {
+  margin-bottom: 65px;
+}
+
+.people-about img,
+.people-about strong,
+.people-about a {
+  display: block;
+}
+
+.people-about img {
+  width: 255px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+
+.people-about strong {
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  line-height: 33px;
+  margin-bottom: 56px;
+  color: black;
+}
+
+.people-about p {
+  font-size: 20px;
+  line-height: 33px;
+  text-align: left;
+  font-style: italic;
+  color: black;
+}
+
+.people-about a {
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  line-height: 32px;
+  padding-top: 48px;
   color: #f0774e;
 }
 
