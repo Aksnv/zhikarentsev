@@ -22,7 +22,6 @@ function slider() {
 
 setInterval(slider, 3000);
 
-
 $(".slider-pagination__item").click(function(e) {
   e.preventDefault();
   for (var i = 0; i < $(".slider-pagination__item").length; i++) {
@@ -36,6 +35,20 @@ $(".slider-pagination__item").click(function(e) {
 
 
 /* Seminars & Consultations tabs */
+
+$(".tabs-title__item--seminars").click(function() {
+  $(this).addClass("tabs-title__item--active");
+  $(".tabs-title__item--consultations").removeClass("tabs-title__item--active");
+  $(".consultations-wrapper").hide();
+  $(".seminars--wrapper").show();
+});
+
+$(".tabs-title__item--consultations").click(function() {
+  $(this).addClass("tabs-title__item--active");
+  $(".tabs-title__item--seminars").removeClass("tabs-title__item--active");
+  $(".consultations-wrapper").show();
+  $(".seminars--wrapper").hide();
+});
 
 $(".tabs-seminars__item--tile").click(function() {
   $(this).addClass("tabs-seminars__item--active");
@@ -61,3 +74,29 @@ $(".seminars-list__item").mouseover(function() {
 $(".seminars-list__item").mouseout(function() {
   $(this).removeClass("seminars-list__item--active");
 });
+
+
+/* Back-to-top button */
+
+$(".back-to-top").click(function() {
+  $("html, body").animate({
+    scrollTop: 0
+  }, 1000);
+  return false;
+});
+
+(function () {
+
+  var backToTopButton = document.querySelector(".back-to-top");
+  window.addEventListener("scroll", function(event) {
+    if ($(window).scrollTop() == 0) {
+      backToTopButton.classList.remove("back-to-top--visible");
+    } else {
+      backToTopButton.classList.add("back-to-top--visible");
+    }
+  });
+
+}());
+
+
+

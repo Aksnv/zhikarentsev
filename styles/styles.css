@@ -45,6 +45,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'museo_sans_cyrl900';
+  src: url('../fonts/museosanscyrl_900-webfont.woff2') format('woff2'),
+       url('../fonts/museosanscyrl_900-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 /* *** All styles *** */
 
@@ -737,6 +745,103 @@ input[type="submit"]:focus {
   background-image: url("../images/tile/24_hover.png");
 }
 
+.consultations-wrapper {
+  display: none;
+  margin-bottom: 122px;
+}
+
+.consultations-promo {
+  width: 585px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: left;
+  font-style: italic;
+  margin-bottom: 95px;
+  padding-top: 61px;
+  color: black;
+}
+
+.consultations-list {
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 57px;
+  padding-bottom: 51px;
+  border-bottom: 1px solid #f17a4d;
+}
+
+.consultations-list h2 {
+  width: 780px;
+  font-family: 'geometriabold';
+  font-size: 52px;
+  line-height: 56px;
+  margin-bottom: 42px;
+  color: #2a3a4b;
+}
+
+.consultations-list__block--left,
+.consultations-list__block--right {
+  float: left;
+}
+
+.consultations-list__block--left {
+  width: 680px;
+  margin-right: 40px;
+}
+
+.consultations-list__block--left li {
+  position: relative;
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  line-height: 42px;
+  padding-left: 50px;
+  color: #2a3a4b;
+}
+
+.consultations-list__block--left li::before {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 25px;
+  height: 22px;
+  background-image: url("../images/sprite.fw.png");
+  background-position: -24px -40px;
+}
+
+.consultations-list__block--right img {
+  position: relative;
+  top: -5px;
+  width: auto;
+  max-width: 450px;
+  height: auto;
+  max-height: 300px;
+}
+
+.consultations-contacts {
+  clear: both;
+  width: 875px;
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
+  color: #2a3a4b;
+}
+
+.consultations-contacts p:first-child {
+  margin-bottom: 33px;
+}
+
+.consultations-contacts strong {
+  font-family: 'museo_sans_cyrl900';
+}
+
+.consultations-contacts a {
+  font-family: 'museo_sans_cyrl900';
+  color: #f0774e;
+}
+
 
 /* *** Footer *** */
 
@@ -858,3 +963,42 @@ input[type="submit"]:focus {
 .footer--white-bg .social-links__item--yt {
   background-position: -67px -20px;
 }
+
+
+/* *** Back-to-top button *** */
+
+.back-to-top {
+  position: fixed;
+  left: 70px;
+  bottom: 120px;
+  display: none;
+  width: 108px;
+  height: 31px;
+  font-family: 'museo_sans_cyrl100';
+  font-size: 15px;
+  line-height: 32px;
+  padding-left: 10px;
+  background-color: #e6e6e9;
+  color: #2a3a4b;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-to-top::before {
+  position: absolute;
+  top: 13px;
+  left: 14px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 7px;
+  background-image: url("../images/sprite.fw.png");
+  background-position: -4px -40px;
+}
+
+.back-to-top--visible {
+  display: block;
+}
+
