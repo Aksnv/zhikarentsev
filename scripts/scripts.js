@@ -1,4 +1,4 @@
-/* Slider on main page */
+/* Slider */
 
 function slider() {
   for (var i = 0; i < $(".slider-pagination__item").length; i++) {
@@ -34,7 +34,7 @@ $(".slider-pagination__item").click(function(e) {
 });
 
 
-/* Seminars & Consultations tabs */
+/* Seminars & consultations */
 
 $(".tabs-title__item--seminars").click(function() {
   $(this).addClass("tabs-title__item--active");
@@ -64,9 +64,6 @@ $(".tabs-seminars__item--list").click(function() {
   $(".seminars-tile").hide();
 });
 
-
-/* Seminars list */
-
 $(".seminars-list__item").mouseover(function() {
   $(this).addClass("seminars-list__item--active");
 });
@@ -76,20 +73,20 @@ $(".seminars-list__item").mouseout(function() {
 });
 
 
-/* Entry form button */
+/* Entry form */
 
 $(".entry-button").click(function() {
   $(".popup").addClass("popup--active");
+  $(".jq-selectbox__select-text").text("Семинар *");
 });
 
 $(".popup__close-button").click(function() {
   $(".popup").removeClass("popup--active");
 });
 
-/* Entry form tabs */
-
 $(".tabs-form__item--seminar").click(function() {
   $(this).addClass("tabs-form__item--active");
+  $(".tabs-form").removeClass("tabs-form--consultation");
   $(".tabs-form__item--consultation").removeClass("tabs-form__item--active");
   $(".entry-form--consultation").hide();
   $(".entry-form--seminar").show();
@@ -97,9 +94,66 @@ $(".tabs-form__item--seminar").click(function() {
 
 $(".tabs-form__item--consultation").click(function() {
   $(this).addClass("tabs-form__item--active");
+  $(".tabs-form").addClass("tabs-form--consultation");
   $(".tabs-form__item--seminar").removeClass("tabs-form__item--active");
   $(".entry-form--consultation").show();
   $(".entry-form--seminar").hide();
+});
+
+$(".entry-form input[type='text']").blur(function() {
+  if (this.value != "") {
+    $(this).next().addClass("entry-form__label");
+  } else {
+    $(this).next().removeClass("entry-form__label");
+    $(this).addClass("invalid-value");
+    if ($(this).hasClass("entry-form__comments")) {
+      $(this).removeClass("invalid-value");
+    }
+  }
+});
+
+$(".entry-form input[type='tel']").blur(function() {
+  if (this.value != "") {
+    $(this).next().addClass("entry-form__label");
+  } else {
+    $(this).next().removeClass("entry-form__label");
+    $(this).addClass("invalid-value");
+  }
+});
+
+$(".entry-form input[type='email']").blur(function() {
+  if (this.value != "") {
+    $(this).next().addClass("entry-form__label");
+  } else {
+    $(this).next().removeClass("entry-form__label");
+    $(this).addClass("invalid-value");
+  }
+});
+
+$(".entry-form input[type='text']").focus(function() {
+  $(this).removeClass("invalid-value");
+});
+
+$(".entry-form input[type='tel']").focus(function() {
+  $(this).removeClass("invalid-value");
+});
+
+$(".entry-form input[type='email']").focus(function() {
+  $(this).removeClass("invalid-value");
+});
+
+$(".entry-form__select").blur(function() {
+  if ($(".jq-selectbox__select-text").text() == "Семинар *") {
+    $(".entry-form .jq-selectbox").addClass("invalid-value");
+  } else {
+    $(".entry-form .jq-selectbox").removeClass("invalid-value");
+  }
+});
+
+$(".entry-form__select").change(function() {
+  if ($(".jq-selectbox__select-text").text() != "Семинар *") {
+    $(".entry-form .jq-selectbox").removeClass("invalid-value");
+  }
 });
 
 

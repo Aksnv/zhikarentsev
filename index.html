@@ -129,57 +129,62 @@
           <option>Открытое Пространство</option>
           <option>Дева Обида — Дорога в Разум или Как Стать Богатым</option>
         </select>
-        <input type="text" name="entry-form__name" class="entry-form__name" placeholder="Фамилия и имя *">
-        <input type="tel" name="entry-form__phone" class="entry-form__phone" placeholder="Мобильный телефон *">
-        <input type="email" name="entry-form__email" class="entry-form__email" placeholder="Электронная почта *">
-        <input type="text" name="entry-form__city" class="entry-form__city" placeholder="Ваш город *">
-        <input type="text" name="entry-form__comments" class="entry-form__comments" placeholder="Дополнительная информация">
-        <input type="checkbox" name="entry-form__subscribe" id="entry-form__subscribe">
-        <label for="entry-form__subscribe">Подписаться на рассылку</label>
+        <div class="entry-form__wrapper">
+          <input type="text" name="entry-form__name" class="entry-form__name">
+          <label>Фамилия и имя *</label>
+        </div>
+        <div class="entry-form__wrapper">
+          <input type="tel" name="entry-form__phone" class="entry-form__phone">
+          <label>Мобильный телефон *</label>
+        </div>
+        <div class="entry-form__wrapper">
+          <input type="email" name="entry-form__email" class="entry-form__email">
+          <label>Электронная почта *</label>
+        </div>
+        <div class="entry-form__wrapper">
+          <input type="text" name="entry-form__city" class="entry-form__city">
+          <label>Ваш город *</label>
+        </div>
+        <div class="entry-form__wrapper">
+          <input type="text" name="entry-form__comments" class="entry-form__comments">
+          <label>Дополнительная информация</label>
+        </div>
+        
+        <input type="checkbox" name="entry-form__subscribe" id="entry-form__subscribe--1">
+        <label for="entry-form__subscribe--1">Подписаться на рассылку</label>
         <input type="submit" name="entry-form__submit" class="entry-button entry-form__submit" value="Записаться">
         <p><span>*</span> &mdash; поля, обязательные для заполнения</p>
       </form>
 
       <form name="entry-form" class="entry-form entry-form--consultation" action="#" method="POST">
-        <select name="entry-form__select" class="entry-form__select" placeholder="Семинар *">
-          <option>Обретение Внутренней Силы</option>
-          <option>Ключ к свободе. Типы характеров человека</option>
-          <option>Метод Единорог</option>
-          <option>Самоисцеление</option>
-          <option>Базовый Мастер-курс</option>
-          <option>Как Создавать Деньги</option>
-          <option>Дело Вашей Жизни</option>
-          <option>Диалоги Голосов I - V</option>
-          <option>Диалог Голосов I</option>
-          <option>Диалог Голосов II</option>
-          <option>Диалог Голосов III</option>
-          <option>Диалог Голосов IV</option>
-          <option>Диалог Голосов V</option>
-          <option>Диалог Голосов VI</option>
-          <option>ЖИ — Энергия Жизни</option>
-          <option>Мужчина и Женщина</option>
-          <option>Мужчина и Женщина 2</option>
-          <option>Знакомство с Женщиной</option>
-          <option>Путь мужчины - 1</option>
-          <option>Лабиринты Ума</option>
-          <option>Лабиринты Ума - 2</option>
-          <option>Сказка как путь души</option>
-          <option>Тайна Москвы</option>
-          <option>Горе и Злочастие (Птица-Душа)</option>
-          <option>Позвоночник — основа Жизни</option>
-          <option>Старославянский язык — знакомство с двойственным числом</option>
-          <option>Основы старославянского языка</option>
-          <option>Миром правит Желание — Радость и Сладость Жизни</option>
-          <option>Открытое Пространство</option>
-          <option>Дева Обида — Дорога в Разум или Как Стать Богатым</option>
-        </select>
-        <input type="text" name="entry-form__name" class="entry-form__name" placeholder="Фамилия и имя *">
-        <input type="tel" name="entry-form__phone" class="entry-form__phone" placeholder="Мобильный телефон *">
-        <input type="email" name="entry-form__email" class="entry-form__email" placeholder="Электронная почта *">
-        <input type="text" name="entry-form__city" class="entry-form__city" placeholder="Ваш город *">
-        <input type="text" name="entry-form__comments" class="entry-form__comments" placeholder="Дополнительная информация">
-        <input type="checkbox" name="entry-form__subscribe" id="entry-form__subscribe">
-        <label for="entry-form__subscribe">Подписаться на рассылку</label>
+        <div class="entry-form__type-of-consultation">
+          <input type="radio" name="entry-form__radio" value="entry-form__radio-meeting" id="entry-form__radio-meeting" checked="checked">
+          <label for="entry-form__radio-meeting">Личная встреча</label>
+          <input type="radio" name="entry-form__radio" value="entry-form__radio-skype" id="entry-form__radio-skype">
+          <label for="entry-form__radio-skype">Скайп-консультация</label>
+        </div>
+        <div class="entry-form__wrapper">
+          <input type="text" name="entry-form__name" class="entry-form__name">
+          <label>Фамилия и имя *</label>
+        </div>
+        <div class="entry-form__wrapper">
+          <input type="tel" name="entry-form__phone" class="entry-form__phone">
+          <label>Мобильный телефон *</label>
+        </div>
+        <div class="entry-form__wrapper">
+          <input type="email" name="entry-form__email" class="entry-form__email">
+          <label>Электронная почта *</label>
+        </div>
+        <div class="entry-form__wrapper">
+          <input type="text" name="entry-form__city" class="entry-form__city">
+          <label>Ваш город *</label>
+        </div>
+        <div class="entry-form__wrapper">
+          <input type="text" name="entry-form__comments" class="entry-form__comments">
+          <label>Дополнительная информация</label>
+        </div>
+        <input type="checkbox" name="entry-form__subscribe" id="entry-form__subscribe--2">
+        <label for="entry-form__subscribe--2">Подписаться на рассылку</label>
         <input type="submit" name="entry-form__submit" class="entry-button entry-form__submit" value="Записаться">
         <p>* &mdash; поля, обязательные для заполнения</p>
       </form>
