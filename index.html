@@ -5,7 +5,7 @@
   <title>Школа Мира Владимира Жикаренцева</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico"> -->
+  <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
@@ -84,6 +84,62 @@
       </ul>
     </div>
   </footer>
+
+  <div class="popup popup--entry-form">
+    <button class="popup__close-button"></button>
+    <div class="container">
+      <h1>Форма записи</h1>
+      <div class="tabs-seminars">
+        <div class="tabs-seminars__item tabs-seminars__item--tile">На семинар</div>
+        <div class="tabs-seminars__item tabs-seminars__item--list tabs-seminars__item--active">На консультацию</div>
+      </div>
+      <form name="entry-form" class="entry-form" action="#" method="POST">
+        <select name="entry-form__select" class="entry-form__select" placeholder="Семинар *">
+          <option>Обретение Внутренней Силы</option>
+          <option>Ключ к свободе. Типы характеров человека</option>
+          <option>Метод Единорог</option>
+          <option>Самоисцеление</option>
+          <option>Базовый Мастер-курс</option>
+          <option>Как Создавать Деньги</option>
+          <option>Дело Вашей Жизни</option>
+          <option>Диалоги Голосов I - V</option>
+          <option>Диалог Голосов I</option>
+          <option>Диалог Голосов II</option>
+          <option>Диалог Голосов III</option>
+          <option>Диалог Голосов IV</option>
+          <option>Диалог Голосов V</option>
+          <option>Диалог Голосов VI</option>
+          <option>ЖИ — Энергия Жизни</option>
+          <option>Мужчина и Женщина</option>
+          <option>Мужчина и Женщина 2</option>
+          <option>Знакомство с Женщиной</option>
+          <option>Путь мужчины - 1</option>
+          <option>Лабиринты Ума</option>
+          <option>Лабиринты Ума - 2</option>
+          <option>Сказка как путь души</option>
+          <option>Тайна Москвы</option>
+          <option>Горе и Злочастие (Птица-Душа)</option>
+          <option>Позвоночник — основа Жизни</option>
+          <option>Старославянский язык — знакомство с двойственным числом</option>
+          <option>Основы старославянского языка</option>
+          <option>Миром правит Желание — Радость и Сладость Жизни</option>
+          <option>Открытое Пространство</option>
+          <option>Дева Обида — Дорога в Разум или Как Стать Богатым</option>
+        </select>
+        <input type="text" name="entry-form__name" class="entry-form__name" placeholder="Фамилия и имя *">
+        <input type="tel" name="entry-form__phone" class="entry-form__phone" placeholder="Мобильный телефон *">
+        <input type="email" name="entry-form__email" class="entry-form__email" placeholder="Электронная почта *">
+        <input type="text" name="entry-form__city" class="entry-form__city" placeholder="Ваш город *">
+        <input type="text" name="entry-form__comments" class="entry-form__comments" placeholder="Дополнительная информация">
+        <input type="checkbox" name="entry-form__subscribe" id="entry-form__subscribe">
+        <label for="entry-form__subscribe">Подписаться на рассылку</label>
+        <input type="submit" name="entry-form__submit" value="Записаться">
+        <p>* &mdash; поля, обязательные для заполнения</p>
+      </form>
+    </div>
+    
+  </div>
+
   <script src="scripts/jquery-3.2.1.min.js"></script>
   <script src="scripts/scripts.js"></script>
 </body>

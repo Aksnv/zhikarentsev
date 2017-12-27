@@ -76,6 +76,13 @@ $(".seminars-list__item").mouseout(function() {
 });
 
 
+/* Entry form */
+
+$(".entry-button").click(function() {
+  $(".popup").addClass("popup--active");
+});
+
+
 /* Back-to-top button */
 
 $(".back-to-top").click(function() {
