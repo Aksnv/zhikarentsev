@@ -77,16 +77,8 @@
   box-sizing: border-box;
 }
 
-/* html, body {
-  height: 100%;
-} */
-
 body {
   font-family: sans-serif;
-  /* font-family: 'geometriaregular', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px; */
   background-image: url("../images/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -249,10 +241,6 @@ input[type="submit"]:focus {
 
 /* *** Main content *** */
 
-/* .content {
-  height: 100%;
-} */
-
 /* Home */
 
 .entry-button {
@@ -365,7 +353,7 @@ input[type="submit"]:focus {
   border: none;
 }
 
-/* Seminars & Consultations */
+/* Seminars & сonsultations */
 
 .tabs-title {
   display: inline-block;
@@ -949,6 +937,16 @@ input[type="submit"]:focus {
   line-height: 32px;
   padding-top: 48px;
   color: #f0774e;
+}
+
+/* Seminar */
+
+.seminar-about {
+  margin-bottom: 117px;
+}
+
+.seminar-about h1 {
+  margin-bottom: 65px;
 }
 
 
