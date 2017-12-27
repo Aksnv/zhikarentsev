@@ -71,9 +71,9 @@
     </div>
     <div class="footer__links">
       <ul>
-        <li><a href="#">Обратная связь</a></li>
-        <li><a href="#">Дистанционные семинары</a></li>
-        <li><a href="#">Старославянский язык</a></li>
+        <li><a href="#" class="footer-link__feedback">Обратная связь</a></li>
+        <li><a href="#" class="footer-link__distance-seminars">Дистанционные семинары</a></li>
+        <li><a href="#" class="footer-link__oldslavonic-language">Старославянский язык</a></li>
       </ul>
     </div>
     <div class="footer__social-links">
@@ -149,7 +149,6 @@
           <input type="text" name="entry-form__comments" class="entry-form__comments">
           <label>Дополнительная информация</label>
         </div>
-        
         <input type="checkbox" name="entry-form__subscribe" id="entry-form__subscribe--1">
         <label for="entry-form__subscribe--1">Подписаться на рассылку</label>
         <input type="submit" name="entry-form__submit" class="entry-button entry-form__submit" value="Записаться">
@@ -189,7 +188,40 @@
         <p>* &mdash; поля, обязательные для заполнения</p>
       </form>
     </div>
-    
+  </div>
+
+  <div class="popup popup--feedback-form">
+    <button class="popup__close-button"></button>
+    <div class="container container--form">
+      <h1>Форма обратной связи</h1>
+
+      <form name="feedback-form" class="feedback-form" action="#" method="POST">
+        <div class="feedback-form__wrapper">
+          <input type="text" name="feedback-form__name" class="feedback-form__name">
+          <label>Фамилия и имя *</label>
+        </div>
+        <div class="feedback-form__wrapper">
+          <input type="tel" name="feedback-form__phone" class="feedback-form__phone">
+          <label>Мобильный телефон *</label>
+        </div>
+        <div class="feedback-form__wrapper">
+          <input type="email" name="feedback-form__email" class="feedback-form__email">
+          <label>Электронная почта *</label>
+        </div>
+        <div class="feedback-form__wrapper">
+          <input type="text" name="feedback-form__message-theme" class="feedback-form__message-theme">
+          <label>Тема сообщения</label>
+        </div>
+        <div class="feedback-form__wrapper">
+          <input type="text" name="feedback-form__message-text" class="feedback-form__message-text">
+          <label>Текст сообщения *</label>
+        </div>
+        <input type="checkbox" name="feedback-form__subscribe" id="feedback-form__subscribe">
+        <label for="feedback-form__subscribe">Подписаться на рассылку</label>
+        <input type="submit" name="feedback-form__submit" class="entry-button feedback-form__submit" value="Отправить">
+        <p>* &mdash; поля, обязательные для заполнения</p>
+      </form>
+    </div>
   </div>
 
   <script src="scripts/jquery-3.2.1.min.js"></script>

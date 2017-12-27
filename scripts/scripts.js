@@ -76,12 +76,12 @@ $(".seminars-list__item").mouseout(function() {
 /* Entry form */
 
 $(".entry-button").click(function() {
-  $(".popup").addClass("popup--active");
+  $(".popup--entry-form").addClass("popup--active");
   $(".jq-selectbox__select-text").text("Семинар *");
 });
 
 $(".popup__close-button").click(function() {
-  $(".popup").removeClass("popup--active");
+  $(".popup--entry-form").removeClass("popup--active");
 });
 
 $(".tabs-form__item--seminar").click(function() {
@@ -154,6 +154,60 @@ $(".entry-form__select").change(function() {
   if ($(".jq-selectbox__select-text").text() != "Семинар *") {
     $(".entry-form .jq-selectbox").removeClass("invalid-value");
   }
+});
+
+
+/* Feedback form */
+
+$(".footer-link__feedback").click(function(e) {
+  e.preventDefault();
+  $(".popup--feedback-form").addClass("popup--active");
+});
+
+$(".popup__close-button").click(function() {
+  $(".popup--feedback-form").removeClass("popup--active");
+});
+
+$(".feedback-form input[type='text']").blur(function() {
+  if (this.value != "") {
+    $(this).next().addClass("feedback-form__label");
+  } else {
+    $(this).next().removeClass("feedback-form__label");
+    $(this).addClass("invalid-value");
+    if ($(this).hasClass("feedback-form__message-theme")) {
+      $(this).removeClass("invalid-value");
+    }
+  }
+});
+
+$(".feedback-form input[type='tel']").blur(function() {
+  if (this.value != "") {
+    $(this).next().addClass("feedback-form__label");
+  } else {
+    $(this).next().removeClass("feedback-form__label");
+    $(this).addClass("invalid-value");
+  }
+});
+
+$(".feedback-form input[type='email']").blur(function() {
+  if (this.value != "") {
+    $(this).next().addClass("feedback-form__label");
+  } else {
+    $(this).next().removeClass("feedback-form__label");
+    $(this).addClass("invalid-value");
+  }
+});
+
+$(".feedback-form input[type='text']").focus(function() {
+  $(this).removeClass("invalid-value");
+});
+
+$(".feedback-form input[type='tel']").focus(function() {
+  $(this).removeClass("invalid-value");
+});
+
+$(".feedback-form input[type='email']").focus(function() {
+  $(this).removeClass("invalid-value");
 });
 
 

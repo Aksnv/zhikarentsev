@@ -1148,26 +1148,35 @@ input[type="submit"]:focus {
   cursor: pointer;
 }
 
-.popup h1 {
+.popup--entry-form h1 {
   margin-bottom: 36px;
 }
 
+.popup--feedback-form h1 {
+  margin-bottom: 113px;
+}
 
-/* *** Entry form *** */
+
+/* *** Entry & feedback forms *** */
 
 .container--form {
   width: 1040px;
 }
 
-.entry-form {
+.entry-form,
+.feedback-form {
   display: none;
   font-family: 'proxima_nova_ltlight';
   padding-bottom: 150px;
 }
 
-.entry-form--active {
+.feedback-form {
   display: block;
 }
+
+.entry-form--active {
+  display: block;
+} 
 
 .tabs-form {
   margin-bottom: 95px;
@@ -1257,7 +1266,8 @@ input[type="submit"]:focus {
   background-color: #f7c29d;
 }
 
-.entry-form__wrapper {
+.entry-form__wrapper,
+.feedback-form__wrapper {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -1265,7 +1275,10 @@ input[type="submit"]:focus {
 
 .entry-form input[type="text"],
 .entry-form input[type="tel"],
-.entry-form input[type="email"] {
+.entry-form input[type="email"],
+.feedback-form input[type="text"],
+.feedback-form input[type="tel"],
+.feedback-form input[type="email"] {
   width: 320px;
   height: 50px;
   font-family: 'proxima_nova_ltlight';
@@ -1276,17 +1289,23 @@ input[type="submit"]:focus {
 }
 
 .entry-form input[type="text"],
-.entry-form input[type="tel"] {
+.entry-form input[type="tel"],
+.feedback-form input[type="text"],
+.feedback-form input[type="tel"] {
   margin-right: 35px;
 }
 
-.entry-form input[type="tel"] {
+.entry-form input[type="tel"],
+.feedback-form input[type="tel"] {
   margin-bottom: 65px;
 }
 
 .entry-form input[type="text"]:focus,
 .entry-form input[type="tel"]:focus,
-.entry-form input[type="email"]:focus {
+.entry-form input[type="email"]:focus,
+.feedback-form input[type="text"]:focus,
+.feedback-form input[type="tel"]:focus,
+.feedback-form input[type="email"]:focus {
   height: 49px;
   border-bottom: 2px solid #f79149;
   outline: none;
@@ -1294,13 +1313,19 @@ input[type="submit"]:focus {
 
 .entry-form input[type="text"].invalid-value,
 .entry-form input[type="tel"].invalid-value,
-.entry-form input[type="email"].invalid-value {
+.entry-form input[type="email"].invalid-value,
+.feedback-form input[type="text"].invalid-value,
+.feedback-form input[type="tel"].invalid-value,
+.feedback-form input[type="email"].invalid-value {
   border-bottom: 1px solid #e25555;
 }
 
 .entry-form input[type="text"] + label,
 .entry-form input[type="tel"] + label,
-.entry-form input[type="email"] + label {
+.entry-form input[type="email"] + label,
+.feedback-form input[type="text"] + label,
+.feedback-form input[type="tel"] + label,
+.feedback-form input[type="email"] + label {
   position: absolute;
   top: 0;
   left: 0;
@@ -1317,7 +1342,13 @@ input[type="submit"]:focus {
 .entry-form input[type="email"]:focus + label,
 .entry-form input[type="text"] + label.entry-form__label,
 .entry-form input[type="tel"] + label.entry-form__label,
-.entry-form input[type="email"] + label.entry-form__label {
+.entry-form input[type="email"] + label.entry-form__label,
+.feedback-form input[type="text"]:focus + label,
+.feedback-form input[type="tel"]:focus + label,
+.feedback-form input[type="email"]:focus + label,
+.feedback-form input[type="text"] + label.feedback-form__label,
+.feedback-form input[type="tel"] + label.feedback-form__label,
+.feedback-form input[type="email"] + label.feedback-form__label {
   top: -25px;
   left: 0;
   font-size: 14px;
@@ -1326,7 +1357,10 @@ input[type="submit"]:focus {
 
 .entry-form input[type="text"].invalid-value + label::before,
 .entry-form input[type="tel"].invalid-value + label::before,
-.entry-form input[type="email"].invalid-value + label::before {
+.entry-form input[type="email"].invalid-value + label::before,
+.feedback-form input[type="text"].invalid-value + label::before,
+.feedback-form input[type="tel"].invalid-value + label::before,
+.feedback-form input[type="email"].invalid-value + label::before {
   position: absolute;
   top: -25px;
   left: 0;
@@ -1343,13 +1377,15 @@ input[type="submit"]:focus {
   margin-bottom: 26px;
 }
 
-.entry-form input[type="checkbox"] {
+.entry-form input[type="checkbox"],
+.feedback-form input[type="checkbox"] {
   visibility: hidden;
   display: inline-block;
   vertical-align: top;
 }
 
-.entry-form input[type="checkbox"] + label {
+.entry-form input[type="checkbox"] + label,
+.feedback-form input[type="checkbox"] + label {
   position: relative;
   display: block;
   width: 200px;
@@ -1360,7 +1396,8 @@ input[type="submit"]:focus {
   color: #000;
 }
 
-.entry-form input[type="checkbox"] + label::before {
+.entry-form input[type="checkbox"] + label::before,
+.feedback-form input[type="checkbox"] + label::before {
   position: absolute;
   top: 0;
   left: 5px;
@@ -1372,11 +1409,13 @@ input[type="submit"]:focus {
   background-position: -67px -40px;
 }
 
-.entry-form input[type="checkbox"]:checked + label::before {
+.entry-form input[type="checkbox"]:checked + label::before,
+.feedback-form input[type="checkbox"]:checked + label::before {
   background-position: -87px -40px;
 }
 
-.entry-form input[type="checkbox"]:checked + label::after {
+.entry-form input[type="checkbox"]:checked + label::after,
+.feedback-form input[type="checkbox"]:checked + label::after {
   position: absolute;
   top: 4px;
   left: 9px;
@@ -1388,17 +1427,20 @@ input[type="submit"]:focus {
   background-position: -54px -40px;
 }
 
-.entry-form__submit {
+.entry-form__submit,
+.feedback-form__submit {
   width: 272px;
   margin-bottom: 76px;
 }
 
-.entry-form--seminar p {
+.entry-form--seminar p,
+.feedback-form p {
   font-family: 'proxima_nova_ltlight';
   font-size: 14px;
 }
 
-.entry-form--seminar p > span {
+.entry-form--seminar p > span,
+.feedback-form p > span {
   display: inline-block;
   vertical-align: top;
   padding-top: 2px;
@@ -1452,4 +1494,15 @@ input[type="submit"]:focus {
   height: 12px;
   background-color: #fff;
   border-radius: 50%;
+}
+
+.feedback-form input[type="text"].feedback-form__message-theme,
+.feedback-form input[type="text"].feedback-form__message-text {
+  width: 1040px;
+  margin-right: 0;
+  margin-bottom: 44px;
+}
+
+.feedback-form input[type="text"].feedback-form__message-text {
+  margin-bottom: 26px;
 }
