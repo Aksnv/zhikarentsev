@@ -76,10 +76,30 @@ $(".seminars-list__item").mouseout(function() {
 });
 
 
-/* Entry form */
+/* Entry form button */
 
 $(".entry-button").click(function() {
   $(".popup").addClass("popup--active");
+});
+
+$(".popup__close-button").click(function() {
+  $(".popup").removeClass("popup--active");
+});
+
+/* Entry form tabs */
+
+$(".tabs-form__item--seminar").click(function() {
+  $(this).addClass("tabs-form__item--active");
+  $(".tabs-form__item--consultation").removeClass("tabs-form__item--active");
+  $(".entry-form--consultation").hide();
+  $(".entry-form--seminar").show();
+});
+
+$(".tabs-form__item--consultation").click(function() {
+  $(this).addClass("tabs-form__item--active");
+  $(".tabs-form__item--seminar").removeClass("tabs-form__item--active");
+  $(".entry-form--consultation").show();
+  $(".entry-form--seminar").hide();
 });
 
 
@@ -104,6 +124,35 @@ $(".back-to-top").click(function() {
   });
 
 }());
+
+
+/* jQuery Form Styler activation */
+
+(function($) {
+$(function() {
+
+  $('select').styler();
+    
+});
+})(jQuery);
+
+
+/* Foods - advanced search - slider range (jQuery UI) */
+
+/*$( function() {
+    $( ".advanced-search__price-range" ).slider({
+      range: true,
+      min: 100,
+      max: 9999,
+      values: [ 100, 5000 ],
+      slide: function( event, ui ) {
+        $( "#advanced-search__min-price" ).val( ui.values[ 0 ] );
+        $( "#advanced-search__max-price" ).val( ui.values[ 1 ] );
+      }
+    });
+    $( "#advanced-search__min-price" ).val( $( ".advanced-search__price-range" ).slider( "values", 0 ) );
+    $( "#advanced-search__max-price" ).val( $( ".advanced-search__price-range" ).slider( "values", 1 ) );
+  } );*/
 
 
 
