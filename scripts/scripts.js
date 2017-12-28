@@ -226,6 +226,37 @@ $(".review-invisible").click(function() {
 });
 
 
+/* Oldslavonic language navigation */
+
+$("a[href='#oldslavonic-language__why-to-study']").click(function() {
+  $("html, body").animate({
+    scrollTop: $("#oldslavonic-language__why-to-study").offset().top
+  }, 1000);
+  return false;
+});
+
+$("a[href='#oldslavonic-language__our-results']").click(function() {
+  $("html, body").animate({
+    scrollTop: $("#oldslavonic-language__our-results").offset().top
+  }, 1000);
+  return false;
+});
+
+$("a[href='#oldslavonic-language__cyrillic']").click(function() {
+  $("html, body").animate({
+    scrollTop: $("#oldslavonic-language__cyrillic").offset().top
+  }, 1000);
+  return false;
+});
+
+$("a[href='#oldslavonic-language__double-number']").click(function() {
+  $("html, body").animate({
+    scrollTop: $("#oldslavonic-language__double-number").offset().top
+  }, 1000);
+  return false;
+});
+
+
 /* Back-to-top button */
 
 $(".back-to-top").click(function() {
