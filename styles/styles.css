@@ -1307,6 +1307,51 @@ input[type="submit"]:focus {
   color: #000;
 }
 
+.news-article {
+  overflow: hidden;
+  margin-bottom: 141px;
+}
+
+.news-article h1 {
+  margin-bottom: 104px;
+}
+
+.news-article__block {
+  float: left;
+}
+
+.news-article__block--right {
+  text-align: left;
+}
+
+.news-article .news-item__image,
+.news-article .news-item__date,
+.news-article .news-item__text {
+  float: none;
+}
+
+.news-article .news-item__image {
+  text-align: left;
+}
+
+.news-article .news-item__date {
+  text-align: left;
+  padding-top: 30px;
+}
+
+.news-article .news-item__text {
+  width: 877px;
+  margin-right: 0;
+}
+
+.news-article .news-item__text + a {
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  line-height: 32px;
+}
+
+/* Pagination */
+
 .pagination {
   text-align: center;
 }
