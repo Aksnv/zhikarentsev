@@ -1506,6 +1506,19 @@ input[type="submit"]:focus {
   font-family: 'museo_sans_cyrl900';
 }
 
+/* Oldslavonic language */
+
+.oldslavonic-language {
+  text-align: left;
+  margin-bottom: 150px;
+}
+
+.oldslavonic-language h1 {
+  text-align: center;
+  padding-top: 90px;
+  margin-bottom: 60px;
+}
+
 /* *** Footer *** */
 
 .footer {
