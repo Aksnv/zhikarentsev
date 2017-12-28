@@ -1411,6 +1411,101 @@ input[type="submit"]:focus {
   background-position: -120px -40px;
 }
 
+/* Distance seminars */
+
+.distance-seminars {
+  margin-bottom: 158px;
+}
+
+.distance-seminars h1 {
+  padding-top: 107px;
+  margin-bottom: 36px;
+}
+
+.distance-button {
+  display: inline-block;
+  vertical-align: top;
+  width: 402px;
+  height: 50px;
+  font-family: 'geometriaregular';
+  font-size: 13px;
+  line-height: 46px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 97px;
+  color: #f79149;
+  border: 2px solid #f79149;
+  border-radius: 25px;
+}
+
+.distance-button:hover {
+  background-color: #f79149;
+  color: #fff;
+}
+
+.distance-seminars__promo {
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
+  margin-bottom: 65px;
+}
+
+.distance-seminars__promo strong {
+  font-family: 'museo_sans_cyrl900';
+}
+
+.distance-seminars__list {
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 57px;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #f17a4d;
+}
+
+.distance-seminars__list h2 {
+  font-family: 'geometriabold';
+  font-size: 52px;
+  line-height: 56px;
+  margin-bottom: 46px;
+  color: #2a3a4b;
+}
+
+.distance-seminars__list li {
+  position: relative;
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  color: #2a3a4b;
+}
+
+.distance-seminars__list li::before {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 25px;
+  height: 22px;
+  background-image: url("../images/sprite.fw.png");
+  background-position: -24px -40px;
+}
+
+.distance-seminars__price {
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
+  color: #2a3a4b;
+}
+
+.distance-seminars__price strong {
+  font-family: 'museo_sans_cyrl900';
+}
+
 /* *** Footer *** */
 
 .footer {
@@ -1457,8 +1552,17 @@ input[type="submit"]:focus {
   color: #fff;
 }
 
+.footer__links a.footer-link--active {
+  text-decoration: none;
+  border-bottom: 4px solid #f17a4d;
+}
+
 .footer--white-bg .footer__links a {
   color: #f0774e;
+}
+
+.footer--white-bg .footer__links a.footer-link--active {
+  color: #2a3a4b;
 }
 
 .footer__social-links li {
