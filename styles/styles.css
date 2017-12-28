@@ -1249,6 +1249,123 @@ input[type="submit"]:focus {
   padding-bottom: 13px;
 }
 
+/* News */
+
+.news {
+  text-align: left;
+  margin-bottom: 166px;
+}
+
+.news h1 {
+  text-align: center;
+  margin-bottom: 104px;
+  padding-top: 107px;
+}
+
+.news ul {
+  margin-bottom: 97px;
+}
+
+.news-item {
+  overflow: hidden;
+  margin-bottom: 68px;
+}
+
+.news-item__image,
+.news-item__text,
+.news-item__date {
+  float: left;
+}
+
+.news-item__image {
+  width: 290px;
+  padding-top: 7px;
+}
+
+.news-item__text {
+  width: 585px;
+  font-family: 'loraitalic';
+  font-size: 20px;
+  line-height: 33px;
+  margin-right: 100px;
+}
+
+.news-item__text p {
+  margin-bottom: 8px;
+}
+
+.news-item__text a {
+  font-family: 'museo_sans_cyrl100';
+  line-height: 32px;
+}
+
+.news-item__date {
+  width: 96px;
+  font-family: 'loraitalic';
+  font-size: 20px;
+  padding-top: 7px;
+  color: #000;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.pagination li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.pagination li:last-child {
+  margin-right: 0;
+}
+
+.pagination-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  font-family: 'geometriaregular';
+  font-size: 13px;
+  line-height: 46px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  border: 2px solid #f79149;
+  border-radius: 25px;
+}
+
+.pagination-item--active,
+.pagination-item:hover {
+  background-color: #f79149;
+  color: #fff;
+}
+
+.pagination li:first-child .pagination-item::before,
+.pagination li:last-child .pagination-item::before  {
+  position: absolute;
+  top: 18px;
+  left: 21px;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 15px;
+  background-image: url("../images/sprite.fw.png");
+  background-position: -108px -40px;
+}
+
+.pagination li:last-child .pagination-item::before {
+  transform: rotate(180deg);
+}
+
+.pagination li:first-child .pagination-item:hover::before,
+.pagination li:last-child .pagination-item:hover::before  {
+  background-position: -120px -40px;
+}
+
 /* *** Footer *** */
 
 .footer {
