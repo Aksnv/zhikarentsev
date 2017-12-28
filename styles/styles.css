@@ -69,6 +69,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'loraitalic';
+  src: url('../fonts/lora-italic-webfont.woff2') format('woff2'),
+       url('../fonts/lora-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* *** All styles *** */
 
 * {
@@ -120,14 +128,12 @@ input[type="submit"]:focus {
   text-align: center;
 }
 
-/* .inline-link {
+.inline-link {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  font-family: 'geometriamedium';
-  font-weight: 500;
+  color: #f0774e;
   text-decoration: none;
-  color: #fffeba;
 }
 
 .inline-link::after {
@@ -138,8 +144,8 @@ input[type="submit"]:focus {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #fffeba;
-} */
+  background-color: #f0774e;
+}
 
 .breadcrumbs {
   font-family: 'museo_sans_cyrl300';
@@ -941,12 +947,267 @@ input[type="submit"]:focus {
 
 /* Seminar */
 
-.seminar-about {
+.seminar {
   margin-bottom: 117px;
 }
 
-.seminar-about h1 {
+.seminar h1 {
+  margin-bottom: 103px;
+}
+
+.seminar h2 {
+  font-family: 'geometriabold';
+  font-size: 52px;
+  line-height: 56px;
+  text-align: left;
+  margin-bottom: 46px;
+  color: #2a3a4b;
+}
+
+.seminar-recourse {
+  overflow: hidden;
+  margin-bottom: 95px;
+}
+
+.seminar-recourse__block--left,
+.seminar-recourse__block--right {
+  float: left;
+}
+
+.seminar-recourse__block--left {
+  margin-right: 96px;
+}
+
+.seminar-recourse__block--left p {
+  width: 585px;
+  font-family: 'loraitalic';
+  font-size: 20px;
+  line-height: 33px;
+  text-align: left;
+  color: black;
+}
+
+.seminar-recourse__block--right {
+  padding-top: 8px;
+}
+
+.seminar-recourse__block--right img {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 28px;
+}
+
+.seminar-recourse__block--right p {
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  line-height: 32px;
+  color: black;
+}
+
+.seminar-content {
+  clear: both;
+  text-align: left;
   margin-bottom: 65px;
+}
+
+.seminar-content p {
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 32px;
+  color: #2a3a4b;
+}
+
+.seminar-content strong {
+  font-family: 'museo_sans_cyrl900';
+}
+
+.seminar-video {
+  overflow: hidden;
+  margin-bottom: 73px;
+  padding-top: 30px;
+}
+
+.seminar-video__block--left,
+.seminar-video__block--right {
+  float: left;
+}
+
+.seminar-video__block--left {
+  margin-right: 96px;
+}
+
+.seminar-video__block--left a {
+  position: relative;
+  display: block;
+}
+
+.seminar-video__block--left a::before {
+  position: absolute;
+  top: 83px;
+  left: 213px;
+  content: "";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-image: url("../images/sprite.fw.png");
+  background-position: -138px -2px;
+}
+
+.seminar-video__block--right {
+  padding-top: 7px;
+}
+
+.seminar-video__block--right p {
+  width: 195px;
+  font-family: 'loraitalic';
+  font-size: 20px;
+  line-height: 33px;
+  color: black;
+}
+
+.seminar-schedule {
+  text-align: left;
+  margin-bottom: 62px;
+}
+
+.seminar-schedule h2 {
+  margin-bottom: 61px;
+}
+
+.seminar-schedule ul {
+  width: 638px;
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  margin-bottom: 22px;
+  color: #2a3a4b;
+}
+
+.seminar-schedule .seminars-list__item {
+  line-height: 54px;
+}
+
+.seminar-schedule strong {
+  display: inline-block;
+  width: 258px;
+  font-family: 'museo_sans_cyrl900';
+  margin-right: 30px;
+}
+
+.seminar-schedule .seminars-list__item .entry-button {
+  right: -272px;
+}
+
+.seminar-schedule a {
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  line-height: 32px;
+  margin-left: 18px;
+}
+
+.seminar-reviews {
+  text-align: center;
+}
+
+.seminar-reviews h3 {
+  position: relative;
+  font-family: 'bodoniboldcyrillic';
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 31px;
+  color: #2a3a4b;
+}
+
+.seminar-reviews h3::before,
+.seminar-reviews h3::after {
+  position: absolute;
+  top: 23px;
+  content: "";
+  display: block;
+  width: 32%;
+  height: 1px;
+  background-color: #f1794e;
+}
+
+.seminar-reviews h3::before {
+  left: 0;
+}
+
+.seminar-reviews h3::after {
+  right: 0;
+}
+
+.seminar-reviews strong {
+  display: block;
+  font-family: 'museo_sans_cyrl900';
+  text-align: left;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 34px;
+}
+
+.seminar-reviews p {
+  font-family: 'loraitalic';
+  font-size: 20px;
+  line-height: 33px;
+  text-align: left;
+  margin-bottom: 33px;
+  color: black;
+}
+
+.seminar-review {
+  overflow-y: hidden;
+  height: 595px;
+}
+
+.seminar-review--visible {
+  overflow-y: visible;
+  height: auto;
+}
+
+.add-review-button {
+  display: inline-block;
+  vertical-align: top;
+  width: 204px;
+  height: 50px;
+  font-family: 'geometriaregular';
+  font-size: 13px;
+  line-height: 46px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  background-color: transparent;
+  color: #f79149;
+  border: none;
+  border: 2px solid #f79149;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+}
+
+.add-review-button:hover {
+  background-color: #f79149;
+  color: #fff;
+}
+
+.review-visible,
+.review-invisible {
+  float: right;
+  display: inline-block;
+  vertical-align: top;
+  font-family: 'museo_sans_cyrl300';
+  font-size: 15px;
+  text-decoration: none;
+  background-color: transparent;
+  color: #f0774e;
+  border: none;
+  border-bottom: 1px dashed #f0774e;
+  outline: none;
+  cursor: pointer;
+}
+
+.review-invisible {
+  display: none;
 }
 
 

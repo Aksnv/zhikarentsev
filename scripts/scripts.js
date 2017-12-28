@@ -211,6 +211,21 @@ $(".feedback-form input[type='email']").focus(function() {
 });
 
 
+/* Seminar reviews */
+
+$(".review-visible").click(function() {
+  $(this).hide();
+  $(".seminar-review").addClass("seminar-review--visible");
+  $(".review-invisible").show();
+});
+
+$(".review-invisible").click(function() {
+  $(this).hide();
+  $(".seminar-review").removeClass("seminar-review--visible");
+  $(".review-visible").show();
+});
+
+
 /* Back-to-top button */
 
 $(".back-to-top").click(function() {
