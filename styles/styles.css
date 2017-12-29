@@ -1196,6 +1196,138 @@ input[type="submit"]:focus {
   color: #fff;
 }
 
+.review-form {
+  display: none;
+  margin-bottom: 78px;
+  padding-top: 55px;
+  padding-bottom: 18px;
+  padding-left: 64px;
+  padding-right: 67px;
+  background-color: #eeebea;
+  border-radius: 5px;
+}
+
+.review-form--visible {
+  display: block;
+}
+
+.review-form__wrapper {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 44px;
+}
+
+.review-form input[type="text"] {
+  position: relative;
+  width: 1040px;
+  height: 50px;
+  font-family: 'proxima_nova_ltlight';
+  font-size: 20px;
+  line-height: 50px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #aba39e;
+}
+
+.review-form input[type="text"]:focus {
+  height: 49px;
+  border-bottom: 2px solid #f79149;
+  outline: none;
+}
+
+.review-form input[type="text"].invalid-value {
+  border-bottom: 1px solid #e25555;
+}
+
+.review-form input[type="text"] + label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  font-family: 'proxima_nova_ltlight';
+  font-size: 20px;
+  line-height: 50px;
+  color: #333;
+  pointer-events: none;
+}
+
+.review-form input[type="text"]:focus + label,
+.review-form input[type="text"] + label.review-form__label {
+  top: -25px;
+  left: 0;
+  font-size: 14px;
+  color: #000;
+}
+
+.review-form input[type="text"].invalid-value + label::before {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  content: "Заполните поле";
+  display: block;
+  font-family: 'proxima_nova_ltlight';
+  font-size: 14px;
+  color: #e25555;
+}
+
+.review-form__capcha {
+  overflow: hidden;
+  width: 340px;
+  padding-top: 152px;
+}
+
+.review-form__capcha .review-form__wrapper,
+.review-form__capcha img {
+  float: left;
+}
+
+.review-form__capcha .review-form__wrapper {
+  margin-bottom: 6px;
+}
+
+.review-form__capcha img {
+  margin-right: 20px;
+  padding-top: 10px;
+}
+
+.review-form__capcha p {
+  font-family: 'proxima_nova_ltlight';
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.review-form__capcha p > span {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 2px;
+  font-size: 20px;
+}
+
+.review-form .review-form__capcha input[type="text"] {
+  width: 230px;
+}
+
+.review-form__submit,
+.review-form__reset {
+  float: right;
+  width: 210px;
+  margin-top: 142px;
+}
+
+.review-form__reset {
+  margin-right: 20px;
+  background: none;
+  background-color: #f1d4ca;
+  color: #000;
+  box-shadow: none;
+}
+
+.review-form__reset:hover {
+  background: none;
+  background-color: #f0c5b6;
+}
+
 .review-visible,
 .review-invisible {
   float: right;
@@ -1963,9 +2095,6 @@ input[type="submit"]:focus {
     text-decoration: none;
     color: #f0774e;
     border-bottom: 1px dashed #f0774e;
-
-
-
 }
 
 /* *** Footer *** */

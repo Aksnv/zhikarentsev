@@ -213,6 +213,32 @@ $(".feedback-form input[type='email']").focus(function() {
 
 /* Seminar reviews */
 
+$(".add-review-button").click(function() {
+  $(this).hide();
+  $(".review-form").addClass("review-form--visible");
+});
+
+$(".review-form__reset").click(function() {
+  $(".review-form").removeClass("review-form--visible");
+  $(".add-review-button").show();
+});
+
+$(".review-form input[type='text']").blur(function() {
+  if (this.value != "") {
+    $(this).next().addClass("review-form__label");
+  } else {
+    $(this).next().removeClass("review-form__label");
+    $(this).addClass("invalid-value");
+    if ($(this).hasClass("review-form__name")) {
+      $(this).removeClass("invalid-value");
+    }
+  }
+});
+
+$(".review-form input[type='text']").focus(function() {
+  $(this).removeClass("invalid-value");
+});
+
 $(".review-visible").click(function() {
   $(this).hide();
   $(".seminar-review").addClass("seminar-review--visible");
