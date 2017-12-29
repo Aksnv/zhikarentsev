@@ -1381,11 +1381,21 @@ input[type="submit"]:focus {
 
 /* Library */
 
+.library {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.library h1 {
+  padding-top: 107px;
+  margin-bottom: 37px;
+}
+
 .tabs-library {
   display: inline-block;
   vertical-align: top;
   font-size: 0;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .tabs-library__item {
@@ -1397,9 +1407,13 @@ input[type="submit"]:focus {
   line-height: 48px;
   text-transform: uppercase;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #fff;
   color: #2a3a4b;
   border: 2px solid #f79149;
+  border-left: none;
+  border-right: none;
   cursor: pointer;
 }
 
@@ -1412,6 +1426,7 @@ input[type="submit"]:focus {
 .tabs-library__item:first-child {
   padding-left: 30px;
   padding-right: 20px;
+  border-left: 2px solid #f79149;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
@@ -1419,8 +1434,151 @@ input[type="submit"]:focus {
 .tabs-library__item:last-child {
   padding-left: 20px;
   padding-right: 30px;
+  border-right: 2px solid #f79149;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
+}
+
+.tabs-books li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 25px;
+  margin-bottom: 10px;
+}
+
+.tabs-books__item {
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #f0774e;
+  border-bottom: 1px dashed #f0774e;
+}
+
+.tabs-books__item--active {
+  width: 170px;
+  height: 43px;
+  padding: 10px 20px;
+  background-color: #e6e6e9;
+  color: #000;
+  border-bottom: none;
+  border-radius: 5px;
+}
+
+.library .breadcrumbs {
+  padding-top: 42px;
+  margin-bottom: 74px;
+}
+
+.library-section {
+  overflow: hidden;
+  text-align: left;
+}
+
+.books-section__item {
+  overflow: hidden;
+  margin-bottom: 48px;
+}
+
+.books-section__image,
+.books-section__text,
+.books-section__actions {
+  float: left;
+}
+
+.books-section__image {
+  width: 260px;
+  padding-top: 8px;
+}
+
+.books-section__text {
+  width: 715px;
+}
+
+.books-section__text h3 {
+  width: 620px;
+  font-family: 'museo_sans_cyrl900';
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 10px;
+  color: #2a3a4b;
+}
+
+.books-section__text p {
+  width: 620px;
+  font-family: 'loraitalic';
+  font-size: 20px;
+  line-height: 33px;
+  color: #000;
+}
+
+.books-section__actions {
+  width: 195px;
+  padding-top: 35px;
+  padding-left: 10px;
+}
+
+.library-button {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 184px;
+  height: 50px;
+  font-family: 'geometriaregular';
+  font-size: 13px;
+  line-height: 46px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 8px;
+  color: #000;
+  border: 2px solid #f79149;
+  border-radius: 25px;
+}
+
+.library-button:hover {
+  background-color: #f79149;
+  color: #fff;
+}
+
+.library-button--order {
+  padding-left: 34px;
+}
+
+.library-button--order::before {
+  position: absolute;
+  top: 11px;
+  left: 25px;
+  content: "";
+  display: block;
+  width: 21px;
+  height: 24px;
+  background-image: url("../images/sprite.fw.png");
+  background-position: -3px -64px;
+}
+
+.library-button--order:hover::before {
+  background-position: -30px -64px;
+}
+
+.library-button--download {
+  padding-left: 20px;
+}
+
+.library-button--download::before {
+  position: absolute;
+  top: 11px;
+  left: 23px;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/sprite.fw.png");
+  background-position: -56px -64px;
+}
+
+.library-button--download:hover::before {
+  background-position: -85px -64px;
 }
 
 /* Pagination */
