@@ -1391,14 +1391,16 @@ input[type="submit"]:focus {
   margin-bottom: 37px;
 }
 
-.tabs-library {
+.tabs-library,
+.tabs-contacts {
   display: inline-block;
   vertical-align: top;
   font-size: 0;
   margin-bottom: 36px;
 }
 
-.tabs-library__item {
+.tabs-library__item,
+.tabs-contacts__item {
   display: inline-block;
   vertical-align: top;
   height: 50px;
@@ -1417,23 +1419,26 @@ input[type="submit"]:focus {
   cursor: pointer;
 }
 
-.tabs-library__item--active {
+.tabs-library__item--active,
+.tabs-contacts__item--active {
   background-color: #f79149;
   color: #fff;
   cursor: default;
 }
 
-.tabs-library__item:first-child {
-  padding-left: 30px;
+.tabs-library__item:first-child,
+.tabs-contacts__item:first-child {
+  padding-left: 35px;
   padding-right: 20px;
   border-left: 2px solid #f79149;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
 
-.tabs-library__item:last-child {
+.tabs-library__item:last-child,
+.tabs-contacts__item:last-child {
   padding-left: 20px;
-  padding-right: 30px;
+  padding-right: 35px;
   border-right: 2px solid #f79149;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -1635,6 +1640,79 @@ input[type="submit"]:focus {
   top: 0;
   font-family: 'museo_sans_cyrl900';
 }
+
+/* Contacts */
+
+.map {
+  margin-bottom: 61px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.contacts:last-child {
+  margin-bottom: 138px;
+}
+
+.contacts h1 {
+  padding-top: 106px;
+  margin-bottom: 37px;
+}
+
+.contacts h2 {
+  font-family: 'geometriabold';
+  font-size: 52px;
+  line-height: 56px;
+  text-align: left;
+  margin-bottom: 46px;
+  color: #2a3a4b;
+}
+
+.contacts p {
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 32px;
+  color: #2a3a4b;
+}
+
+.tabs-contacts {
+  margin-bottom: 50px;
+}
+
+.contacts-info {
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 44px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #f0774e;
+}
+
+.contacts-info__block {
+  float: left;
+  width: 390px;
+}
+
+.contacts-info strong {
+  font-family: 'museo_sans_cyrl900';
+}
+
+.contacts-info a {
+  font-family: 'museo_sans_cyrl900';
+  color: #f0774e;
+}
+
+.contacts-info + p {
+  text-align: left;
+}
+
+.contacts-info + p > strong {
+  font-family: 'museo_sans_cyrl900';
+}
+
+
 
 /* Pagination */
 

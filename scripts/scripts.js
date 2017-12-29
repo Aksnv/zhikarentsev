@@ -262,6 +262,16 @@ $(".tabs-library__item").click(function() {
 });
 
 
+/* Contacts */
+
+$(".tabs-contacts__item").click(function() {
+  for (var i = 0; i < $(".tabs-contacts__item").length; i++) {
+    $($(".tabs-contacts__item")[i]).removeClass("tabs-contacts__item--active");
+    $(this).addClass("tabs-contacts__item--active");
+  }
+});
+
+
 /* Oldslavonic language navigation */
 
 $("a[href='#oldslavonic-language__why-to-study']").click(function() {
