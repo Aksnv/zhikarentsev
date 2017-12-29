@@ -272,6 +272,14 @@ input[type="submit"]:focus {
   cursor: pointer;
 }
 
+.entry-button:hover {
+  background: -webkit-linear-gradient(-68deg, #fd5616 31%, #fa4c18 69%);
+  background: -moz-linear-gradient(-68deg, #fd5616 31%, #fa4c18 69%);
+  background: -o-linear-gradient(-68deg, #fd5616 31%, #fa4c18 69%);
+  background: -ms-linear-gradient(-68deg, #fd5616 31%, #fa4c18 69%);
+  background: linear-gradient(158deg, #fd5616 31%, #fa4c18 69%);
+}
+
 .slider {
   position: absolute;
   left: 0;
@@ -1369,6 +1377,50 @@ input[type="submit"]:focus {
   line-height: 32px;
   text-align: center;
   margin-bottom: 30px;
+}
+
+/* Library */
+
+.tabs-library {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  margin-bottom: 40px;
+}
+
+.tabs-library__item {
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  font-family: 'geometriamedium';
+  font-size: 13px;
+  line-height: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #fff;
+  color: #2a3a4b;
+  border: 2px solid #f79149;
+  cursor: pointer;
+}
+
+.tabs-library__item--active {
+  background-color: #f79149;
+  color: #fff;
+  cursor: default;
+}
+
+.tabs-library__item:first-child {
+  padding-left: 30px;
+  padding-right: 20px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.tabs-library__item:last-child {
+  padding-left: 20px;
+  padding-right: 30px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 /* Pagination */
