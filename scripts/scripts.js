@@ -226,6 +226,42 @@ $(".review-invisible").click(function() {
 });
 
 
+/* Library */
+
+$(".tabs-library__item").click(function() {
+  for (var i = 0; i < $(".tabs-library__item").length; i++) {
+    $($(".tabs-library__item")[i]).removeClass("tabs-library__item--active");
+    $(this).addClass("tabs-library__item--active");
+  }
+  if ($(this).hasClass("tabs-library__item--1")) {
+    $(".tabs-books").show();
+    $(".tabs-articles").hide();
+    $(".tabs-story").hide();
+    $(".tabs-video").hide();
+  } else if ($(this).hasClass("tabs-library__item--2")) {
+    $(".tabs-books").hide();
+    $(".tabs-articles").show();
+    $(".tabs-story").hide();
+    $(".tabs-video").hide();
+  } else if ($(this).hasClass("tabs-library__item--3")) {
+    $(".tabs-books").hide();
+    $(".tabs-articles").hide();
+    $(".tabs-story").show();
+    $(".tabs-video").hide();
+  } else if ($(this).hasClass("tabs-library__item--4")) {
+    $(".tabs-books").hide();
+    $(".tabs-articles").hide();
+    $(".tabs-story").hide();
+    $(".tabs-video").show();
+  } else {
+    $(".tabs-books").hide();
+    $(".tabs-articles").hide();
+    $(".tabs-story").hide();
+    $(".tabs-video").hide();
+  }
+});
+
+
 /* Oldslavonic language navigation */
 
 $("a[href='#oldslavonic-language__why-to-study']").click(function() {

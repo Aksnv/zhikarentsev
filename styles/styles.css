@@ -1439,14 +1439,26 @@ input[type="submit"]:focus {
   border-bottom-right-radius: 25px;
 }
 
-.tabs-books li {
+.tabs-articles,
+.tabs-story,
+.tabs-video {
+  display: none;
+}
+
+.tabs-books li,
+.tabs-articles li,
+.tabs-story li,
+.tabs-video li {
   display: inline-block;
   vertical-align: top;
   margin-right: 25px;
   margin-bottom: 10px;
 }
 
-.tabs-books__item {
+.tabs-books__item,
+.tabs-articles__item,
+.tabs-story__item,
+.tabs-video__item {
   font-family: 'museo_sans_cyrl100';
   font-size: 20px;
   line-height: 32px;
@@ -1455,7 +1467,10 @@ input[type="submit"]:focus {
   border-bottom: 1px dashed #f0774e;
 }
 
-.tabs-books__item--active {
+.tabs-books__item--active,
+.tabs-articles__item--active,
+.tabs-story__item--active,
+.tabs-video__item--active {
   width: 170px;
   height: 43px;
   padding: 10px 20px;
@@ -1466,6 +1481,7 @@ input[type="submit"]:focus {
 }
 
 .library .breadcrumbs {
+  text-align: center;
   padding-top: 42px;
   margin-bottom: 74px;
 }
@@ -1473,6 +1489,11 @@ input[type="submit"]:focus {
 .library-section {
   overflow: hidden;
   text-align: left;
+}
+
+.library-section--books/* ,
+.library-section--articles */ {
+  display: none;
 }
 
 .books-section__item {
@@ -1495,7 +1516,8 @@ input[type="submit"]:focus {
   width: 715px;
 }
 
-.books-section__text h3 {
+.books-section__text h3,
+.articles-section__text h3 {
   width: 620px;
   font-family: 'museo_sans_cyrl900';
   font-size: 20px;
@@ -1504,7 +1526,8 @@ input[type="submit"]:focus {
   color: #2a3a4b;
 }
 
-.books-section__text p {
+.books-section__text p,
+.articles-section__text p {
   width: 620px;
   font-family: 'loraitalic';
   font-size: 20px;
@@ -1579,6 +1602,38 @@ input[type="submit"]:focus {
 
 .library-button--download:hover::before {
   background-position: -85px -64px;
+}
+
+.articles-section__item {
+  margin-bottom: 45px;
+}
+
+.articles-section__text h3,
+.articles-section__text p {
+  width: 100%;
+}
+
+.articles-section__text p {
+  margin-bottom: 33px;
+}
+
+.articles-section__text a {
+  position: relative;
+  top: -25px;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.library-section--articles_6 .articles-section__text p {
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.library-section--articles_6 .articles-section__text a {
+  position: relative;
+  top: 0;
+  font-family: 'museo_sans_cyrl900';
 }
 
 /* Pagination */
