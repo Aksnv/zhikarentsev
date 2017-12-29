@@ -269,6 +269,22 @@ $(".tabs-contacts__item").click(function() {
     $($(".tabs-contacts__item")[i]).removeClass("tabs-contacts__item--active");
     $(this).addClass("tabs-contacts__item--active");
   }
+  if ($(this).hasClass("tabs-contacts__item--1")) {
+    $(".map").show();
+    $(".contacts--spb").show();
+    $(".contacts--msk").hide();
+    $(".contacts--reg").hide();
+  } else if ($(this).hasClass("tabs-contacts__item--2")) {
+    $(".map").hide();
+    $(".contacts--spb").hide();
+    $(".contacts--msk").show();
+    $(".contacts--reg").hide();
+  } else {
+    $(".map").hide();
+    $(".contacts--spb").hide();
+    $(".contacts--msk").hide();
+    $(".contacts--reg").show();
+  }
 });
 
 

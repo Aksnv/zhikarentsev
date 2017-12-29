@@ -1652,8 +1652,12 @@ input[type="submit"]:focus {
   height: 400px;
 }
 
-.contacts:last-child {
+.contacts {
   margin-bottom: 138px;
+}
+
+.contacts--top {
+  margin-bottom: 0;
 }
 
 .contacts h1 {
@@ -1668,6 +1672,11 @@ input[type="submit"]:focus {
   text-align: left;
   margin-bottom: 46px;
   color: #2a3a4b;
+}
+
+.contacts--msk h2,
+.contacts--reg h2 {
+  padding-top: 16px;
 }
 
 .contacts p {
@@ -1690,9 +1699,17 @@ input[type="submit"]:focus {
   border-bottom: 1px solid #f0774e;
 }
 
+.contacts--reg .contacts-info {
+  border-bottom: none;
+}
+
 .contacts-info__block {
   float: left;
   width: 390px;
+}
+
+.contacts--reg .contacts-info__block {
+  width: 292px;
 }
 
 .contacts-info strong {
@@ -1704,15 +1721,18 @@ input[type="submit"]:focus {
   color: #f0774e;
 }
 
-.contacts-info + p {
+.contacts-comments p {
   text-align: left;
 }
 
-.contacts-info + p > strong {
+.contacts-comments strong {
   font-family: 'museo_sans_cyrl900';
 }
 
-
+.contacts--msk,
+.contacts--reg {
+  display: none;
+}
 
 /* Pagination */
 
