@@ -2744,18 +2744,31 @@ input[type="submit"]:focus {
 
 .online-reader__content h3 {
   font-family: 'museo_sans_cyrl900';
-  font-size: 17px;
-  line-height: 24px;
+  line-height: 33px;
   margin-bottom: 38px;
   color: #2a3a4b;
 }
 
 .online-reader__content p {
   font-family: 'loraitalic';
-  font-size: 17px;
   line-height: 33px;
   margin-bottom: 33px;
   color: #000;
+}
+
+.online-reader__content--small h3,
+.online-reader__content--small p {
+  font-size: 17px;
+}
+
+.online-reader__content--normal h3,
+.online-reader__content--normal p {
+  font-size: 20px;
+}
+
+.online-reader__content--large h3,
+.online-reader__content--large p {
+  font-size: 23px;
 }
 
 .online-reader__button {
@@ -2838,7 +2851,7 @@ input[type="submit"]:focus {
 .online-reader__font {
   display: none;
   position: absolute;
-  top: 23px;
+  top: 24px;
   left: -35px;
   width: 96px;
   padding: 7px 0;

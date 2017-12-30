@@ -325,8 +325,15 @@ $(".online-reader__close-button").click(function() {
   $(".popup--online-reader").removeClass("popup--active");
 });
 
-$(".online-reader__action--font").click(function() {
+$(".online-reader__action--font").mouseover(function() {
   $(".online-reader__font").addClass("online-reader__font--visible");
+});
+
+$(document).click(function(e) {
+  var onlineReaderFont = $(".online-reader__font--visible");
+  if ((!onlineReaderFont.is(e.target)) && (onlineReaderFont.has(e.target).length === 0)) {
+    $(onlineReaderFont).removeClass("online-reader__font--visible");
+  }
 });
 
 $( function() {
@@ -341,6 +348,24 @@ $( function() {
   });
   $( "#online-reader__min-range" ).val( $( ".online-reader__range" ).slider( "value" ) );
 } );
+
+$(".online-reader__font-item--small").click(function() {
+  $(".online-reader__content").addClass("online-reader__content--small");
+  $(".online-reader__content").removeClass("online-reader__content--normal");
+  $(".online-reader__content").removeClass("online-reader__content--large");
+});
+
+$(".online-reader__font-item--normal").click(function() {
+  $(".online-reader__content").removeClass("online-reader__content--small");
+  $(".online-reader__content").addClass("online-reader__content--normal");
+  $(".online-reader__content").removeClass("online-reader__content--large");
+});
+
+$(".online-reader__font-item--large").click(function() {
+  $(".online-reader__content").removeClass("online-reader__content--small");
+  $(".online-reader__content").removeClass("online-reader__content--normal");
+  $(".online-reader__content").addClass("online-reader__content--large");
+});
 
 
 /* Oldslavonic language navigation */
