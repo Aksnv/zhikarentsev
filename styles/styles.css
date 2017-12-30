@@ -1638,10 +1638,9 @@ input[type="submit"]:focus {
   text-align: left;
 }
 
-.library-section--books,
 .library-section--articles,
 .library-section--story,
-/* .library-section--video, */
+.library-section--video, 
 .library-section--dictionary {
   display: none;
 }

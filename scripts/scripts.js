@@ -261,29 +261,68 @@ $(".tabs-library__item").click(function() {
   }
   if ($(this).hasClass("tabs-library__item--1")) {
     $(".tabs-books").show();
+    $(".library-section--books").show();
     $(".tabs-articles").hide();
+    $(".library-section--articles").hide();
     $(".tabs-story").hide();
+    $(".library-section--story").hide();
     $(".tabs-video").hide();
+    $(".library-section--video").hide();
+    $(".library-section--dictionary").hide();
   } else if ($(this).hasClass("tabs-library__item--2")) {
     $(".tabs-books").hide();
+    $(".library-section--books").hide();
     $(".tabs-articles").show();
+    $(".library-section--articles_1").show();
     $(".tabs-story").hide();
+    $(".library-section--story").hide();
     $(".tabs-video").hide();
+    $(".library-section--video").hide();
+    $(".library-section--dictionary").hide();
   } else if ($(this).hasClass("tabs-library__item--3")) {
     $(".tabs-books").hide();
+    $(".library-section--books").hide();
     $(".tabs-articles").hide();
+    $(".library-section--articles").hide();
     $(".tabs-story").show();
+    $(".library-section--story").show();
     $(".tabs-video").hide();
+    $(".library-section--video").hide();
+    $(".library-section--dictionary").hide();
   } else if ($(this).hasClass("tabs-library__item--4")) {
     $(".tabs-books").hide();
+    $(".library-section--books").hide();
     $(".tabs-articles").hide();
+    $(".library-section--articles").hide();
     $(".tabs-story").hide();
+    $(".library-section--story").hide();
     $(".tabs-video").show();
+    $(".library-section--video").show();
+    $(".library-section--dictionary").hide();
   } else {
     $(".tabs-books").hide();
+    $(".library-section--books").hide();
     $(".tabs-articles").hide();
+    $(".library-section--articles").hide();
     $(".tabs-story").hide();
+    $(".library-section--story").hide();
     $(".tabs-video").hide();
+    $(".library-section--video").hide();
+    $(".library-section--dictionary").show();
+  }
+});
+
+$(".tabs-articles__item").click(function() {
+  for (var i = 0; i < $(".tabs-articles__item").length; i++) {
+    $($(".tabs-articles__item")[i]).removeClass("tabs-articles__item--active");
+    $(this).addClass("tabs-articles__item--active");
+    if ($(this).hasClass("tabs-articles__item--1")) {
+      $(".library-section--articles_1").show();
+      $(".library-section--articles_6").hide();
+    } else if ($(this).hasClass("tabs-articles__item--6")) {
+      $(".library-section--articles_1").hide();
+      $(".library-section--articles_6").show();
+    }
   }
 });
 
