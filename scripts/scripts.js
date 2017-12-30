@@ -314,6 +314,35 @@ $(".tabs-contacts__item").click(function() {
 });
 
 
+/* Online reader */
+
+$(".library-button--read").click(function(e) {
+  e.preventDefault();
+  $(".popup--online-reader").addClass("popup--active");
+});
+
+$(".online-reader__close-button").click(function() {
+  $(".popup--online-reader").removeClass("popup--active");
+});
+
+$(".online-reader__action--font").click(function() {
+  $(".online-reader__font").addClass("online-reader__font--visible");
+});
+
+$( function() {
+  $( ".online-reader__range" ).slider({
+    range: "min",
+    value: 12,
+    min: 1,
+    max: 156,
+    slide: function( event, ui ) {
+      $( "#online-reader__min-range" ).val( ui.value );
+    }
+  });
+  $( "#online-reader__min-range" ).val( $( ".online-reader__range" ).slider( "value" ) );
+} );
+
+
 /* Oldslavonic language navigation */
 
 $("a[href='#oldslavonic-language__why-to-study']").click(function() {
@@ -377,24 +406,6 @@ $(function() {
     
 });
 })(jQuery);
-
-
-/* Foods - advanced search - slider range (jQuery UI) */
-
-/*$( function() {
-    $( ".advanced-search__price-range" ).slider({
-      range: true,
-      min: 100,
-      max: 9999,
-      values: [ 100, 5000 ],
-      slide: function( event, ui ) {
-        $( "#advanced-search__min-price" ).val( ui.values[ 0 ] );
-        $( "#advanced-search__max-price" ).val( ui.values[ 1 ] );
-      }
-    });
-    $( "#advanced-search__min-price" ).val( $( ".advanced-search__price-range" ).slider( "values", 0 ) );
-    $( "#advanced-search__max-price" ).val( $( ".advanced-search__price-range" ).slider( "values", 1 ) );
-  } );*/
 
 
 
