@@ -274,6 +274,11 @@ $(".tabs-library__item").click(function() {
     $(".library-section--books").hide();
     $(".tabs-articles").show();
     $(".library-section--articles_1").show();
+
+    $(".library-section--articles_1 ul").show();
+    $(".library-section--articles_1 .pagination").show();
+    $(".library-section--articles article.article_1-1").hide();
+
     $(".tabs-story").hide();
     $(".library-section--story").hide();
     $(".tabs-video").hide();
@@ -318,12 +323,31 @@ $(".tabs-articles__item").click(function() {
     $(this).addClass("tabs-articles__item--active");
     if ($(this).hasClass("tabs-articles__item--1")) {
       $(".library-section--articles_1").show();
+
+      $(".library-section--articles_1 ul").show();
+      $(".library-section--articles_1 .pagination").show();
+      $(".library-section--articles article.article_1-1").hide();
+      
       $(".library-section--articles_6").hide();
     } else if ($(this).hasClass("tabs-articles__item--6")) {
       $(".library-section--articles_1").hide();
       $(".library-section--articles_6").show();
     }
   }
+});
+
+$(".article-link_1-1").click(function(e) {
+  e.preventDefault();
+  $(".library-section--articles_1 ul").hide();
+  $(".library-section--articles_1 .pagination").hide();
+  $(".library-section--articles article.article_1-1").show();
+});
+
+$(".articles-list").click(function(e) {
+  e.preventDefault();
+  $(".library-section--articles_1 ul").show();
+  $(".library-section--articles_1 .pagination").show();
+  $(".library-section--articles article.article_1-1").hide();
 });
 
 
