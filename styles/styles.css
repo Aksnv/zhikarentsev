@@ -1227,7 +1227,7 @@ input[type="submit"]:focus {
 
 .review-form__wrapper--textarea {
   padding-top: 13px;
-}
+}  
 
 .review-form input[type="text"],
 .review-form textarea {
@@ -1243,9 +1243,10 @@ input[type="submit"]:focus {
 }
 
 .review-form textarea {
-  height: 37px;
+  height: 37px;  
   line-height: 25px;
-  /* padding-bottom: 13px; */
+  /* padding-top: 13px; */
+  padding-bottom: 13px;  
 } 
 
 .review-form input[type="text"]:focus,
@@ -1257,11 +1258,16 @@ input[type="submit"]:focus {
 
 .review-form textarea:focus {
   height: 37px;
-}
+}  
 
 .review-form input[type="text"].invalid-value,
 .review-form textarea.invalid-value {
   border-bottom: 1px solid #e25555;
+}
+
+.review-form textarea.invalid-value {
+  height: 37px!important;
+  padding-bottom: 0;
 }
 
 .review-form input[type="text"] + label,
