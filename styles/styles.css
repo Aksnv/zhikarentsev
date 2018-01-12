@@ -334,11 +334,28 @@ input[type="submit"]:focus {
 }
 
 .slider-content__item {
+  position: relative;
   display: none;
 }
 
 .slider-content__item--active {
-  display: block;
+  display: block; 
+  animation: showSlide 3s ease-in-out infinite;
+  -webkit-animation: showSlide 3s ease-in-out infinite;   
+}
+
+@keyframes showSlide {
+  0% { opacity: 0;
+  top: 50px; }
+  50% { top: 0;
+  opacity: 1; }
+}
+
+@-webkit-keyframes showSlide {
+  0% { opacity: 0;
+  top: 50px; }
+  50% { top: 0;
+  opacity: 1; }
 }
 
 .slider-content__item a {
