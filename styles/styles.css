@@ -404,7 +404,7 @@ input[type="submit"]:focus {
 }
 
 .seminars--wrapper p {
-  font-family: 'geometriamedium';
+  font-family: 'geometriaregular';
   font-size: 20px;
   line-height: 32px;
   margin-bottom: 22px;
@@ -1225,7 +1225,12 @@ input[type="submit"]:focus {
   margin-bottom: 44px;
 }
 
-.review-form input[type="text"] {
+.review-form__wrapper--textarea {
+  padding-top: 13px;
+}
+
+.review-form input[type="text"],
+.review-form textarea {
   position: relative;
   width: 1040px;
   height: 50px;
@@ -1237,17 +1242,30 @@ input[type="submit"]:focus {
   border-bottom: 1px solid #aba39e;
 }
 
-.review-form input[type="text"]:focus {
+.review-form textarea {
+  height: 37px;
+  line-height: 25px;
+  /* padding-bottom: 13px; */
+} 
+
+.review-form input[type="text"]:focus,
+.review-form textarea:focus {
   height: 49px;
   border-bottom: 2px solid #f79149;
   outline: none;
 }
 
-.review-form input[type="text"].invalid-value {
+.review-form textarea:focus {
+  height: 37px;
+}
+
+.review-form input[type="text"].invalid-value,
+.review-form textarea.invalid-value {
   border-bottom: 1px solid #e25555;
 }
 
-.review-form input[type="text"] + label {
+.review-form input[type="text"] + label,
+.review-form textarea + label {
   position: absolute;
   top: 0;
   left: 0;
@@ -1260,14 +1278,17 @@ input[type="submit"]:focus {
 }
 
 .review-form input[type="text"]:focus + label,
-.review-form input[type="text"] + label.review-form__label {
+.review-form textarea:focus + label,
+.review-form input[type="text"] + label.review-form__label,
+.review-form textarea + label.review-form__label {
   top: -25px;
   left: 0;
   font-size: 14px;
   color: #000;
 }
 
-.review-form input[type="text"].invalid-value + label::before {
+.review-form input[type="text"].invalid-value + label::before,
+.review-form textarea.invalid-value + label::before {
   position: absolute;
   top: -25px;
   left: 0;

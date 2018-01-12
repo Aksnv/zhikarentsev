@@ -235,7 +235,23 @@ $(".review-form input[type='text']").blur(function() {
   }
 });
 
+$(".review-form textarea").blur(function() {
+  if (this.value != "") {
+    $(this).next().addClass("review-form__label");
+  } else {
+    $(this).next().removeClass("review-form__label");
+    $(this).addClass("invalid-value");
+    if ($(this).hasClass("review-form__name")) {
+      $(this).removeClass("invalid-value");
+    }
+  }
+});
+
 $(".review-form input[type='text']").focus(function() {
+  $(this).removeClass("invalid-value");
+});
+
+$(".review-form textarea").focus(function() {
   $(this).removeClass("invalid-value");
 });
 
@@ -327,7 +343,7 @@ $(".tabs-articles__item").click(function() {
       $(".library-section--articles_1 ul").show();
       $(".library-section--articles_1 .pagination").show();
       $(".library-section--articles article.article_1-1").hide();
-      
+
       $(".library-section--articles_6").hide();
     } else if ($(this).hasClass("tabs-articles__item--6")) {
       $(".library-section--articles_1").hide();
@@ -496,4 +512,11 @@ $(function() {
 })(jQuery);
 
 
+/* autoResize textarea plugin activation */
 
+jQuery(function()
+{
+  jQuery('textarea').autoResize({
+    extraSpace : 0
+});
+});

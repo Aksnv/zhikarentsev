@@ -94,8 +94,12 @@
               <input type="text" name="review-form__name" class="review-form__name">
               <label>Фамилия и имя</label>
             </div>
-            <div class="review-form__wrapper">
+            <!-- <div class="review-form__wrapper">
               <input type="text" name="review-form__text" class="review-form__text">
+              <label>Текст отзыва *</label>
+            </div> -->
+            <div class="review-form__wrapper review-form__wrapper--textarea">
+              <textarea name="review-form__text" class="review-form__text"></textarea>
               <label>Текст отзыва *</label>
             </div>
             <input type="submit" name="review-form__submit" class="entry-button review-form__submit" value="Отправить">
@@ -168,6 +172,7 @@
 
   <script src="../scripts/jquery-3.2.1.min.js"></script>
   <script src="../scripts/jquery.formstyler.min.js"></script>
+  <script src="../scripts/autoresize.jquery.js"></script>
   <script src="../scripts/scripts.js"></script>
 </body>
 </html>
