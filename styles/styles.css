@@ -103,6 +103,10 @@ body {
   color: #2a3a4b;
 }
 
+.body--forum {
+  background-color: #f6e7bc;
+}
+
 ol, ul {
   list-style: none;
   padding: 0;
