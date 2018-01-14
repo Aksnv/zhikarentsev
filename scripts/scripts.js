@@ -501,6 +501,13 @@ $(".back-to-top").click(function() {
 }());
 
 
+/* Menu button */
+
+$(".main-menu__button").click(function() {
+  $(".main-menu ul").show();
+});
+
+
 /* jQuery Form Styler activation */
 
 (function($) {
