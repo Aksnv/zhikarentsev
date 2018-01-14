@@ -3121,9 +3121,8 @@ article.articles-section__text p {
   }
 
   .slider {
-    left: 32px;
+    left: calc(50% - 552px);
   }
-
 
   /* *** Footer *** */
 
@@ -3151,6 +3150,37 @@ article.articles-section__text p {
     position: relative;
     top: -15px;
     margin-right: 0;
+  }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .container,
+  .content {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  /* *** Header *** */
+
+  .header {
+    width: 768px;
+  }
+
+  /* *** Content *** */
+
+  .slider {
+    width: 768px;
+    left: calc(50% - 424px);
+  }
+
+  /* *** Footer *** */
+
+  .footer {
+    left: calc(50% - 384px);
+    width: 768px;
   }
 
 }
