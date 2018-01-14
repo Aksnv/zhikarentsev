@@ -134,7 +134,7 @@ input[type="submit"]:focus {
 }
 
 .content {
-  min-height: calc(100% - 200px);
+  min-height: calc(100% - 222px);
   text-align: center;
   padding-bottom: 68px;
 }
@@ -596,7 +596,9 @@ input[type="submit"]:focus {
 }
 
 .seminars-tile__item--1:hover {
-  background-image: url("../images/tile/03_hover.jpg");
+  /* background-image: url("../images/tile/03_hover.jpg");  */
+  -webkit-filter: saturate(200%); 
+  filter: saturate(200%);
 }
 
 .seminars-tile__item--2 {
@@ -604,7 +606,9 @@ input[type="submit"]:focus {
 }
 
 .seminars-tile__item--2:hover {
-  background-image: url("../images/tile/01_hover.jpg");
+  /* background-image: url("../images/tile/01_hover.jpg"); */
+  -webkit-filter: contrast(1.5);
+  filter: contrast(1.5);
 }
 
 .seminars-tile__item--3 {
@@ -612,7 +616,9 @@ input[type="submit"]:focus {
 }
 
 .seminars-tile__item--3:hover {
-  background-image: url("../images/tile/02_hover.jpg");
+  /* background-image: url("../images/tile/02_hover.jpg"); */
+  -webkit-filter: sepia(0.7);
+  filter: sepia(0.7);
 }
 
 .seminars-tile__item--4 {
@@ -620,7 +626,9 @@ input[type="submit"]:focus {
 }
 
 .seminars-tile__item--4:hover {
-  background-image: url("../images/tile/04_hover.jpg");
+  /* background-image: url("../images/tile/04_hover.jpg"); */ 
+  -webkit-filter: contrast(1.5);
+  filter: contrast(1.5);
 }
 
 .seminars-tile__item--5 {
@@ -628,7 +636,7 @@ input[type="submit"]:focus {
 }
 
 .seminars-tile__item--5:hover {
-  background-image: url("../images/tile/05_hover.jpg");
+  background-image: url("../images/tile/05_hover.jpg");  
 }
 
 .seminars-tile__item--6 {
