@@ -545,17 +545,18 @@ input[type="submit"]:focus {
 .seminars-tile__item {
   position: relative;
   background-repeat: no-repeat;
-  transition: all 0.5s ease-out;
 }
 
 .seminars-tile__item::after {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  /* right: 0;
+  bottom: 0; */
   content: "";
   display: block;
+  width: 100%;
+  height: 100%;
   background-color: #f0774e;
   transition: opacity 0.5s ease-out;
   opacity: 0;
@@ -566,6 +567,7 @@ input[type="submit"]:focus {
   opacity: 0.65;
 }
 
+.seminars-tile__item a,
 .seminars-tile__item:hover a {
   position: absolute;
   z-index: 2;
