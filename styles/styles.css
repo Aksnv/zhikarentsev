@@ -300,9 +300,10 @@ input[type="submit"]:focus {
   position: absolute;
   left: 0;
   bottom: 131px;
-  width: 990px;
+  width: 990px; 
   text-align: left;
   margin-left: 70px;
+  margin-right: 70px;
 }
 
 .slider-header p,
@@ -2354,7 +2355,8 @@ article.articles-section__text p {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding-top: 180px;
+  /* padding-top: 180px; */
+  padding-top: 80px;
   background-color: #fff;
   color: #333;
   z-index: 100;
@@ -2399,7 +2401,8 @@ article.articles-section__text p {
 .feedback-form {
   display: none;
   font-family: 'proxima_nova_ltlight';
-  padding-bottom: 150px;
+  /* padding-bottom: 150px; */
+  padding-bottom: 50px;
 }
 
 .feedback-form {
@@ -2411,11 +2414,7 @@ article.articles-section__text p {
 } 
 
 .tabs-form {
-  margin-bottom: 95px;
-}
-
-.tabs-form--consultation {
-  margin-bottom: 82px;
+  margin-bottom: 65px;
 }
 
 .tabs-form__item {
@@ -2662,16 +2661,17 @@ article.articles-section__text p {
 .entry-form__submit,
 .feedback-form__submit {
   width: 272px;
-  margin-bottom: 76px;
+  /* margin-bottom: 76px; */
+  margin-bottom: 53px;
 }
 
-.entry-form--seminar p,
+.entry-form p,
 .feedback-form p {
   font-family: 'proxima_nova_ltlight';
   font-size: 14px;
 }
 
-.entry-form--seminar p > span,
+.entry-form p > span,
 .feedback-form p > span {
   display: inline-block;
   vertical-align: top;
@@ -2680,7 +2680,8 @@ article.articles-section__text p {
 }
 
 .entry-form__type-of-consultation {
-  margin-bottom: 105px;
+  /* margin-bottom: 105px; */
+  margin-bottom: 92px;
 }
 
 .entry-form__type-of-consultation label {
@@ -3239,6 +3240,68 @@ article.articles-section__text p {
   .footer {
     left: calc(50% - 384px);
     width: 768px;
+  }
+
+}
+
+
+@media screen and (max-height: 769px) {
+
+  /* *** Content *** */
+
+  .slider {
+    width: auto;
+  }
+
+  .slider-content__item a {
+    font-size: 40px;
+  }
+
+  /* *** Popup *** */
+
+  .popup {
+    padding-top: 69px;
+  }
+
+  /* *** Entry & feedback forms *** */
+
+  .entry-form, 
+  .feedback-form {
+    padding-bottom: 0;
+  }
+
+  .popup--entry-form h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .tabs-form {
+    margin-bottom: 46px;
+  }
+
+  .popup--feedback-form h1 {
+    font-size: 40px;
+    margin-bottom: 115px;
+  }
+
+  .feedback-form input[type="text"].feedback-form__message-theme {
+    margin-bottom: 67px;
+  }
+
+  .feedback-form input[type="text"].feedback-form__message-text {
+    margin-bottom: 26px;
+  }
+
+  .entry-form__submit, 
+  .feedback-form__submit {
+    margin-bottom: 0;
+  }
+
+  .entry-form p, 
+  .feedback-form p {
+    position: absolute;
+    right: 0;
+    bottom: 12px;
   }
 
 }

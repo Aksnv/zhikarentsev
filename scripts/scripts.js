@@ -491,10 +491,15 @@ $(".back-to-top").click(function() {
 
   var backToTopButton = document.querySelector(".back-to-top");
   window.addEventListener("scroll", function(event) {
-    if ($(window).scrollTop() == 0) {
+    /*if ($(window).scrollTop() == 0) {
       backToTopButton.classList.remove("back-to-top--visible");
     } else {
       backToTopButton.classList.add("back-to-top--visible");
+    }*/
+    if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
+      backToTopButton.classList.add("back-to-top--visible");
+    } else {
+      backToTopButton.classList.remove("back-to-top--visible");
     }
   });
 
