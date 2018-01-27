@@ -1437,6 +1437,7 @@ input[type="submit"]:focus {
 
 .news-item {
   overflow: hidden;
+  position: relative;
   margin-bottom: 68px;
 }
 
@@ -3331,6 +3332,10 @@ article.articles-section__text p {
     background-image: url("../images/tile/mobile/24.jpg");
   }
 
+  .consultations-wrapper {
+    margin-bottom: 84px;
+  }
+
   .consultations-promo {
     width: 100%;
     margin-bottom: 53px;
@@ -3450,6 +3455,49 @@ article.articles-section__text p {
 
   .people-about p {
     padding: 0 40px;
+  }
+
+  /* News */
+
+  .news {
+    margin-bottom: 96px;
+  }
+
+  .news h1 {
+    margin-bottom: 37px;
+    padding-top: 59px;
+  }
+
+  .news ul {
+    margin-bottom: 50px;
+  }
+
+  .news-item {
+    margin-bottom: 54px;
+    padding-left: 40px;
+  }
+
+  .news-item:last-child {
+    margin-bottom: 50px;
+  }
+
+  .news-item__image {
+    margin-bottom: 34px;
+  }
+
+  .news-item__text {
+    width: 100%;
+    padding-right: 40px;
+  }
+
+  .news-item__text span.br {
+    display: inline;
+  }
+
+  .news-item__date {
+    position: absolute;
+    top: 70px;
+    left: 305px;
   }
 
   /* *** Footer *** */
