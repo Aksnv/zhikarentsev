@@ -511,6 +511,8 @@ $(".back-to-top").click(function() {
 $(window).resize(function() {
   if ($(".container").css("width") == "1170px") {
     $(".main-menu ul").show();
+  } else {
+    $(".main-menu ul").hide();
   }
 });
 
