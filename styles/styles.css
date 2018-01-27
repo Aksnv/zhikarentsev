@@ -753,6 +753,10 @@ input[type="submit"]:focus {
   color: black;
 }
 
+/* .consultations-promo span.br {
+  display: inline;
+} */
+
 .consultations-list {
   overflow: hidden;
   text-align: left;
@@ -3144,6 +3148,98 @@ article.articles-section__text p {
 
   .slider {
     left: calc(50% - 552px);
+  }
+
+  /* Seminars & сonsultations */
+
+  .tabs-title {
+    margin-bottom: 13px;
+    padding-top: 59px;
+  }
+
+  .tabs-title__item--seminars {
+    margin-right: 0;
+  }
+
+  .seminars--wrapper {
+    margin-bottom: 85px;
+  }
+
+  .seminars--wrapper p {
+    font-size: 18px;
+    padding: 0 25px;
+  }
+
+  .seminars--wrapper span.br {
+    display: inline;
+  }
+
+  .seminars-list {
+    margin-bottom: 67px;
+  }
+
+  .seminars-list__item {
+    padding-left: 32px;
+  }
+
+  .consultations-promo {
+    width: 100%;
+    margin-bottom: 53px;
+    padding-top: 21px;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+
+  .consultations-promo p {
+    margin-bottom: 33px;
+  }
+
+  .consultations-promo p:last-child {
+    margin-bottom: 0;
+  }
+
+  .consultations-list {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 66px;
+  }
+
+  .consultations-list h2 {
+    width: 625px;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 32px;
+  }
+
+  .consultations-list__block--left, 
+  .consultations-list__block--right {
+    float: none;
+  }
+
+  .consultations-list__block--left {
+    margin-bottom: 35px;
+  }
+
+  .consultations-list__block--right {
+    padding-left: 50px;
+  }
+
+  .consultations-list__block--right img {
+    position: static;
+  }
+
+  .consultations-contacts {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .consultations-contacts span.br {
+    display: inline;
+  }
+
+  .consultations-contacts span.br:last-child {
+    display: block;
   }
 
   /* People */
