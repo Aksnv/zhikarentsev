@@ -3030,6 +3030,10 @@ article.articles-section__text p {
     margin: 0 auto;
   }
 
+  .breadcrumbs {
+    padding-top: 21px;
+  }
+
   /* *** Header *** */
 
   .header {
@@ -3140,6 +3144,16 @@ article.articles-section__text p {
 
   .slider {
     left: calc(50% - 552px);
+  }
+
+  /* People */
+
+  .people-about {
+    margin-bottom: 86px;
+  }
+
+  .people-about p {
+    padding: 0 40px;
   }
 
   /* *** Footer *** */
