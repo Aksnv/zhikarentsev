@@ -608,16 +608,31 @@ input[type="submit"]:focus {
   height: 798px;
 }
 
-.seminars-tile__block .seminars-tile__item:nth-child(2) {
+.seminars-tile__block--left,
+.seminars-tile__block--right {
+  position: relative;
+}
+
+.seminars-tile__block--left .seminars-tile__item:nth-child(2) {
+  margin-bottom: 2px;
+}
+
+.seminars-tile__block--right .seminars-tile__item:nth-child(1) {
   margin-bottom: 4px;
 }
 
-.seminars-tile__block--right .seminars-tile__item--vertical {
-  float: right;
+.seminars-tile__block--right .seminars-tile__item--vertical,
+.seminars-tile__block--left .seminars-tile__item--vertical {
+  position: absolute;
+  top: 0;
 }
 
 .seminars-tile__block--left .seminars-tile__item--vertical {
-  float: left;
+  left: 0;
+}
+
+.seminars-tile__block--right .seminars-tile__item--vertical {
+  right: 0;
 }
 
 .seminars-tile__block--left .seminars-tile__item--horizontal {
@@ -643,15 +658,15 @@ input[type="submit"]:focus {
 }
 
 .seminars-tile__item--1 {
-  background-image: url("../images/tile/03.jpg");
-}
-
-.seminars-tile__item--2 {
   background-image: url("../images/tile/01.jpg");
 }
 
-.seminars-tile__item--3 {
+.seminars-tile__item--2 {
   background-image: url("../images/tile/02.jpg");
+}
+
+.seminars-tile__item--3 {
+  background-image: url("../images/tile/03.jpg");
 }
 
 .seminars-tile__item--4 {
@@ -667,15 +682,15 @@ input[type="submit"]:focus {
 }
 
 .seminars-tile__item--7 {
-  background-image: url("../images/tile/09.jpg");
-}
-
-.seminars-tile__item--8 {
   background-image: url("../images/tile/07.jpg");
 }
 
-.seminars-tile__item--9 {
+.seminars-tile__item--8 {
   background-image: url("../images/tile/08.jpg");
+}
+
+.seminars-tile__item--9 {
+  background-image: url("../images/tile/09.jpg");
 }
 
 .seminars-tile__item--10 {
@@ -691,15 +706,15 @@ input[type="submit"]:focus {
 }
 
 .seminars-tile__item--13 {
-  background-image: url("../images/tile/15.jpg");
-}
-
-.seminars-tile__item--14 {
   background-image: url("../images/tile/13.jpg");
 }
 
-.seminars-tile__item--15 {
+.seminars-tile__item--14 {
   background-image: url("../images/tile/14.jpg");
+}
+
+.seminars-tile__item--15 {
+  background-image: url("../images/tile/15.jpg");
 }
 
 .seminars-tile__item--16 {
@@ -715,15 +730,15 @@ input[type="submit"]:focus {
 }
 
 .seminars-tile__item--19 {
-  background-image: url("../images/tile/21.jpg");
-}
-
-.seminars-tile__item--20 {
   background-image: url("../images/tile/19.jpg");
 }
 
-.seminars-tile__item--21 {
+.seminars-tile__item--20 {
   background-image: url("../images/tile/20.jpg");
+}
+
+.seminars-tile__item--21 {
+  background-image: url("../images/tile/21.jpg");
 }
 
 .seminars-tile__item--22 {
@@ -733,6 +748,7 @@ input[type="submit"]:focus {
 .seminars-tile__item--23 {
   background-image: url("../images/tile/23.jpg");
 }
+
 .seminars-tile__item--24 {
   background-image: url("../images/tile/24.jpg");
 }
@@ -3162,7 +3178,7 @@ article.articles-section__text p {
   }
 
   .seminars--wrapper {
-    margin-bottom: 85px;
+    margin-bottom: 67px;
   }
 
   .seminars--wrapper p {
@@ -3180,6 +3196,134 @@ article.articles-section__text p {
 
   .seminars-list__item {
     padding-left: 32px;
+  }
+
+  .seminars-tile__item {
+    margin: 0 auto;
+    margin-bottom: 4px;
+  }
+
+  .seminars-tile__item--vertical,
+  .seminars-tile__item--horizontal,
+  .seminars-tile__item--vertical a,
+  .seminars-tile__item--horizontal a {
+    width: 708px;
+    height: 270px;
+  }
+
+  .seminars-tile__item--horizontal span,
+  .seminars-tile__item--vertical span {
+    left: 38px;
+  }
+
+  .seminars-tile__block--left .seminars-tile__item--vertical,
+  .seminars-tile__block--right .seminars-tile__item--vertical {
+    position: relative;
+  }
+
+  .seminars-tile__block--left .seminars-tile__item--horizontal {
+    margin: 0 auto;
+    margin-bottom: 4px;
+  }
+
+  .seminars-tile__block--left .seminars-tile__item:nth-child(2) {
+    margin-bottom: 4px;
+  }
+
+  .seminars-tile__item--1 {
+    background-image: url("../images/tile/mobile/01.jpg");
+  }
+
+  .seminars-tile__item--2 {
+    background-image: url("../images/tile/mobile/02.jpg");
+  }
+
+  .seminars-tile__item--3 {
+    background-image: url("../images/tile/mobile/03.jpg");
+  }
+
+  .seminars-tile__item--4 {
+    background-image: url("../images/tile/mobile/04.jpg");
+  }
+
+  .seminars-tile__item--5 {
+    background-image: url("../images/tile/mobile/05.jpg");
+  }
+
+  .seminars-tile__item--6 {
+    background-image: url("../images/tile/mobile/06.jpg");
+  }
+
+  .seminars-tile__item--7 {
+    background-image: url("../images/tile/mobile/07.jpg");
+  }
+
+  .seminars-tile__item--8 {
+    background-image: url("../images/tile/mobile/08.jpg");
+  }
+
+  .seminars-tile__item--9 {
+    background-image: url("../images/tile/mobile/09.jpg");
+  }
+
+  .seminars-tile__item--10 {
+    background-image: url("../images/tile/mobile/10.jpg");
+  }
+
+  .seminars-tile__item--11 {
+    background-image: url("../images/tile/mobile/11.jpg");
+  }
+
+  .seminars-tile__item--12 {
+    background-image: url("../images/tile/mobile/12.jpg");
+  }
+
+  .seminars-tile__item--13 {
+    background-image: url("../images/tile/mobile/13.jpg");
+  }
+
+  .seminars-tile__item--14 {
+    background-image: url("../images/tile/mobile/14.jpg");
+  }
+
+  .seminars-tile__item--15 {
+    background-image: url("../images/tile/mobile/15.jpg");
+  }
+
+  .seminars-tile__item--16 {
+    background-image: url("../images/tile/mobile/16.jpg");
+  }
+
+  .seminars-tile__item--17 {
+    background-image: url("../images/tile/mobile/17.jpg");
+  }
+
+  .seminars-tile__item--18 {
+    background-image: url("../images/tile/mobile/18.jpg");
+  }
+
+  .seminars-tile__item--19 {
+    background-image: url("../images/tile/mobile/19.jpg");
+  }
+
+  .seminars-tile__item--20 {
+    background-image: url("../images/tile/mobile/20.jpg");
+  }
+
+  .seminars-tile__item--21 {
+    background-image: url("../images/tile/mobile/21.jpg");
+  }
+
+  .seminars-tile__item--22 {
+    background-image: url("../images/tile/mobile/22.jpg");
+  }
+
+  .seminars-tile__item--23 {
+    background-image: url("../images/tile/mobile/23.jpg");
+  }
+
+  .seminars-tile__item--24 {
+    background-image: url("../images/tile/mobile/24.jpg");
   }
 
   .consultations-promo {
