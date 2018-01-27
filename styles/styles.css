@@ -138,7 +138,7 @@ input[type="submit"]:focus {
 }
 
 .content {
-  min-height: calc(100% - 222px);
+  min-height: calc(100% - 237px);
   text-align: center;
   padding-bottom: 68px;
 }
@@ -3079,7 +3079,7 @@ article.articles-section__text p {
     padding-left: 0;
     padding-top: 90px;
     background-color: #2a3a4b;
-    z-index: 10;
+    z-index: 12;
   }
 
   .main-menu ul {
@@ -3124,7 +3124,7 @@ article.articles-section__text p {
     width: 19px;
     height: 19px;
     background-position: -80px -91px;
-    z-index: 11;
+    z-index: 13;
   }
 
   .logo {
@@ -3196,6 +3196,11 @@ article.articles-section__text p {
 
   .seminars-list__item {
     padding-left: 32px;
+  }
+
+  .seminars-list__item .entry-button {
+    top: calc(50% - 30px);
+    width: 152px;
   }
 
   .seminars-tile__item {
@@ -3396,6 +3401,47 @@ article.articles-section__text p {
     margin-bottom: 0;
   }
 
+  /* Schedule */
+
+  .schedule {
+    margin-bottom: 86px;
+  }
+
+  .schedule h1 {
+    margin-bottom: 57px;
+    padding-top: 59px;
+  }
+
+  .schedule .seminars-list__item {
+    line-height: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 17px;
+  }
+
+  .schedule strong,
+  .schedule span {
+    display: block;
+  }
+
+  .schedule a {
+    display: inline-block;
+    width: auto;
+    max-width: 400px;
+    margin-bottom: 17px;
+    padding: 0;
+  }
+
+  .seminars-list__item--schedule .entry-button {
+    top: calc(50% - 20px);
+    right: 40px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  } 
+
   /* People */
 
   .people-about {
@@ -3579,6 +3625,12 @@ article.articles-section__text p {
   .entry-form p, 
   .feedback-form p {
     font-size: 14px;
+  }
+
+  /* *** Back-to-top button *** */
+
+  .back-to-top {
+    display: none;
   }
 
 }

@@ -1,3 +1,32 @@
+/* Menu */
+
+$(window).resize(function() {
+  if ($(".container").css("width") == "1170px") {
+    $(".main-menu ul").show();
+  } else {
+    $(".main-menu ul").hide();
+  }
+});
+
+$(".main-menu__open-button").click(function() {
+  $(this).hide();
+  $(".main-menu").addClass("main-menu--mobile");
+  $(".content").addClass("content--mobile");
+  $(".main-menu ul").show();
+  $(".main-menu__close-button").show();
+  $("body").css("overflowY", "hidden");
+});
+
+$(".main-menu__close-button").click(function() {
+  $(this).hide();
+  $(".main-menu").removeClass("main-menu--mobile");
+  $(".content").removeClass("content--mobile");
+  $(".main-menu ul").hide();
+  $(".main-menu__open-button").show();
+  $("body").css("overflowY", "scroll");
+});
+
+
 /* Slider */
 
 function slider() {
@@ -70,6 +99,25 @@ $(".seminars-list__item").mouseover(function() {
 
 $(".seminars-list__item").mouseout(function() {
   $(this).removeClass("seminars-list__item--active");
+});
+
+
+/* Schedule */
+
+$(window).resize(function() {
+  if ($(".container").css("width") != "1170px") {
+    $(".seminars-list__item .entry-button").text("Записаться");
+  } else {
+    $(".seminars-list__item .entry-button").text("Записаться на семинар");
+  }
+});
+
+$(document).ready(function() {
+  if ($(".container").css("width") != "1170px") {
+    $(".seminars-list__item .entry-button").text("Записаться");
+  } else {
+    $(".seminars-list__item .entry-button").text("Записаться на семинар");
+  }
 });
 
 
@@ -504,33 +552,6 @@ $(".back-to-top").click(function() {
   });
 
 }());
-
-
-/* Menu */
-
-$(window).resize(function() {
-  if ($(".container").css("width") == "1170px") {
-    $(".main-menu ul").show();
-  } else {
-    $(".main-menu ul").hide();
-  }
-});
-
-$(".main-menu__open-button").click(function() {
-  $(this).hide();
-  $(".main-menu").addClass("main-menu--mobile");
-  $(".content").addClass("content--mobile");
-  $(".main-menu ul").show();
-  $(".main-menu__close-button").show();
-});
-
-$(".main-menu__close-button").click(function() {
-  $(this).hide();
-  $(".main-menu").removeClass("main-menu--mobile");
-  $(".content").removeClass("content--mobile");
-  $(".main-menu ul").hide();
-  $(".main-menu__open-button").show();
-});
 
 
 /* jQuery Form Styler activation */
