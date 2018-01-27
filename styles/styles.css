@@ -2089,6 +2089,10 @@ article.articles-section__text p {
   font-family: 'museo_sans_cyrl900';
 }
 
+.distance-seminars__promo span.br {
+  display: inline;
+}
+
 .distance-seminars__list {
   overflow: hidden;
   text-align: left;
@@ -3707,6 +3711,35 @@ article.articles-section__text p {
     margin-left: 40px;
   }
 
+  /* Distance seminars */
+
+  .distance-seminars {
+    margin-bottom: 76px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .distance-seminars h1 {
+    padding-top: 59px;
+  }
+
+  .distance-button {
+    margin-bottom: 78px;
+  }
+
+  .distance-seminars__promo {
+    margin-bottom: 33px;
+  }
+
+  .distance-seminars__promo span.br {
+    display: block;
+  }
+
+  .distance-seminars__list h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
   /* *** Footer *** */
 
   .footer {
@@ -3744,6 +3777,12 @@ article.articles-section__text p {
   .footer--white-bg .footer__links {
     text-align: center;
     margin-bottom: 37px;
+  }
+
+  .footer--white-bg .footer__links a.footer-link--active {
+    text-decoration: underline;
+    color: #f0774e;
+    border-bottom: none;
   }
 
   .footer__social-links {
