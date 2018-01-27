@@ -3500,6 +3500,50 @@ article.articles-section__text p {
     left: 305px;
   }
 
+  .news-article {
+    margin-bottom: 99px;
+  }
+
+  .news-article h1 {
+    margin-bottom: 61px;
+  }
+
+  .news-article__block {
+    float: none;
+    position: relative;
+  }
+
+  .news-article .news-item__image {
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+  }
+
+  .news-article .news-item__date {
+    top: -32px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .news-article .news-item__text {
+    width: 100%;
+    padding-left: 40px;
+  }
+
+  .news-item__text p {
+    margin-bottom: 30px;
+  }
+
+  .news-item__text p:last-child {
+    margin-bottom: 10px;
+  }
+
+  .news-article .news-item__text + a {
+    margin-left: 40px;
+  }
+
   /* *** Footer *** */
 
   .footer {
