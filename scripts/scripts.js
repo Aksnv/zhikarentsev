@@ -506,7 +506,13 @@ $(".back-to-top").click(function() {
 }());
 
 
-/* Menu button */
+/* Menu */
+
+$(window).resize(function() {
+  if ($(".container").css("width") == "1170px") {
+    $(".main-menu ul").show();
+  }
+});
 
 $(".main-menu__open-button").click(function() {
   $(this).hide();
