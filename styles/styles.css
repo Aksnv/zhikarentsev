@@ -2200,6 +2200,14 @@ article.articles-section__text p {
   color: #f0774e;
 }
 
+.oldslavonic-language__information p > span.br {
+  display: inline;
+}
+
+.oldslavonic-language__information p > span.br:last-child {
+  display: block;
+}
+
 .oldslavonic-language__content-links {
   margin-bottom: 53px;
 }
@@ -3738,6 +3746,36 @@ article.articles-section__text p {
   .distance-seminars__list h2 {
     font-size: 40px;
     line-height: 48px;
+  }
+
+  /* Oldslavonic language */
+
+  .oldslavonic-language {
+    margin-bottom: 95px;
+  }
+
+  .oldslavonic-language h1 {
+    margin-bottom: 64px;
+    padding-top: 59px;
+  }
+
+  .oldslavonic-language__information {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .oldslavonic-language__information p > span.br {
+    display: block;
+  }
+
+  .oldslavonic-language__content-links {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .oldslavonic-language section {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   /* *** Footer *** */
