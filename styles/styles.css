@@ -1199,6 +1199,7 @@ input[type="submit"]:focus {
 }
 
 .review-form {
+  overflow: hidden;
   display: none;
   margin-bottom: 78px;
   padding-top: 55px;
@@ -1302,8 +1303,10 @@ input[type="submit"]:focus {
 
 .review-form__capcha {
   overflow: hidden;
+  float: left;
   width: 340px;
-  padding-top: 152px;
+  margin-right: 258px;
+  padding-top: 148px;
 }
 
 .review-form__capcha .review-form__wrapper,
@@ -1339,9 +1342,9 @@ input[type="submit"]:focus {
 
 .review-form__submit,
 .review-form__reset {
-  float: right;
+  float: left;
   width: 210px;
-  margin-top: 142px;
+  margin-top: 138px;
 }
 
 .review-form__reset {
@@ -3200,8 +3203,14 @@ article.articles-section__text p {
   }
 
   .seminars-list__item .entry-button {
-    top: calc(50% - 30px);
+    top: calc(50% - 20px);
+    right: 40px;
+    display: block;
     width: 152px;
+    height: 40px;
+    line-height: 40px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 
   .seminars-tile__item {
@@ -3394,6 +3403,160 @@ article.articles-section__text p {
 
   .consultations-contacts span.br:last-child {
     display: block;
+  }
+
+  /* Seminar */
+
+  .seminar h1 {
+    margin-bottom: 53px;
+  }
+
+  .seminar-recourse {
+    margin-bottom: 73px;
+  }
+
+  .seminar-recourse__block--left {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+
+  .seminar-recourse__block--left p {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .seminar-recourse__block--left span.br {
+    display: inline;
+  }
+
+  .seminar-recourse__block--right {
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .seminar h2 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 26px;
+  }
+
+  .seminar-content {
+    margin-bottom: 54px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .seminar-video {
+    margin-bottom: 45px;
+    padding-top: 9px;
+  }
+
+  .seminar-video__block--left, 
+  .seminar-video__block--right {
+    float: none;
+  }
+
+  .seminar-video__block--left {
+    margin-right: 0;
+    margin-bottom: 6px;
+  }
+
+  .seminar-video__block--left img {
+    width: 100%;
+    height: 393px;
+  }
+
+  .seminar-video__block--left a::before {
+    top: calc(50% - 80px);
+    left: calc(50% - 80px);    
+  }
+
+  .seminar-video__block--right p {
+    width: 100%;
+  }
+
+  .seminar-schedule {
+    margin-bottom: 58px;
+  }
+
+  .seminar-schedule h2 {
+    padding-left: 40px;
+  }
+
+  .seminar-schedule ul {
+    width: 100%;
+    margin-bottom: 18px;
+    padding-top: 12px;
+  }
+
+  .seminar-schedule .seminars-list__item {
+    padding-left: 40px;
+  }
+
+  .seminar-schedule strong {
+    width: 248px;
+  }
+
+  .seminar-schedule .seminars-list__item .entry-button {
+    right: 40px;
+    display: block;
+  }
+
+  .seminar-schedule a {
+    margin-left: 40px;
+  }
+
+  .seminar-reviews h3::before, 
+  .seminar-reviews h3::after {
+    width: 23%;
+  }
+
+  .seminar-review {
+    height: 775px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .seminar-review--visible {
+    height: auto;
+  }
+
+  .review-visible, 
+  .review-invisible {
+    margin-right: 40px;
+  }
+
+  .review-form {
+    position: relative;
+    padding-bottom: 58px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .review-form input[type="text"], 
+  .review-form textarea {
+    width: 680px;
+  }
+
+  .review-form__submit, 
+  .review-form__reset {
+    float: none;
+    display: inline-block;
+    margin-top: 140px;
+  }
+
+  .review-form__capcha {
+    overflow: visible;
+    position: absolute;
+    left: calc(50% - 170px);
+    bottom: 143px;
+    padding-top: 0;
+  }
+
+  .review-form__capcha p {
+    text-align: center;
   }
 
   /* Forum */
@@ -3766,6 +3929,7 @@ article.articles-section__text p {
 
   .slider-content__item a {
     font-size: 40px;
+    line-height: 48px;
   }
 
   /* People */
@@ -3789,6 +3953,7 @@ article.articles-section__text p {
 
   .popup--entry-form h1 {
     font-size: 40px;
+    line-height: 48px;
     margin-bottom: 20px;
   }
 
@@ -3798,6 +3963,7 @@ article.articles-section__text p {
 
   .popup--feedback-form h1 {
     font-size: 40px;
+    line-height: 48px;
     margin-bottom: 115px;
   }
 

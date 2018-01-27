@@ -264,6 +264,7 @@ $(".feedback-form input[type='email']").focus(function() {
 $(".add-review-button").click(function() {
   $(this).hide();
   $(".review-form").addClass("review-form--visible");
+  $(".seminar-reviews").addClass("seminar-reviews--visible");
 });
 
 $(".review-form__reset").click(function() {
