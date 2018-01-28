@@ -138,6 +138,7 @@ input[type="submit"]:focus {
 }
 
 .content {
+  position: relative;
   min-height: calc(100% - 237px);
   text-align: center;
   padding-bottom: 68px;
@@ -1901,7 +1902,10 @@ article.articles-section__text p {
 /* Contacts */
 
 .map {
-  margin-bottom: 61px;
+  position: absolute;
+  top: 307px;
+  left: 0;
+  width: 100%;
 }
 
 .map iframe {
@@ -1929,6 +1933,10 @@ article.articles-section__text p {
   text-align: left;
   margin-bottom: 46px;
   color: #2a3a4b;
+}
+
+.contacts--spb {
+  padding-top: 466px;
 }
 
 .contacts--msk h2,
@@ -3089,6 +3097,7 @@ article.articles-section__text p {
   } 
 
   .header--image-bg {
+    background-image: url("../images/header_bg_mobile.jpg");
     -webkit-background-size: cover;
     background-size: cover;
   }
@@ -3984,7 +3993,9 @@ article.articles-section__text p {
   }
 
   .contacts--spb {
-    padding-bottom: 306px;
+    margin-bottom: 51px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .contacts-info {
@@ -4038,10 +4049,8 @@ article.articles-section__text p {
   }
 
   .map {
-    position: absolute;
-    left: 0;
-    bottom: 3px;
-    width: 100%;
+    position: static;
+    margin-bottom: 21px;
   }
 
   /* Distance seminars */
@@ -4421,7 +4430,7 @@ article.articles-section__text p {
   .header {
     min-height: 568px;
     padding-top: 31px;
-    background-image: url(../images/bg_mobile.jpg);
+    background-image: url(../images/header_bg_mobile.jpg);
     -webkit-background-size: cover;
     background-size: cover;
   }
@@ -4476,6 +4485,7 @@ article.articles-section__text p {
 
   .content {
     padding-top: 0;
+    padding-bottom: 0;
     background-color: #fff;
     color: #2a3a4b;
   }
@@ -4572,6 +4582,128 @@ article.articles-section__text p {
 
   .people-about p {
     padding: 0;
+  }
+
+  /* Contacts */
+
+  .contacts {
+    width: 280px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .contacts--top {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .contacts h1 {
+    margin-bottom: 14px;
+    padding-top: 43px;
+  }
+
+  .contacts h2 {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 19px;
+  }
+
+  .contacts p {
+    margin-bottom: 0;
+  }
+
+  .tabs-contacts {
+    margin-bottom: 43px;
+    border-bottom: 1px solid #d5d1ce;
+  }
+
+  .tabs-library__item, 
+  .tabs-contacts__item {
+    height: 40px;
+    font-family: 'geometriabold';
+    font-size: 12px;
+    padding: 0 10px;
+    border: none;
+  }
+
+  .tabs-library__item:first-child, 
+  .tabs-contacts__item:first-child {
+    padding: 0 10px;
+    border-left: none;
+    border-radius: 0;
+  }
+
+  .tabs-library__item:last-child, 
+  .tabs-contacts__item:last-child {
+    padding: 0 10px;
+    border-right: none;
+    border-radius: 0;
+  }
+
+  .tabs-library__item--active, 
+  .tabs-contacts__item--active {
+    background-color: transparent;
+    color: #f17a4d;
+    border-bottom: 2px solid #f17a4d;
+  }
+
+  .contacts-info {
+    padding-bottom: 50px;
+  }
+
+  .contacts-info__block {
+    width: 280px;
+  }
+
+  .contacts-info__block--email {
+    position: static;
+  }
+
+  .contacts--spb {
+    margin-bottom: 41px;
+  }
+
+  .contacts--spb span.br {
+    display: inline;
+  }
+
+  .contacts-info__block--phone {
+    margin-bottom: 32px;
+  }
+
+  .contacts-info__block--phone span.br {
+    display: block;
+  }
+
+  .contacts--spb .contacts-info__block--email p > a:last-child {
+    position: static;
+  }
+
+  .contacts-comments p {
+    margin-bottom: 32px;
+  }
+
+  .contacts--msk {
+    margin-bottom: 61px;
+  }
+
+  .contacts--reg {
+    margin-bottom: 12px;
+  }
+
+  .contacts--reg .contacts-info {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .contacts--reg .contacts-info__block {
+    margin-bottom: 48px;
+  }
+
+  .map {
+    height: 400px;
+    margin-bottom: 0;
   }
 
   /* *** Footer *** */
