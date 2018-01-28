@@ -316,6 +316,10 @@ input[type="submit"]:focus {
   background: linear-gradient(158deg, #fd5616 31%, #fa4c18 69%);
 }
 
+.entry-button span.br {
+  display: inline;
+}
+
 .slider {
   position: absolute;
   left: 0;
@@ -4390,11 +4394,90 @@ article.articles-section__text p {
 
 @media screen and (max-width: 768px) {
 
+  body {
+    background-image: none;
+  }
+
   .container,
   .container--footer/* ,
   .content */ {
     width: 280px;
     margin: 0 auto;
+  }
+
+  /* *** Header *** */
+
+  .header {
+    min-height: 568px;
+    padding-top: 31px;
+    background-image: url(../images/bg_mobile.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .logo {
+    position: static;
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  .main-menu__open-button {
+    top: -11px;
+    right: 0px;
+  }
+  
+  /* *** Content *** */
+
+  .content {
+    padding-top: 46px;
+    background-color: #fff;
+    color: #2a3a4b;
+  }
+
+  .entry-button {
+    position: absolute;
+    top: -110px;
+    left: calc(50% - 140px);
+    width: 280px;
+    line-height: 16px;
+    margin-top: 0;
+  }
+
+  .entry-button span.br {
+    display: block;
+  }
+
+  .slider {
+    position: static;
+    left: 0;
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .slider-header p {
+    font-size: 15px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .slider-header a {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: calc(50% - 140px);
+    width: 280px;
+    margin-bottom: 20px;
+    color: #2a3a4b;
+  }
+
+  .slider-content__item a {
+    font-size: 30px;
+    line-height: 36px;
+    color: #2a3a4b;
+  }
+
+  .slider-pagination a {
+    border: 2px solid #2a3a4b;
   }
 
   /* *** Footer *** */
