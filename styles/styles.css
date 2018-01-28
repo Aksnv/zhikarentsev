@@ -4820,6 +4820,49 @@ article.articles-section__text p {
     padding-right: 0;
   }
 
+  /* Distance seminars */
+
+  .distance-seminars {
+    margin-bottom: 49px;
+    padding: 0;
+  }
+
+  .distance-seminars h1 {
+    padding-top: 42px;
+    margin-bottom: 32px;
+  }
+
+  .distance-button {
+    width: 280px;
+    font-size: 12px;
+    margin-bottom: 28px;
+  }
+
+  .distance-seminars__list {
+    margin-bottom: 38px;
+    padding-bottom: 25px;
+  }
+
+  .distance-seminars__promo,
+  .distance-seminars__list li {
+    font-size: 18px;
+  }
+
+  .distance-seminars__promo {
+    margin-bottom: 43px;
+  }
+
+  .distance-seminars__list h2 {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 28px;
+  }
+
+  .distance-seminars__list li {
+    margin-bottom: 11px;
+    padding-left: 30px;
+  }
+
 
   /* *** Footer *** */
 

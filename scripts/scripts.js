@@ -121,6 +121,25 @@ $(document).ready(function() {
 });
 
 
+/* Distance seminars */
+
+$(window).resize(function() {
+  if ($(".container").css("width") == "280px") {
+    $(".distance-button").text("Сайт дистанционного обучения");
+  } else {
+    $(".distance-button").text("Перейти на сайт дистанционного обучения");
+  }
+});
+
+$(document).ready(function() {
+  if ($(".container").css("width") == "280px") {
+    $(".distance-button").text("Сайт дистанционного обучения");
+  } else {
+    $(".distance-button").text("Перейти на сайт дистанционного обучения");
+  }
+});
+
+
 /* Entry form */
 
 $(".entry-button").click(function() {
