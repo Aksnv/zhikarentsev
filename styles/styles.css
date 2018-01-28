@@ -375,7 +375,7 @@ input[type="submit"]:focus {
 .slider-content__item--active {
   display: block; 
   animation: showSlide 3s ease-in-out infinite;
-  -webkit-animation: showSlide 3s ease-in-out infinite;   
+  -webkit-animation: showSlide 3s ease-in-out infinite;    
 }
 
 @keyframes showSlide {
@@ -4457,7 +4457,7 @@ article.articles-section__text p {
   .slider-header p {
     font-size: 15px;
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 
   .slider-header a {
@@ -4466,14 +4466,23 @@ article.articles-section__text p {
     bottom: 0;
     left: calc(50% - 140px);
     width: 280px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #2a3a4b;
+  }
+
+  .slider-content {
+    margin-bottom: 26px;
   }
 
   .slider-content__item a {
     font-size: 30px;
     line-height: 36px;
     color: #2a3a4b;
+  }
+
+  .slider-pagination {
+    position: absolute;
+    bottom: 129px;
   }
 
   .slider-pagination a {
