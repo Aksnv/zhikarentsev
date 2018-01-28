@@ -1978,6 +1978,10 @@ article.articles-section__text p {
   font-family: 'museo_sans_cyrl900';
 }
 
+.contacts-comments span.br {
+  display: inline;
+}
+
 .contacts--msk,
 .contacts--reg {
   display: none;
@@ -3060,8 +3064,8 @@ article.articles-section__text p {
   }
 
   .container,
-  .container--footer,
-  .content {
+  .container--footer/* ,
+  .content */ {
     width: 1024px;
     margin: 0 auto;
   }
@@ -3164,6 +3168,7 @@ article.articles-section__text p {
   /* *** Content *** */
 
   .content {
+    position: relative;
     padding-bottom: 43px;
   }
 
@@ -3719,6 +3724,87 @@ article.articles-section__text p {
     margin-left: 40px;
   }
 
+  /* Contacts */
+
+  .contacts h1 {
+    padding-top: 59px;
+  }
+
+  .contacts h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .contacts {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .tabs-contacts {
+    margin-bottom: 63px;
+  }
+
+  .contacts--spb {
+    padding-bottom: 306px;
+  }
+
+  .contacts-info {
+    position: relative;
+  }
+
+  .contacts-info__block--email {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 270px;
+    height: 100%;
+  }
+
+  .contacts--spb .contacts-info__block--email p > a:last-child {
+    position: absolute;
+    bottom: 50px;
+  }
+
+  .contacts--spb .contacts-comments span.br {
+    display: block;
+  }
+
+  .contacts--msk {
+    margin-bottom: 85px;
+  }
+
+  .contacts--reg {
+    margin-bottom: 65px;
+  }
+
+  .contacts--msk h2, 
+  .contacts--reg h2 {
+    padding-top: 0;
+  }
+
+  .contacts--msk .contacts-comments span.br {
+    display: inline;
+  }
+
+  .contacts--reg .contacts-info__block {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 92px;
+    margin-bottom: 17px;
+  }
+
+  .contacts--reg .contacts-info__block:nth-child(2n+2) {
+    margin-right: 0;
+  }
+
+  .map {
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+  }
+
   /* Distance seminars */
 
   .distance-seminars {
@@ -3971,8 +4057,8 @@ article.articles-section__text p {
 @media screen and (max-width: 1024px) {
 
   .container,
-  .container--footer,
-  .content {
+  .container--footer/* ,
+  .content */ {
     width: 768px;
     margin: 0 auto;
   }
