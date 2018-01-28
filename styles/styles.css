@@ -4779,6 +4779,48 @@ article.articles-section__text p {
     margin-bottom: 0;
   }
 
+  /* Oldslavonic language */
+
+  .oldslavonic-language {
+    margin-bottom: 79px;
+  }
+
+  .oldslavonic-language h1 {
+    margin-bottom: 44px;
+    padding-top: 43px;
+  }
+
+  .oldslavonic-language__information {
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  .oldslavonic-language__information p > span.br:last-child {
+    display: inline;
+  }
+
+  .oldslavonic-language__content-links {
+    line-height: 24px;
+    margin-bottom: 60px;
+    padding: 0;
+    padding-top: 36px;
+  }
+
+  .oldslavonic-language__content-links li {
+    margin-bottom: 18px;
+  }
+
+  .oldslavonic-language__content-links a {
+    display: inline;
+  }
+
+  .oldslavonic-language section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
   /* *** Footer *** */
 
   .footer {
