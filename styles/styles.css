@@ -4430,7 +4430,7 @@ article.articles-section__text p {
   .header {
     min-height: 568px;
     padding-top: 31px;
-    background-image: url(../images/header_bg_mobile.jpg);
+    background-image: url(../images/bg_mobile.jpg);
     -webkit-background-size: cover;
     background-size: cover;
   }
@@ -4438,6 +4438,7 @@ article.articles-section__text p {
   .header--image-bg {
     min-height: 100px;
     padding-top: 29px;
+    background-image: url(../images/header_bg_mobile.jpg);
     -webkit-background-size: cover;
     background-size: cover;
   }
@@ -4582,6 +4583,53 @@ article.articles-section__text p {
 
   .people-about p {
     padding: 0;
+  }
+
+  /* News */
+
+  .news {
+    margin-bottom: 59px;
+  }
+
+  .news h1 {
+    margin-bottom: 71px;
+    padding-top: 42px;
+  }
+
+  .news-item {
+    overflow: visible;
+    margin-bottom: 90px;
+    padding-left: 0;
+  }
+
+  .news-item__image, 
+  .news-item__text, 
+  .news-item__date {
+    float: none;
+  }
+
+  .news-item__image {
+    padding-top: 0;
+    padding-left: 26px;
+  }
+
+  .news-item__text {
+    padding-right: 0;
+  }
+
+  .news-item__date {
+    top: -43px;
+    left: 95px;
+  }
+
+  .news-item__text p {
+    margin-bottom: 8px;
+  }
+
+  /* Pagination */
+
+  .pagination li {
+    margin-right: 3px;
   }
 
   /* Contacts */
