@@ -1834,6 +1834,10 @@ article.articles-section__text p {
   font-family: 'museo_sans_cyrl900';
 }
 
+.library-section--articles_6 .articles-section__text span.br {
+  display: inline;
+}
+
 .library-section--video .video-section__item {
   position: relative;
   display: inline-block;
@@ -3722,6 +3726,237 @@ article.articles-section__text p {
 
   .news-article .news-item__text + a {
     margin-left: 40px;
+  }
+
+  /* Library */
+
+  .library {
+    margin-bottom: 86px;
+  }
+
+  .library h1 {
+    padding-top: 59px;
+  }
+
+  .tabs-library {
+    margin-bottom: 30px;
+  }
+
+  .tabs-books, 
+  .tabs-articles, 
+  .tabs-story, 
+  .tabs-video {
+    margin-bottom: 52px;
+  } 
+
+  .tabs-books--active, 
+  .tabs-articles--active, 
+  .tabs-story--active, 
+  .tabs-video--active {
+    position: relative;
+    top: -15px;
+    margin-bottom: 39px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #f2f2f2;
+  }
+
+  .tabs-books li, 
+  .tabs-articles li, 
+  .tabs-story li, 
+  .tabs-video li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .tabs-books__item, 
+  .tabs-articles__item, 
+  .tabs-story__item, 
+  .tabs-video__item {
+    display: none;
+    width: 688px;
+    line-height: 43px;
+    margin: 0 auto;
+    border-bottom: none;
+    border-radius: 0;
+  }
+
+  .tabs-books--active .tabs-books__item, 
+  .tabs-articles--active .tabs-articles__item, 
+  .tabs-story--active .tabs-story__item, 
+  .tabs-video--active .tabs-video__item {
+    display: block;
+  }
+
+  .tabs-books__item--active, 
+  .tabs-articles__item--active, 
+  .tabs-story__item--active, 
+  .tabs-video__item--active {
+    position: relative;
+    display: block;
+    padding: 0;
+    border-radius: 5px;
+  }
+
+  .tabs-books__item--active::after, 
+  .tabs-articles__item--active::after, 
+  .tabs-story__item--active::after, 
+  .tabs-video__item--active::after {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 7px;
+    background-image: url("../images/sprite.fw.png");
+    background-position: -112px -65px;
+  }
+
+  .tabs-books--active .tabs-books__item--active::after, 
+  .tabs-articles--active .tabs-articles__item--active::after, 
+  .tabs-story--active .tabs-story__item--active::after, 
+  .tabs-video--active .tabs-video__item--active::after {
+    transform: rotate(180deg);
+  }
+
+  .tabs-books__item:hover, 
+  .tabs-articles__item:hover, 
+  .tabs-story__item:hover, 
+  .tabs-video__item:hover {
+    background-color: #e6e6e9;
+  }
+
+  .library .breadcrumbs {
+    display: none;
+  }
+
+  .library .library-section--dictionary .breadcrumbs {
+    display: block;
+    padding-top: 28px;
+  }
+
+  .library-section {
+    padding-left: 40px;
+  }
+
+  .books-section__item {
+    margin-bottom: 55px;
+  }
+
+  .books-section__text,
+  .books-section__text h3,
+  .books-section__text p {
+    width: 425px;
+  }
+
+  .books-section__text span.br {
+    display: inline;
+  }
+
+  .books-section__actions {
+    float: none;
+    clear: both;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .library-button {
+    width: 222px;
+    margin-right: 7px;
+  }
+
+  .library-button--order {
+    padding-left: 48px;
+  }
+
+  .library-button--order::before {
+    left: 51px;
+  }
+
+  .library-button--download {
+    padding-left: 49px;
+    /* background-color: #f79149;
+    color: #fff; */
+  }
+
+  .library-button--download::before {
+    left: 55px;
+    /* background-position: -85px -64px; */
+  }
+
+  .articles-section__item {
+    margin-bottom: 30px;
+  }
+
+  .articles-section__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .library-section--articles article,
+  .articles-section__text h3, 
+  .articles-section__text p {
+    width: 688px;
+  }
+
+  .library-section--articles_6 .articles-section__text a {
+    position: relative;
+    top: -16px;
+  }
+
+  .library-section--articles_6 .articles-section__text span.br {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .library-section--articles_6 .articles-section__text p {
+    margin-bottom: 3px;
+  }
+
+  .library-section--video {
+    padding-left: 75px;
+  }
+
+  .library-section--video .video-section__item {
+    width: 280px;
+    margin-bottom: 22px;
+    padding-top: 8px;
+  }
+
+  .library-section--video .video-section__item:nth-child(n) {
+    margin-right: 54px;
+  }
+
+  .library-section--video .video-section__item:nth-child(2n+2) {
+    margin-right: 0;
+  }
+
+  .library-section--video .video-section__item::before {
+    left: calc(50% - 51px);
+    top: 45px;
+  }
+
+  .library-section--video p {
+    width: 280px;
+    text-align: left;
+    padding-top: 15px;
+  }
+
+  .video-section__item span.br {
+    display: inline;
+  }
+
+  .library-section--dictionary {
+    margin-bottom: 86px;
+  }
+
+  .library-section--dictionary .books-section__actions {
+    text-align: left;
+  }
+
+  .library-section--dictionary .library-button {
+    margin-right: 7px;
   }
 
   /* Contacts */

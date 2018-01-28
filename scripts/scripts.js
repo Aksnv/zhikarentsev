@@ -415,6 +415,26 @@ $(".articles-list").click(function(e) {
   $(".library-section--articles article.article_1-1").hide();
 });
 
+$(".tabs-books__item--active").click(function(e) {
+  e.preventDefault();
+  $(".tabs-books").toggleClass("tabs-books--active");
+});
+
+$(".tabs-articles__item--active").click(function(e) {
+  e.preventDefault();
+  $(".tabs-articles").toggleClass("tabs-articles--active");
+});
+
+$(".tabs-story__item--active").click(function(e) {
+  e.preventDefault();
+  $(".tabs-story").toggleClass("tabs-story--active");
+});
+
+$(".tabs-video__item--active").click(function(e) {
+  e.preventDefault();
+  $(".tabs-video").toggleClass("tabs-video--active");
+});
+
 
 /* Contacts */
 
