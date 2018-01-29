@@ -4651,6 +4651,60 @@ article.articles-section__text p {
     left: 15px;
   }
 
+  .consultations-wrapper {
+    margin-bottom: 61px;
+  }
+
+  .consultations-promo {
+    margin-bottom: 62px;
+    padding-top: 27px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .consultations-list h2 {
+    width: 100%;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .consultations-list {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 38px;
+    padding-bottom: 45px;
+  }
+
+  .consultations-list__block--left {
+    width: 100%;
+  }
+
+  .consultations-list__block--left li {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 14px;
+    padding-left: 38px;
+  }
+
+  .consultations-list__block--left li::before {
+    top: 4px;
+    left: 0;
+  }
+
+  .consultations-list__block--right {
+    padding-left: 0;
+  }
+
+  .consultations-list__block--right img {
+    max-width: 280px;
+  }
+
+  .consultations-contacts {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   /* People */
 
   .people {
