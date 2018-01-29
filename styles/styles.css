@@ -4552,6 +4552,105 @@ article.articles-section__text p {
     border: 2px solid #2a3a4b;
   }
 
+  /* Seminars & consultations */
+
+  .tabs-title {
+    padding-top: 42px;
+  }
+
+  .tabs-title__item {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .seminars--wrapper,
+  .seminars-list {
+    margin-bottom: 33px;
+  }
+
+  .seminars--wrapper p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+
+  .tabs-seminars, 
+  .tabs-form {
+    margin-bottom: 18px;
+    border-bottom: 1px solid #d5d1ce;
+  }
+
+  .tabs-seminars__item, 
+  .tabs-form__item {
+    height: 42px;
+    font-family: 'geometriabold';
+    font-size: 12px;
+    padding: 0 39px;
+    color: #2a3a4b;
+    border: none;
+  }
+
+  .tabs-seminars__item--tile, 
+  .tabs-form__item--seminar {
+    border-radius: 0;
+  }
+
+  .tabs-seminars__item--active, 
+  .tabs-form__item--active {
+    background-color: transparent;
+    color: #f79149;
+    border-bottom: 4px solid #f79149;
+    border-radius: 0;
+  }
+
+  .seminars-list__item {
+    height: auto;
+    padding-left: 10px;
+    padding-top: 19px;
+    padding-bottom: 13px;
+  }
+
+  .seminars-list__item:first-child {
+    border-top: none;
+  }
+
+  .seminars-list__item a {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .seminars-list__item .entry-button {
+    display: none;
+  }
+
+  .seminars-tile {
+    margin-bottom: 33px;
+  }
+
+  .seminars-tile__item--vertical, 
+  .seminars-tile__item--horizontal, 
+  .seminars-tile__item--vertical a, 
+  .seminars-tile__item--horizontal a {
+    width: 280px;
+  }
+
+  .seminars-tile__item {
+    background-position: 98% 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .seminars-tile__item span {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .seminars-tile__item--horizontal span, 
+  .seminars-tile__item--vertical span {
+    left: 15px;
+  }
+
   /* People */
 
   .people {

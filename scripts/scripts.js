@@ -101,6 +101,38 @@ $(".seminars-list__item").mouseout(function() {
   $(this).removeClass("seminars-list__item--active");
 });
 
+$(window).resize(function() {
+  if ($(".container").css("width") == "280px") {
+    $(".tabs-seminars__item--list").text("Списком");
+  } else {
+    $(".tabs-seminars__item--list").text("Показывать списком");
+  }
+});
+
+$(document).ready(function() {
+  if ($(".container").css("width") == "280px") {
+    $(".tabs-seminars__item--list").text("Списком");
+  } else {
+    $(".tabs-seminars__item--list").text("Показывать списком");
+  }
+});
+
+$(window).resize(function() {
+  if ($(".container").css("width") == "280px") {
+    $(".tabs-seminars__item--tile").text("Плиткой");
+  } else {
+    $(".tabs-seminars__item--tile").text("Показывать плиткой");
+  }
+});
+
+$(document).ready(function() {
+  if ($(".container").css("width") == "280px") {
+    $(".tabs-seminars__item--tile").text("Плиткой");
+  } else {
+    $(".tabs-seminars__item--tile").text("Показывать плиткой");
+  }
+});
+
 
 /* Schedule */
 
