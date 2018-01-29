@@ -1647,7 +1647,7 @@ input[type="submit"]:focus {
 .tabs-story__item--active,
 .tabs-video__item--active {
   width: 170px;
-  height: 43px;
+  min-height: 43px;
   padding: 10px 20px;
   background-color: #e6e6e9;
   color: #000;
@@ -3817,7 +3817,8 @@ article.articles-section__text p {
   .tabs-story__item--active::after, 
   .tabs-video__item--active::after {
     position: absolute;
-    top: 17px;
+    /* top: 17px; */
+    top: calc(50% - 4px);
     right: 20px;
     content: "";
     display: block;
@@ -3839,6 +3840,7 @@ article.articles-section__text p {
   .tabs-story__item:hover, 
   .tabs-video__item:hover {
     background-color: #e6e6e9;
+    color: #000;
   }
 
   .library .breadcrumbs {
@@ -3913,9 +3915,22 @@ article.articles-section__text p {
     width: 688px;
   }
 
+  .library-section--articles_6 .articles-section__item:last-child {
+    margin-bottom: 0;
+  }
+
   .library-section--articles_6 .articles-section__text a {
+    overflow: hidden;
     position: relative;
     top: -16px;
+    display: block;
+    text-overflow: ellipsis;
+    text-decoration: underline;
+    white-space: nowrap;
+  }
+
+  .library-section--articles_6 .articles-section__text a.inline-link::after {
+    display: none;
   }
 
   .library-section--articles_6 .articles-section__text span.br {
@@ -3961,7 +3976,7 @@ article.articles-section__text p {
   }
 
   .library-section--dictionary {
-    margin-bottom: 86px;
+    margin-bottom: 66px;
   }
 
   .library-section--dictionary .books-section__actions {
@@ -3970,6 +3985,27 @@ article.articles-section__text p {
 
   .library-section--dictionary .library-button {
     margin-right: 7px;
+  }
+
+  .library-section--video .video-section__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .library .breadcrumbs {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .library .library-section--dictionary .breadcrumbs {
+    padding-top: 20px;
+  }
+
+  .library-section--dictionary .breadcrumbs {
+    margin-bottom: 30px;
+  }
+
+  .library-section--dictionary p {
+    margin-bottom: 0;
   }
 
   /* Contacts */
@@ -4821,9 +4857,16 @@ article.articles-section__text p {
   }
 
   .seminars-list__item--schedule .entry-button {
+    display: block;
     position: static;
     width: 100%;
     margin-top: 11px;
+  }
+
+  /* Forum */
+
+  .forum h1 {
+    padding-top: 42px;
   }
 
   /* Pagination */
@@ -4953,6 +4996,117 @@ article.articles-section__text p {
     height: 400px;
     margin-bottom: 0;
   }
+
+  /* Library */
+
+  .library {
+    margin-bottom: 50px;
+  }
+
+  .library h1 {
+    margin-bottom: 15px;
+    padding-top: 42px;
+  }
+
+  .tabs-library__item {
+    font-size: 11px;
+    padding: 0 5px;
+  }
+
+  .tabs-library__item:first-child,
+  .tabs-library__item:last-child {
+    padding: 0 5px;
+  }
+
+  .tabs-books__item, 
+  .tabs-articles__item, 
+  .tabs-story__item, 
+  .tabs-video__item {
+    width: 280px;
+    line-height: 22px;
+    padding: 10px 20px;
+  }
+
+  .tabs-library {
+    margin-bottom: 22px;
+  }
+
+  .tabs-books__item--active::after, 
+  .tabs-articles__item--active::after, 
+  .tabs-story__item--active::after, 
+  .tabs-video__item--active::after {
+    right: 10px;
+  }
+
+  .tabs-books, 
+  .tabs-articles, 
+  .tabs-story, 
+  .tabs-video {
+    margin-bottom: 41px;
+  }
+
+  .library-section {
+    padding-left: 0;
+  }
+
+  .books-section__image, 
+  .books-section__text, 
+  .books-section__actions {
+    float: none;
+  }
+
+  .books-section__image {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 34px;
+  }
+
+  .books-section__text, 
+  .books-section__text h3, 
+  .books-section__text p {
+    width: 100%;
+  }
+
+  .books-section__actions {
+    padding-top: 32px;
+  }
+
+  .library-button {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .library-button--order::before {
+    left: 80px;
+  }
+
+  .library-button--download::before {
+    left: 84px;
+  }
+
+  .library-button--download {
+    background-color: #f79149;
+    color: #fff;
+  }
+
+  .library-button--download::before {
+    background-position: -85px -64px;
+  }
+
+  .library-section--articles article, 
+  .articles-section__text h3, 
+  .articles-section__text p {
+    width: 280px;
+  }
+
+  .articles-section__item {
+    margin-bottom: 25px;
+  }
+
+  .articles-section__item:last-child {
+    margin-bottom: 37px;
+  }
+  
 
   /* Oldslavonic language */
 
