@@ -5192,7 +5192,6 @@ article.articles-section__text p {
     padding-left: 30px;
   }
 
-
   /* *** Footer *** */
 
   .footer {
@@ -5271,5 +5270,119 @@ article.articles-section__text p {
     height: 23px;
     background-position: -177px -167px;
   }
+
+  /* *** Popup *** */
+
+  .popup__close-button {
+    top: 20px;
+    right: 20px;
+  }
+
+  /* *** Entry & feedback forms *** */
+
+  .tabs-form {
+    margin-bottom: 50px;
+  }
+
+  .tabs-form__item {
+    min-width: 133px;
+    padding: 0 10px;
+  }
+
+  .popup--entry-form h1 {
+    margin-bottom: 24px;
+  }
+
+  .entry-form input[type="text"], 
+  .entry-form input[type="tel"], 
+  .feedback-form input[type="text"], 
+  .feedback-form input[type="tel"],
+  .entry-form input[type="email"], 
+  .feedback-form input[type="email"] {
+    margin-right: 0;
+  }
+
+  .entry-form .jq-selectbox,
+  .entry-form .jq-selectbox__dropdown, 
+  .entry-form .jq-selectbox__dropdown ul {
+    width: 280px;
+  }
+
+  .entry-form .jq-selectbox {
+    margin-bottom: 38px;
+  }
+
+  .entry-form .jq-selectbox li {
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    white-space: normal;
+  }
+
+  .entry-form input[type="text"], 
+  .entry-form input[type="tel"], 
+  .entry-form input[type="email"], 
+  .feedback-form input[type="text"], 
+  .feedback-form input[type="tel"], 
+  .feedback-form input[type="email"] {
+    width: 280px;
+  }
+
+  .entry-form__wrapper, 
+  .feedback-form__wrapper {
+    margin-bottom: 40px;
+  }
+
+  .entry-form input[type="tel"], 
+  .feedback-form input[type="tel"],
+  .entry-form input[name="entry-form__city"],
+  .entry-form input[class="entry-form__comments"] {
+    margin-bottom: 0;
+  }
+
+  .entry-form__submit, 
+  .feedback-form__submit {
+    position: static;
+  }
+
+  .entry-form .jq-selectbox__dropdown, .entry-form .jq-selectbox__dropdown ul {
+    max-height: 313px;
+  }
+
+  .entry-form__type-of-consultation {
+    margin-bottom: 76px;
+  }
+
+  .entry-form__type-of-consultation label {
+    padding-left: 12px;
+  }
+
+  .entry-form__type-of-consultation label::before {
+    left: -34px;
+  }
+
+  .entry-form__type-of-consultation input[type="radio"]:checked + label::after {
+    left: -27px;
+  }
+
+  .entry-form__type-of-consultation label[for="entry-form__radio-skype"] {
+    position: relative;
+    top: 24px;
+    left: -3px;
+  }
+
+  .popup--feedback-form h1 {
+    width: 100%;
+    line-height: 36px;
+    margin-bottom: 48px;
+  }
+
+  .feedback-form input[type="text"].feedback-form__message-theme,
+  .feedback-form input[type="text"].feedback-form__message-text {
+    width: 280px;
+    margin-bottom: 0;
+  }
+
 
 }

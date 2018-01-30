@@ -177,10 +177,12 @@ $(document).ready(function() {
 $(".entry-button").click(function() {
   $(".popup--entry-form").addClass("popup--active");
   $(".jq-selectbox__select-text").text("Семинар *");
+  $("body").css("overflowY", "hidden");
 });
 
 $(".popup__close-button").click(function() {
   $(".popup--entry-form").removeClass("popup--active");
+  $("body").css("overflowY", "scroll");
 });
 
 $(".tabs-form__item--seminar").click(function() {
@@ -261,10 +263,12 @@ $(".entry-form__select").change(function() {
 $(".footer-link__feedback").click(function(e) {
   e.preventDefault();
   $(".popup--feedback-form").addClass("popup--active");
+  $("body").css("overflowY", "hidden");
 });
 
 $(".popup__close-button").click(function() {
   $(".popup--feedback-form").removeClass("popup--active");
+  $("body").css("overflowY", "scroll");
 });
 
 $(".feedback-form input[type='text']").blur(function() {
@@ -518,10 +522,12 @@ $(".tabs-contacts__item").click(function() {
 $(".library-button--read").click(function(e) {
   e.preventDefault();
   $(".popup--online-reader").addClass("popup--active");
+  $("body").css("overflowY", "hidden");
 });
 
 $(".online-reader__close-button").click(function() {
   $(".popup--online-reader").removeClass("popup--active");
+  $("body").css("overflowY", "scroll");
 });
 
 $(".online-reader__action--font").mouseover(function() {
