@@ -561,7 +561,7 @@ input[type="submit"]:focus {
 
 .seminars-tile {
   display: none;
-  margin-bottom: 55px;
+  margin-bottom: 140px;
 }
 
 .seminars-tile__block {
@@ -887,7 +887,7 @@ input[type="submit"]:focus {
   margin-bottom: 29px;
 }
 
-.people-item__photo:hover::before {
+.people-item__photo::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -901,6 +901,11 @@ input[type="submit"]:focus {
   background: -ms-linear-gradient(-68deg, #f79249 8%, #ef714f 92%);
   background: linear-gradient(158deg, #f79249 8%, #ef714f 92%);
   border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.people-item__photo:hover::before {
   opacity: 0.7;
 }
 
@@ -1353,11 +1358,22 @@ input[type="submit"]:focus {
 }
 
 .review-form__reset {
+  display: block;
+  height: 60px;
+  font-family: 'geometriabold';
+  font-size: 13px;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin: 0 auto;
   margin-right: 20px;
+  margin-top: 138px;
   background: none;
   background-color: #f1d4ca;
   color: #000;
   box-shadow: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .review-form__reset:hover {
@@ -1898,10 +1914,6 @@ article.articles-section__text p {
   position: absolute;
   top: 307px;
   left: 0;
-  width: 100%;
-}
-
-.map iframe {
   width: 100%;
   height: 400px;
 }

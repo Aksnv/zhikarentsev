@@ -658,3 +658,27 @@ jQuery(function()
     extraSpace : 0
 });
 });
+
+
+/* Yandex map */
+
+ymaps.ready(init);
+    var myMap,
+        myPlacemark;
+
+    function init(){     
+        myMap = new ymaps.Map("map", {
+            center: [59.92800956, 30.32647750],
+            zoom: 16
+        });
+
+        ymaps.route(['метро Сенная Площадь', 'Апраксин переулок 11'], {
+            multiRoute: true,
+            routingMode: "pedestrian"
+        }).done(function (route) {
+            route.options.set("mapStateAutoApply", true);
+            myMap.geoObjects.add(route);
+        }, function (err) {
+            throw err;
+        }, this);
+    }
