@@ -236,7 +236,6 @@ $(".entry-form textarea").blur(function() {
     $(this).next().addClass("entry-form__label");
   } else {
     $(this).next().removeClass("entry-form__label");
-    /*$(this).addClass("invalid-value");*/
   }
 });
 
@@ -251,10 +250,6 @@ $(".entry-form input[type='tel']").focus(function() {
 $(".entry-form input[type='email']").focus(function() {
   $(this).removeClass("invalid-value");
 });
-
-/*$(".entry-form textarea").focus(function() {
-  $(this).removeClass("invalid-value");
-});*/
 
 $(".entry-form__select").blur(function() {
   if ($(".jq-selectbox__select-text").text() == "Семинар *") {
@@ -319,7 +314,7 @@ $(".feedback-form textarea").blur(function() {
     $(this).next().addClass("feedback-form__label");
   } else {
     $(this).next().removeClass("feedback-form__label");
-    /*$(this).addClass("invalid-value");*/
+    $(this).addClass("invalid-value");
   }
 });
 
@@ -335,9 +330,9 @@ $(".feedback-form input[type='email']").focus(function() {
   $(this).removeClass("invalid-value");
 });
 
-/*$(".feedback-form textarea").focus(function() {
+$(".feedback-form textarea").focus(function() {
   $(this).removeClass("invalid-value");
-});*/
+});
 
 
 /* Seminar reviews */
@@ -403,117 +398,103 @@ $(".review-invisible").click(function() {
 $(".tabs-library__item").click(function() {
   for (var i = 0; i < $(".tabs-library__item").length; i++) {
     $($(".tabs-library__item")[i]).removeClass("tabs-library__item--active");
+    $($(".tabs-library__subitem")[i]).removeClass("tabs-library__subitem--active");
     $(this).addClass("tabs-library__item--active");
+    var num = $(this).attr("class").charAt(39);
+    $($(".tabs-library__subitem")[num - 1]).addClass("tabs-library__subitem--active");
   }
-  if ($(this).hasClass("tabs-library__item--1")) {
-    $(".tabs-books").show();
-    $(".library-section--books").show();
-    $(".tabs-articles").hide();
-    $(".library-section--articles").hide();
-    $(".tabs-story").hide();
-    $(".library-section--story").hide();
-    $(".tabs-video").hide();
-    $(".library-section--video").hide();
-    $(".library-section--dictionary").hide();
-  } else if ($(this).hasClass("tabs-library__item--2")) {
-    $(".tabs-books").hide();
-    $(".library-section--books").hide();
-    $(".tabs-articles").show();
-    $(".library-section--articles_1").show();
 
-    $(".library-section--articles_1 ul").show();
-    $(".library-section--articles_1 .pagination").show();
-    $(".library-section--articles article.article_1-1").hide();
+  for (var j = 0; j < $(".library-section").length; j++) {
+    $($(".library-section")[j]).removeClass("library-section--active");
+  }
+  $(".library-section--" + num + "_1").addClass("library-section--active");
 
-    $(".tabs-story").hide();
-    $(".library-section--story").hide();
-    $(".tabs-video").hide();
-    $(".library-section--video").hide();
-    $(".library-section--dictionary").hide();
-  } else if ($(this).hasClass("tabs-library__item--3")) {
-    $(".tabs-books").hide();
-    $(".library-section--books").hide();
-    $(".tabs-articles").hide();
-    $(".library-section--articles").hide();
-    $(".tabs-story").show();
-    $(".library-section--story").show();
-    $(".tabs-video").hide();
-    $(".library-section--video").hide();
-    $(".library-section--dictionary").hide();
-  } else if ($(this).hasClass("tabs-library__item--4")) {
-    $(".tabs-books").hide();
-    $(".library-section--books").hide();
-    $(".tabs-articles").hide();
-    $(".library-section--articles").hide();
-    $(".tabs-story").hide();
-    $(".library-section--story").hide();
-    $(".tabs-video").show();
-    $(".library-section--video").show();
-    $(".library-section--dictionary").hide();
-  } else {
-    $(".tabs-books").hide();
-    $(".library-section--books").hide();
-    $(".tabs-articles").hide();
-    $(".library-section--articles").hide();
-    $(".tabs-story").hide();
-    $(".library-section--story").hide();
-    $(".tabs-video").hide();
-    $(".library-section--video").hide();
-    $(".library-section--dictionary").show();
+  if (num == 1) {
+    for (var i = 0; i < $(".tabs-books__item").length; i++) {
+      $($(".tabs-books__item")[i]).removeClass("tabs-books__item--active");
+    }
+    $($(".tabs-books__item")[0]).addClass("tabs-books__item--active");
+  } else if (num == 2) {
+    for (var i = 0; i < $(".tabs-articles__item").length; i++) {
+      $($(".tabs-articles__item")[i]).removeClass("tabs-articles__item--active");
+    }
+    $($(".tabs-articles__item")[0]).addClass("tabs-articles__item--active");
+  } else if (num == 3) {
+    for (var i = 0; i < $(".tabs-story__item").length; i++) {
+      $($(".tabs-story__item")[i]).removeClass("tabs-story__item--active");
+    }
+    $($(".tabs-story__item")[0]).addClass("tabs-story__item--active");
+  } else if (num == 4) {
+    for (var i = 0; i < $(".tabs-video__item").length; i++) {
+      $($(".tabs-video__item")[i]).removeClass("tabs-video__item--active");
+    }
+    $($(".tabs-video__item")[0]).addClass("tabs-video__item--active");
   }
 });
 
-$(".tabs-articles__item").click(function() {
-  for (var i = 0; i < $(".tabs-articles__item").length; i++) {
-    $($(".tabs-articles__item")[i]).removeClass("tabs-articles__item--active");
-    $(this).addClass("tabs-articles__item--active");
-    if ($(this).hasClass("tabs-articles__item--1")) {
-      $(".library-section--articles_1").show();
-
-      $(".library-section--articles_1 ul").show();
-      $(".library-section--articles_1 .pagination").show();
-      $(".library-section--articles article.article_1-1").hide();
-
-      $(".library-section--articles_6").hide();
-    } else if ($(this).hasClass("tabs-articles__item--6")) {
-      $(".library-section--articles_1").hide();
-      $(".library-section--articles_6").show();
+$(".tabs-books__item").click(function(e) {
+  e.preventDefault();
+  for (var i = 0; i < $(".tabs-books__item").length; i++) {
+    $($(".tabs-books__item")[i]).removeClass("tabs-books__item--active");
+    $($(".library-section--books")[i]).removeClass("library-section--active");
+    $(this).addClass("tabs-books__item--active");
+    var firstNum = $(this).attr("class").charAt(35);
+    var secondNum = $(this).attr("class").charAt(36);
+    if (secondNum == "") {
+      var num = firstNum;
+      $($(".library-section--books")[num - 1]).addClass("library-section--active");
+    } else {
+      var num = +(firstNum + secondNum);
+      $($(".library-section--books")[num - 1]).addClass("library-section--active");
     }
   }
 });
 
-$(".article-link_1-1").click(function(e) {
+$(".tabs-articles__item").click(function(e) {
   e.preventDefault();
-  $(".library-section--articles_1 ul").hide();
-  $(".library-section--articles_1 .pagination").hide();
-  $(".library-section--articles article.article_1-1").show();
+  for (var i = 0; i < $(".tabs-articles__item").length; i++) {
+    $($(".tabs-articles__item")[i]).removeClass("tabs-articles__item--active");
+    $($(".library-section--articles")[i]).removeClass("library-section--active");
+    $(this).addClass("tabs-articles__item--active");
+    var num = $(this).attr("class").charAt(41);
+    $($(".library-section--articles")[num - 1]).addClass("library-section--active");
+  }
+});
+
+$(".tabs-story__item").click(function(e) {
+  e.preventDefault();
+  for (var i = 0; i < $(".tabs-story__item").length; i++) {
+    $($(".tabs-story__item")[i]).removeClass("tabs-story__item--active");
+    $($(".library-section--story")[i]).removeClass("library-section--active");
+    $(this).addClass("tabs-story__item--active");
+    var num = $(this).attr("class").charAt(35);
+    $($(".library-section--story")[num - 1]).addClass("library-section--active");
+  }
+});
+
+$(".tabs-video__item").click(function(e) {
+  e.preventDefault();
+  for (var i = 0; i < $(".tabs-video__item").length; i++) {
+    $($(".tabs-video__item")[i]).removeClass("tabs-video__item--active");
+    $($(".library-section--video")[i]).removeClass("library-section--active");
+    $(this).addClass("tabs-video__item--active");
+    var num = $(this).attr("class").charAt(35);
+    $($(".library-section--video")[num - 1]).addClass("library-section--active");
+  }
+});
+
+$(".articles-section__link--1_1").click(function(e) {
+  e.preventDefault();
+  $(".library-section--2_1 ul").hide();
+  $(".library-section--2_1 .pagination").hide();
+  $(".library-section article.articles-section__article--1_1").show();
 });
 
 $(".articles-list").click(function(e) {
   e.preventDefault();
-  $(".library-section--articles_1 ul").show();
-  $(".library-section--articles_1 .pagination").show();
-  $(".library-section--articles article.article_1-1").hide();
-});
-
-$(".tabs-books__item--active").click(function(e) {
-  e.preventDefault();
-  $(".tabs-books").toggleClass("tabs-books--active");
-});
-
-$(".tabs-articles__item--active").click(function(e) {
-  e.preventDefault();
-  $(".tabs-articles").toggleClass("tabs-articles--active");
-});
-
-$(".tabs-story__item--active").click(function(e) {
-  e.preventDefault();
-  $(".tabs-story").toggleClass("tabs-story--active");
-});
-
-$(".tabs-video__item--active").click(function(e) {
-  e.preventDefault();
-  $(".tabs-video").toggleClass("tabs-video--active");
+  $(".library-section--2_1 ul").show();
+  $(".library-section--2_1 .pagination").show();
+  $(".library-section article.articles-section__article--1_1").hide();
 });
 
 

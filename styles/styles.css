@@ -1614,16 +1614,15 @@ input[type="submit"]:focus {
   border-bottom-right-radius: 25px;
 }
 
-.tabs-articles,
-.tabs-story,
-.tabs-video {
+.tabs-library__subitem {
   display: none;
 }
 
-.tabs-books li,
-.tabs-articles li,
-.tabs-story li,
-.tabs-video li {
+.tabs-library__subitem--active {
+  display: block;
+}
+
+.tabs-library__subitem li {
   display: inline-block;
   vertical-align: top;
   margin-right: 25px;
@@ -1672,18 +1671,16 @@ input[type="submit"]:focus {
 }
 
 .library-section {
+  display: none;
   overflow: hidden;
   text-align: left;
 }
 
-.library-section--articles,
-.library-section--story,
-.library-section--video, 
-.library-section--dictionary {
-  display: none;
+.library-section--active {
+  display: block;
 }
 
-.library-section--articles article {
+.library-section article {
   display: none;
 }
 
@@ -1728,10 +1725,6 @@ article.articles-section__text h3 {
   font-size: 20px;
   line-height: 33px;
   color: #000;
-}
-
-article.articles-section__text p {
-
 }
 
 .books-section__actions {
@@ -1827,19 +1820,19 @@ article.articles-section__text p {
   line-height: 32px;
 }
 
-.library-section--articles_6 .articles-section__text p {
+.library-section--2_6 .articles-section__text p {
   font-family: 'museo_sans_cyrl100';
   font-size: 20px;
   line-height: 32px;
 }
 
-.library-section--articles_6 .articles-section__text a {
+.library-section--2_6 .articles-section__text a {
   position: relative;
   top: 0;
   font-family: 'museo_sans_cyrl900';
 }
 
-.library-section--articles_6 .articles-section__text span.br {
+.library-section--2_6 .articles-section__text span.br {
   display: inline;
 }
 
