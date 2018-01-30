@@ -231,6 +231,15 @@ $(".entry-form input[type='email']").blur(function() {
   }
 });
 
+$(".entry-form textarea").blur(function() {
+  if (this.value != "") {
+    $(this).next().addClass("entry-form__label");
+  } else {
+    $(this).next().removeClass("entry-form__label");
+    /*$(this).addClass("invalid-value");*/
+  }
+});
+
 $(".entry-form input[type='text']").focus(function() {
   $(this).removeClass("invalid-value");
 });
@@ -242,6 +251,10 @@ $(".entry-form input[type='tel']").focus(function() {
 $(".entry-form input[type='email']").focus(function() {
   $(this).removeClass("invalid-value");
 });
+
+/*$(".entry-form textarea").focus(function() {
+  $(this).removeClass("invalid-value");
+});*/
 
 $(".entry-form__select").blur(function() {
   if ($(".jq-selectbox__select-text").text() == "Семинар *") {
@@ -301,6 +314,15 @@ $(".feedback-form input[type='email']").blur(function() {
   }
 });
 
+$(".feedback-form textarea").blur(function() {
+  if (this.value != "") {
+    $(this).next().addClass("feedback-form__label");
+  } else {
+    $(this).next().removeClass("feedback-form__label");
+    /*$(this).addClass("invalid-value");*/
+  }
+});
+
 $(".feedback-form input[type='text']").focus(function() {
   $(this).removeClass("invalid-value");
 });
@@ -312,6 +334,10 @@ $(".feedback-form input[type='tel']").focus(function() {
 $(".feedback-form input[type='email']").focus(function() {
   $(this).removeClass("invalid-value");
 });
+
+/*$(".feedback-form textarea").focus(function() {
+  $(this).removeClass("invalid-value");
+});*/
 
 
 /* Seminar reviews */

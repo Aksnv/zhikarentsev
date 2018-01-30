@@ -2580,12 +2580,19 @@ article.articles-section__text p {
   vertical-align: top;
 }
 
+.entry-form__wrapper--textarea,
+.feedback-form__wrapper--textarea {
+  padding-top: 13px;
+}
+
 .entry-form input[type="text"],
 .entry-form input[type="tel"],
 .entry-form input[type="email"],
 .feedback-form input[type="text"],
 .feedback-form input[type="tel"],
-.feedback-form input[type="email"] {
+.feedback-form input[type="email"],
+.entry-form textarea,
+.feedback-form textarea {
   width: 320px;
   height: 50px;
   font-family: 'proxima_nova_ltlight';
@@ -2593,6 +2600,14 @@ article.articles-section__text p {
   line-height: 50px;
   border: none;
   border-bottom: 1px solid #aba39e;
+}
+
+.entry-form textarea,
+.feedback-form textarea {
+  width: 1040px;
+  height: 37px;
+  line-height: 25px;
+  padding-bottom: 0;
 }
 
 .entry-form input[type="text"],
@@ -2612,10 +2627,17 @@ article.articles-section__text p {
 .entry-form input[type="email"]:focus,
 .feedback-form input[type="text"]:focus,
 .feedback-form input[type="tel"]:focus,
-.feedback-form input[type="email"]:focus {
+.feedback-form input[type="email"]:focus,
+.entry-form textarea:focus,
+.feedback-form textarea:focus {
   height: 49px;
   border-bottom: 2px solid #f79149;
   outline: none;
+}
+
+.entry-form textarea:focus,
+.feedback-form textarea:focus {
+  height: 37px;
 }
 
 .entry-form input[type="text"].invalid-value,
@@ -2623,7 +2645,9 @@ article.articles-section__text p {
 .entry-form input[type="email"].invalid-value,
 .feedback-form input[type="text"].invalid-value,
 .feedback-form input[type="tel"].invalid-value,
-.feedback-form input[type="email"].invalid-value {
+.feedback-form input[type="email"].invalid-value,
+.entry-form textarea.invalid-value,
+.feedback-form textarea.invalid-value {
   border-bottom: 1px solid #e25555;
 }
 
@@ -2632,7 +2656,9 @@ article.articles-section__text p {
 .entry-form input[type="email"] + label,
 .feedback-form input[type="text"] + label,
 .feedback-form input[type="tel"] + label,
-.feedback-form input[type="email"] + label {
+.feedback-form input[type="email"] + label,
+.entry-form textarea + label,
+.feedback-form textarea + label {
   position: absolute;
   top: 0;
   left: 0;
@@ -2655,7 +2681,11 @@ article.articles-section__text p {
 .feedback-form input[type="email"]:focus + label,
 .feedback-form input[type="text"] + label.feedback-form__label,
 .feedback-form input[type="tel"] + label.feedback-form__label,
-.feedback-form input[type="email"] + label.feedback-form__label {
+.feedback-form input[type="email"] + label.feedback-form__label,
+.entry-form textarea:focus + label,
+.feedback-form textarea:focus + label,
+.entry-form textarea + label.entry-form__label,
+.feedback-form textarea + label.feedback-form__label {
   top: -25px;
   left: 0;
   font-size: 14px;
@@ -2667,7 +2697,9 @@ article.articles-section__text p {
 .entry-form input[type="email"].invalid-value + label::before,
 .feedback-form input[type="text"].invalid-value + label::before,
 .feedback-form input[type="tel"].invalid-value + label::before,
-.feedback-form input[type="email"].invalid-value + label::before {
+.feedback-form input[type="email"].invalid-value + label::before,
+.entry-form textarea.invalid-value + label::before,
+.feedback-form textarea.invalid-value + label::before {
   position: absolute;
   top: -25px;
   left: 0;
@@ -2678,7 +2710,8 @@ article.articles-section__text p {
   color: #e25555;
 }
 
-.entry-form input[class="entry-form__comments"] {
+/* .entry-form input[class="entry-form__comments"], */
+.entry-form textarea {
   width: 680px;
   margin-right: 0;
   margin-bottom: 26px;
@@ -3088,6 +3121,14 @@ article.articles-section__text p {
 
   .breadcrumbs {
     padding-top: 21px;
+  }
+
+  .inline-link {
+    text-decoration: underline;
+  }
+
+  .inline-link::after {
+    display: none;
   }
 
   /* *** Header *** */
@@ -3929,9 +3970,9 @@ article.articles-section__text p {
     white-space: nowrap;
   }
 
-  .library-section--articles_6 .articles-section__text a.inline-link::after {
+  /* .library-section--articles_6 .articles-section__text a.inline-link::after {
     display: none;
-  }
+  } */
 
   .library-section--articles_6 .articles-section__text span.br {
     display: block;
@@ -4293,7 +4334,8 @@ article.articles-section__text p {
     display: block;
   }
 
-  .entry-form input[class="entry-form__comments"] {
+  /* .entry-form input[class="entry-form__comments"], */
+  .entry-form textarea {
     margin-bottom: 88px;
   }
 
@@ -4685,6 +4727,119 @@ article.articles-section__text p {
   .seminars-tile__item--horizontal span, 
   .seminars-tile__item--vertical span {
     left: 15px;
+  }
+
+  .seminar {
+    margin-bottom: 84px;
+  }
+
+  .seminar h1 {
+    margin-bottom: 38px;
+  }
+
+  .seminar h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .seminar-recourse__block--left {
+    margin-bottom: 39px;
+  }
+
+  .seminar-recourse__block--left p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .seminar-recourse {
+    margin-bottom: 53px;
+  }
+
+  .seminar-content {
+    margin-bottom: 52px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .seminar-video {
+    margin-bottom: 11px;
+  }
+
+  .seminar-video__block--left {
+    margin-bottom: 10px;
+  }
+
+  .seminar-video__block--left img {
+    height: 159px;
+  }
+
+  .seminar-video__block--left a::before {
+    top: calc(50% - 33px);
+    left: calc(50% - 33px);
+    width: 66px;
+    height: 66px;
+    background-position: -233px -192px;
+  }
+
+  .seminar-video__block--right p {
+    line-height: 24px;
+  }
+
+  .seminar-schedule h2 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 23px;
+    padding-left: 0;
+  }
+
+  .seminar-schedule .seminars-list__item {
+    line-height: 24px;
+    padding-top: 13px;
+    padding-left: 0;
+  }
+
+  .seminar-schedule .seminars-list__item .entry-button {
+    position: static;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .seminar-schedule {
+    margin-bottom: 53px;
+  }
+
+  .seminar-schedule a {
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .seminar-reviews h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .seminar-reviews h3::before, 
+  .seminar-reviews h3::after {
+    display: none;
+  }
+
+  .add-review-button {
+    width: 100%;
+  }
+
+  .seminar-review {
+    height: 1500px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .seminar-review--visible {
+    height: auto;
+  }
+
+  .review-visible, 
+  .review-invisible {
+    margin-right: 0;
   }
 
   .consultations-wrapper {
@@ -5334,10 +5489,16 @@ article.articles-section__text p {
     margin-bottom: 40px;
   }
 
+  .entry-form__wrapper--textarea,
+  .feedback-form__wrapper--textarea {
+    padding-top: 13px;
+  }
+
   .entry-form input[type="tel"], 
   .feedback-form input[type="tel"],
   .entry-form input[name="entry-form__city"],
-  .entry-form input[class="entry-form__comments"] {
+  /* .entry-form input[class="entry-form__comments"], */
+  .entry-form textarea {
     margin-bottom: 0;
   }
 
@@ -5383,6 +5544,5 @@ article.articles-section__text p {
     width: 280px;
     margin-bottom: 0;
   }
-
 
 }
