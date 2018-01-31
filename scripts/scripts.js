@@ -483,6 +483,42 @@ $(".tabs-video__item").click(function(e) {
   }
 });
 
+$(".tabs-books__item").click(function(e) {
+  e.preventDefault();
+  if ($(".tabs-library__subitem--active").hasClass("tabs-library__subitem--open")) {
+    $(".tabs-library__subitem--active").removeClass("tabs-library__subitem--open");
+  } else {
+    $(".tabs-library__subitem--active").addClass("tabs-library__subitem--open");
+  }
+});
+
+$(".tabs-articles__item").click(function(e) {
+  e.preventDefault();
+  if ($(".tabs-library__subitem--active").hasClass("tabs-library__subitem--open")) {
+    $(".tabs-library__subitem--active").removeClass("tabs-library__subitem--open");
+  } else {
+    $(".tabs-library__subitem--active").addClass("tabs-library__subitem--open");
+  }
+});
+
+$(".tabs-story__item").click(function(e) {
+  e.preventDefault();
+  if ($(".tabs-library__subitem--active").hasClass("tabs-library__subitem--open")) {
+    $(".tabs-library__subitem--active").removeClass("tabs-library__subitem--open");
+  } else {
+    $(".tabs-library__subitem--active").addClass("tabs-library__subitem--open");
+  }
+});
+
+$(".tabs-video__item").click(function(e) {
+  e.preventDefault();
+  if ($(".tabs-library__subitem--active").hasClass("tabs-library__subitem--open")) {
+    $(".tabs-library__subitem--active").removeClass("tabs-library__subitem--open");
+  } else {
+    $(".tabs-library__subitem--active").addClass("tabs-library__subitem--open");
+  }
+});
+
 $(".articles-section__link--1_1").click(function(e) {
   e.preventDefault();
   $(".library-section--2_1 ul").hide();
@@ -658,27 +694,3 @@ jQuery(function()
     extraSpace : 0
 });
 });
-
-
-/* Yandex map */
-
-ymaps.ready(init);
-    var myMap,
-        myPlacemark;
-
-    function init(){     
-        myMap = new ymaps.Map("map", {
-            center: [59.92800956, 30.32647750],
-            zoom: 16
-        });
-
-        ymaps.route(['метро Сенная Площадь', 'Апраксин переулок 11'], {
-            multiRoute: true,
-            routingMode: "pedestrian"
-        }).done(function (route) {
-            route.options.set("mapStateAutoApply", true);
-            myMap.geoObjects.add(route);
-        }, function (err) {
-            throw err;
-        }, this);
-    }
