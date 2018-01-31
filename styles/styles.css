@@ -3245,8 +3245,8 @@ article.articles-section__text p {
   .content--mobile .entry-button {
     position: absolute;
     left: calc(50% - 196px);
-    bottom: 70px;
-    z-index: 11;
+    bottom: -50px;
+    z-index: 12;
   }
 
   .slider {
@@ -4832,6 +4832,70 @@ article.articles-section__text p {
     margin-right: 0;
   }
 
+  .review-form--visible {
+    padding-top: 80px;
+  }
+
+  .seminar-reviews--visible .popup__close-button {
+    top: 20px;
+    right: 20px;
+  }
+
+  .review-form--visible h3 {
+    margin-bottom: 38px;
+  }
+
+  .review-form--visible .review-form__wrapper {
+    margin-bottom: 40px;
+  }
+
+  .review-form--visible .review-form__wrapper--textarea {
+    margin-bottom: 101px;
+  }
+
+  .review-form--visible input[type="text"], 
+  .review-form--visible textarea {
+    width: 280px;
+  }
+
+  .review-form--visible .review-form__capcha .review-form__wrapper {
+    margin-bottom: 6px;
+  }
+
+  .review-form--visible .review-form__capcha input[type="text"] {
+    width: 180px;
+  }
+
+  .review-form--visible .review-form__capcha input[type="text"] + label, 
+  .review-form--visible .review-form__capcha textarea + label,
+  .review-form--visible .review-form__capcha input[type="text"] + label {
+    font-size: 18px;
+  }
+
+  .review-form--visible .review-form__capcha img {
+    margin-right: 15px;
+  }
+
+  .review-form--visible .review-form__capcha p {
+    position: absolute;
+    bottom: -43px;
+    left: 5px;
+  }
+
+  .review-form--visible .review-form__submit, 
+  .review-form--visible .review-form__reset {
+    position: static;
+    width: 130px;
+  }
+
+  .review-form--visible .review-form__reset {
+    margin-right: 10px;
+  }
+
+
+
+
+
   .consultations-wrapper {
     margin-bottom: 61px;
   }
@@ -5491,6 +5555,11 @@ article.articles-section__text p {
     margin-bottom: 0;
   }
 
+  .entry-form textarea,
+  .feedback-form textarea {
+    width: 280px;
+  }
+
   .entry-form__submit, 
   .feedback-form__submit {
     position: static;
@@ -5498,6 +5567,10 @@ article.articles-section__text p {
 
   .entry-form .jq-selectbox__dropdown, .entry-form .jq-selectbox__dropdown ul {
     max-height: 313px;
+  }
+
+  .jq-selectbox select {
+    width: 280px;
   }
 
   .entry-form__type-of-consultation {
