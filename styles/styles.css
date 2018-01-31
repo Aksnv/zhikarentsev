@@ -4599,46 +4599,45 @@ article.articles-section__text p {
 
 @media screen and (max-width: 767px) {
 
-  .container,
-  .container--footer/* ,
-  .content */ {
+  /* .container,
+  .container--footer {
     width: 568px;
     margin: 0 auto;
-  }
+  } */
 
   /* *** Header *** */
 
   /* *** Content *** */
 
-  .slider {
+  /* .slider {
     width: 568px;
     left: calc(50% - 454px); 
   }
-
+  
   .seminar-review {
     height: 775px;
   }
-
+  
   .review-form--visible .container {
     width: 568px;
   }
-
+  
   .contacts--reg .contacts-info__block:nth-child(n) {
     margin-right: 92px;
   }
-
+  
   .contacts--reg .contacts-info__block:nth-child(2n+2) {
     margin-right: 0;
-  }
+  } */
 
   /* *** Online reader *** */
 
-  .online-reader__header-block--center .breadcrumbs {
+  /* .online-reader__header-block--center .breadcrumbs {
     width: 290px;
     line-height: 18px;
     margin: 0 auto;
     padding-top: 5px;
-  }
+  } */
 
 }
 
