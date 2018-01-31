@@ -4549,7 +4549,7 @@ article.articles-section__text p {
 
 /* *** Adaptive styles (768px) *** */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
 
   .container,
   .container--footer/* ,
@@ -4604,7 +4604,7 @@ article.articles-section__text p {
 
 /* *** Adaptive styles (280px) *** */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
   body {
     background-image: none;
