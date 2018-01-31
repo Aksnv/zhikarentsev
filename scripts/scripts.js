@@ -341,11 +341,27 @@ $(".add-review-button").click(function() {
   $(this).hide();
   $(".review-form").addClass("review-form--visible");
   $(".seminar-reviews").addClass("seminar-reviews--visible");
+  if ($(".container").css("width") != "1170px") {
+    $("body").css("overflowY", "hidden");
+  }
 });
 
 $(".review-form__reset").click(function() {
   $(".review-form").removeClass("review-form--visible");
   $(".add-review-button").show();
+  $(".seminar-reviews").removeClass("seminar-reviews--visible");
+  if ($(".container").css("width") != "1170px") {
+    $("body").css("overflowY", "scroll");
+  }
+});
+
+$(".seminar-reviews .popup__close-button").click(function() {
+  $(".review-form").removeClass("review-form--visible");
+  $(".add-review-button").show();
+  $(".seminar-reviews").removeClass("seminar-reviews--visible");
+  if ($(".container").css("width") != "1170px") {
+    $("body").css("overflowY", "scroll");
+  }
 });
 
 $(".review-form input[type='text']").blur(function() {

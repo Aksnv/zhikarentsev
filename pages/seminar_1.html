@@ -95,31 +95,35 @@
             <a href="seminars.html" class="inline-link">Вернуться к списку семинаров</a>
         </section>
         <section class="seminar-reviews">
+          <button class="popup__close-button"></button>
           <h3>Отзывы о семинаре</h3>
           <button class="add-review-button">Оставить отзыв</button>
           <form name="review-form" action="#" method="POST" class="review-form">
-            <div class="review-form__wrapper">
-              <input type="text" name="review-form__name" class="review-form__name">
-              <label>Фамилия и имя</label>
-            </div>
-            <!-- <div class="review-form__wrapper">
-              <input type="text" name="review-form__text" class="review-form__text">
-              <label>Текст отзыва *</label>
-            </div> -->
-            <div class="review-form__wrapper review-form__wrapper--textarea">
-              <textarea name="review-form__text" class="review-form__text"></textarea>
-              <label>Текст отзыва *</label>
-            </div>
-            <div class="review-form__capcha">
-              <img src="../images/pages/seminars/capcha.png">
+            <div class="container">
+              <h3>Отзывы о семинаре</h3>
               <div class="review-form__wrapper">
-                <input type="text" name="review-form__symbols" class="review-form__symbols">
-                <label>Символы с картинки *</label>
+                <input type="text" name="review-form__name" class="review-form__name">
+                <label>Фамилия и имя</label>
               </div>
-              <p><span>*</span> &mdash; поля, обязательные для заполнения</p>
-            </div> 
-            <input type="reset" name="review-form__reset" class="review-form__reset" value="Отмена">
-            <input type="submit" name="review-form__submit" class="entry-button review-form__submit" value="Отправить">           
+              <!-- <div class="review-form__wrapper">
+                <input type="text" name="review-form__text" class="review-form__text">
+                <label>Текст отзыва *</label>
+              </div> -->
+              <div class="review-form__wrapper review-form__wrapper--textarea">
+                <textarea name="review-form__text" class="review-form__text"></textarea>
+                <label>Текст отзыва *</label>
+              </div>
+              <div class="review-form__capcha">
+                <img src="../images/pages/seminars/capcha.png">
+                <div class="review-form__wrapper">
+                  <input type="text" name="review-form__symbols" class="review-form__symbols">
+                  <label>Символы с картинки *</label>
+                </div>
+                <p><span>*</span> &mdash; поля, обязательные для заполнения</p>
+              </div> 
+              <input type="reset" name="review-form__reset" class="review-form__reset" value="Отмена">
+              <input type="submit" name="review-form__submit" class="entry-button review-form__submit" value="Отправить">
+            </div>           
           </form>
           <article class="seminar-review">
             <strong>Кира Ушакова</strong>
