@@ -102,6 +102,18 @@ $(".seminars-list__item").mouseout(function() {
 });
 
 $(window).resize(function() {
+  if (($(".container").css("width") != "1170px") && ($(".tabs-title__item--consultations").hasClass("tabs-title__item--active"))) {
+    $(".tabs-title__item--seminars").addClass("tabs-title__item--active");
+    $(".tabs-title__item--consultations").removeClass("tabs-title__item--active");
+    $(".tabs-title__item--consultations").hide();
+    $(".consultations-wrapper").hide();
+    $(".seminars--wrapper").show();
+  } else if ($(".container").css("width") == "1170px") {
+    $(".tabs-title__item--consultations").show();
+  }
+});
+
+$(window).resize(function() {
   if ($(".container").css("width") == "280px") {
     $(".tabs-seminars__item--list").text("Списком");
   } else {

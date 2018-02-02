@@ -122,9 +122,15 @@ img {
   max-width: 100%;
 }
 
+a,
 button:focus,
 input[type="submit"]:focus {
   outline: none;
+}
+
+a[href^=tel] {
+  text-decoration: none;
+  color: #2a3a4b;
 }
 
 .container {
@@ -223,27 +229,33 @@ input[type="submit"]:focus {
   margin-right: 15px;
 }
 
-.main-menu li:nth-child(4) {
+.main-menu li:nth-child(5) {
   position: relative;
   margin-right: 254px;
   z-index: 1;
 }
 
-.main-menu li:nth-child(5) {
+.main-menu li:nth-child(6) {
   position: relative;
   z-index: 1;
 }
 
-.main-menu li:last-child {
+.main-menu li:last-child,
+.main-menu li:nth-child(3) {
   margin-right: 0;
 }
 
 .main-menu__item {
+  display: inline-block;
   position: relative;
   font-size: 15px;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
+}
+
+.main-menu__item--consultations {
+  display: none;
 }
 
 .main-menu__item:hover,
@@ -757,9 +769,19 @@ input[type="submit"]:focus {
   background-image: url("../images/tile/24.jpg");
 }
 
+.consultations h1 {
+  text-align: center;
+  margin-bottom: 41px;
+  padding-top: 107px;
+}
+
 .consultations-wrapper {
   display: none;
   margin-bottom: 122px;
+}
+
+.consultations .consultations-wrapper {
+  display: block;
 }
 
 .consultations-promo {
@@ -2636,6 +2658,11 @@ article.articles-section__text p {
   vertical-align: top;
 }
 
+.entry-form__wrapper--city {
+  vertical-align: bottom;
+  margin-bottom: 30px;
+}
+
 .entry-form__wrapper--textarea,
 .feedback-form__wrapper--textarea {
   padding-top: 13px;
@@ -3232,7 +3259,7 @@ article.articles-section__text p {
     padding-left: 0;
     padding-top: 90px;
     background-color: #2a3a4b;
-    z-index: 12;
+    z-index: 13;
   }
 
   .main-menu ul {
@@ -3240,7 +3267,7 @@ article.articles-section__text p {
   }
 
   .main-menu li,
-  .main-menu li:nth-child(4) {
+  .main-menu li:nth-child(5) {
     display: block;
     margin-right: 0;
     margin-bottom: 33px;
@@ -3248,6 +3275,10 @@ article.articles-section__text p {
 
   .main-menu__item {
     font-size: 22px;
+  }
+
+  .main-menu__item--consultations {
+    display: inline-block;
   }
 
   .main-menu__item--active::after {
@@ -3277,7 +3308,7 @@ article.articles-section__text p {
     width: 19px;
     height: 19px;
     background-position: -80px -91px;
-    z-index: 13;
+    z-index: 14;
   }
 
   .logo {
@@ -3333,6 +3364,10 @@ article.articles-section__text p {
 
   .tabs-title__item--seminars {
     margin-right: 0;
+  }
+
+  .tabs-title__item--consultations {
+    display: none;
   }
 
   .seminars--wrapper {
@@ -3493,6 +3528,11 @@ article.articles-section__text p {
 
   .seminars-tile__item--24 {
     background-image: url("../images/tile/mobile/24.jpg");
+  }
+
+  .consultations h1 {
+    margin-bottom: 37px;
+    padding-top: 59px;
   }
 
   .consultations-wrapper {
@@ -4439,6 +4479,11 @@ article.articles-section__text p {
 
   /* *** Entry & feedback forms *** */
 
+  .entry-form__wrapper--city {
+    vertical-align: top;
+    margin-bottom: 0;
+  }
+
   .entry-form .jq-selectbox {
     width: 680px;
     margin: 0 auto;
@@ -4599,23 +4644,50 @@ article.articles-section__text p {
 
 @media screen and (max-width: 767px) {
 
-  /* .container,
+  .container,
   .container--footer {
     width: 568px;
     margin: 0 auto;
-  } */
+  } 
 
   /* *** Header *** */
 
   /* *** Content *** */
 
-  /* .slider {
+  .slider {
     width: 568px;
     left: calc(50% - 454px); 
   }
   
   .seminar-review {
     height: 775px;
+  }
+
+  .seminars-list__item {
+    height: auto;
+    padding-left: 10px;
+    padding-top: 19px;
+    padding-bottom: 13px;
+  }
+
+  .seminars-list__item a {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .seminars-list__item .entry-button {
+    display: none;
+  }
+
+  .seminars-tile__item {
+    background-position: 98% 0;
+  }
+
+  .seminars-tile__item--vertical, 
+  .seminars-tile__item--horizontal, 
+  .seminars-tile__item--vertical a, 
+  .seminars-tile__item--horizontal a {
+    width: 568px;
   }
   
   .review-form--visible .container {
@@ -4628,16 +4700,16 @@ article.articles-section__text p {
   
   .contacts--reg .contacts-info__block:nth-child(2n+2) {
     margin-right: 0;
-  } */
+  } 
 
   /* *** Online reader *** */
 
-  /* .online-reader__header-block--center .breadcrumbs {
+  .online-reader__header-block--center .breadcrumbs {
     width: 290px;
     line-height: 18px;
     margin: 0 auto;
     padding-top: 5px;
-  } */
+  } 
 
 }
 
@@ -4721,7 +4793,7 @@ article.articles-section__text p {
   }
 
   .main-menu li, 
-  .main-menu li:nth-child(4) {
+  .main-menu li:nth-child(5) {
     margin-bottom: 20px;
   }
   
@@ -5069,6 +5141,11 @@ article.articles-section__text p {
 
   .review-form--visible .review-form__reset {
     margin-right: 10px;
+  }
+
+  .consultations h1 {
+    margin-bottom: 34px;
+    padding-top: 42px;
   }
 
   .consultations-wrapper {
