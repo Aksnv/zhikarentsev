@@ -130,7 +130,7 @@ input[type="submit"]:focus {
 
 a[href^=tel] {
   text-decoration: none;
-  color: #2a3a4b;
+  color: #000;
 }
 
 .container {
