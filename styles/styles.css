@@ -4721,7 +4721,7 @@ article.articles-section__text p {
   }
 
   .contacts--top {
-    width: 320px;
+    width: 568px;
     margin: 0 auto;
     padding: 0;
   }
@@ -5490,6 +5490,10 @@ article.articles-section__text p {
   }
 
   /* Contacts */
+
+  .contacts--top {
+    width: 320px;
+  }
 
   /* .contacts {
     width: 280px;
