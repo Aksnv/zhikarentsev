@@ -26,6 +26,13 @@ $(".main-menu__close-button").click(function() {
   $("body").css("overflowY", "scroll");
 });
 
+$(window).scroll(function() {
+  if ($(".container").css("width") != "1170px") {
+    $(".main-menu__close-button").hide();
+    $(".main-menu__open-button").show();
+  }
+});
+
 
 /* Slider */
 
