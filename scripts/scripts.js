@@ -27,10 +27,8 @@ $(".main-menu__close-button").click(function() {
 });
 
 $(window).scroll(function() {
-  if ($(".container").css("width") != "1170px") {
-    $(".main-menu__close-button").hide();
-    $(".main-menu__open-button").show();
-  }
+  $(".main-menu__close-button").hide();
+  $(".main-menu__open-button").show();
 });
 
 
