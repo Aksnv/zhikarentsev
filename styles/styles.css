@@ -129,6 +129,7 @@ input[type="submit"]:focus {
 }
 
 a[href^=tel] {
+  -webkit-appearance: none;
   text-decoration: none;
   color: #000;
 }
