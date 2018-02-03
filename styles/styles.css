@@ -128,11 +128,11 @@ input[type="submit"]:focus {
   outline: none;
 }
 
-a[href^=tel] {
+/* a[href^=tel] {
   -webkit-appearance: none;
   text-decoration: none;
   color: #000;
-}
+} */
 
 .container {
   position: relative;
