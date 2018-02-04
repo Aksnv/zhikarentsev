@@ -4759,6 +4759,7 @@ article.articles-section__text p {
   /* *** Header *** */
 
   .main-menu--mobile ul {
+    padding-top: 60px;
     padding-bottom: 90px;
   }
 
@@ -5290,6 +5291,11 @@ article.articles-section__text p {
 
   .main-menu--mobile ul {
     padding-top: 65px;
+    padding-bottom: 0;
+  }
+
+  .main-menu ul {
+    overflow-y: hidden;
   }
 
   .main-menu__item {
