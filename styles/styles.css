@@ -6401,6 +6401,10 @@ article.articles-section__text p {
 
   /* Distance seminars */
 
+  .distance-seminars__promo span.br {
+    display: inline;
+  }
+
   /* .distance-seminars {
     margin-bottom: 49px;
     padding: 0;
