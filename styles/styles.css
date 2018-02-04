@@ -5180,7 +5180,7 @@ article.articles-section__text p {
   }
 
   .container--online-reader {
-    width: 567px;
+
     /* padding-left: 10px;
     padding-right: 10px; */
   }
@@ -5191,6 +5191,10 @@ article.articles-section__text p {
 
   .online-reader__content--small h3, .online-reader__content--small p {
     font-size: 17px;
+  }
+
+  .online-reader__content--small p {
+    font-size: 12px;
   }
 
   .online-reader__content--small h3 {
