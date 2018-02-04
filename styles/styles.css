@@ -5189,6 +5189,7 @@ article.articles-section__text p {
   /* *** Online reader *** */
 
   .container--online-reader {
+    width: 568px;
     padding-bottom: 25px;
   }
 
