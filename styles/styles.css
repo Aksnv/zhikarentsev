@@ -5180,8 +5180,8 @@ article.articles-section__text p {
   }
 
   .container--online-reader {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .online-reader__content {
@@ -6386,6 +6386,8 @@ article.articles-section__text p {
   /* *** Online reader *** */
 
   .container--online-reader {
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 10px;
   }
 
