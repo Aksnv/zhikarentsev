@@ -5193,11 +5193,6 @@ article.articles-section__text p {
     font-size: 17px;
   }
 
-  .online-reader__content--small p {
-    font-size: 12px;
-    line-height: 16px;
-  }
-
   .online-reader__content--small h3 {
     line-height: 30px;
     margin-bottom: 30px;
@@ -5205,6 +5200,11 @@ article.articles-section__text p {
 
   .online-reader__content p {
     line-height: 30px;
+  }
+
+  .online-reader__content--small p {
+    font-size: 12px;
+    line-height: 12px;
   }
 
   /* .online-reader__pagination, 
