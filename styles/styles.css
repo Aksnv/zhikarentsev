@@ -4701,6 +4701,11 @@ article.articles-section__text p {
 
   /* *** Online reader *** */
 
+  .online-reader__content {
+    height: 87%;
+    /* padding-bottom: 40px; */
+  }
+
   .online-reader__header-block--center .breadcrumbs {
     width: 290px;
     line-height: 18px;
