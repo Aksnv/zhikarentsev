@@ -5186,7 +5186,7 @@ article.articles-section__text p {
   }
 
   .online-reader__content {
-    height: 75%;
+    height: 70%;
   }
 
   .online-reader__content--small h3, .online-reader__content--small p {
@@ -5203,7 +5203,7 @@ article.articles-section__text p {
   }
 
   .online-reader__content--small p {
-    font-size: 11px;
+    font-size: 10px;
     line-height: 14px;
   }
 
