@@ -5153,6 +5153,10 @@ article.articles-section__text p {
     height: 87%;
   }
 
+  .online-reader__content--small h3, .online-reader__content--small p {
+    font-size: 17px;
+  }
+
   .online-reader__content--small h3 {
     line-height: 30px;
     margin-bottom: 30px;
@@ -6376,7 +6380,7 @@ article.articles-section__text p {
   /* .online-reader__pagination, 
   .online-reader__pagination input {
     font-size: 10px;
-  } */
+  }  */
 
 }
 
