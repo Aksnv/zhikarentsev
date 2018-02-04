@@ -5217,14 +5217,14 @@ article.articles-section__text p {
     height: 68%;
   }
 
-  .online-reader__content--small h3, .online-reader__content--small p {
+  /* .online-reader__content--small h3, .online-reader__content--small p {
     font-size: 17px;
     line-height: 30px;
   }
-
+  
   .online-reader__content--small h3 {
     margin-bottom: 10px;
-  }
+  } */
 
   /* .online-reader__pagination, 
   .online-reader__pagination input {
@@ -6435,15 +6435,15 @@ article.articles-section__text p {
     padding-bottom: 0;
   }
 
-  .online-reader__content--small p {
+  /* .online-reader__content--small p {
     font-size: 17px;
     line-height: 30px;
   }
-
+  
   .online-reader__content--small h3 {
     line-height: 30px;
     margin-bottom: 30px;
-  }
+  } */
 
   .online-reader__content span.br {
     display: inline;
