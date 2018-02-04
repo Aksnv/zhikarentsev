@@ -4637,7 +4637,7 @@ article.articles-section__text p {
   .container--online-reader {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 0;
   }
 
   .popup--online-reader {
