@@ -4767,48 +4767,6 @@ article.articles-section__text p {
     overflow-y: scroll;
   } */
 
-  .header {
-    min-height: 568px;
-    padding-top: 31px;
-    background-image: url(../images/bg_mobile.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
-  }
-
-  .header--image-bg {
-    min-height: 100px;
-    padding-top: 29px;
-    background-image: url(../images/header_bg_mobile.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
-  }
-
-  .logo {
-    position: static;
-    width: 260px;
-    margin: 0 auto;
-  }
-
-  .header--image-bg .logo {
-    margin-left: 0;
-    padding-top: 0;
-  }
-
-  .header--image-bg .logo--mobile {
-    width: 210px;
-  }
-
-  .main-menu__open-button,
-  .main-menu__close-button {
-    top: -11px;
-    right: 0px;
-  }
-
-  .header--image-bg .main-menu__open-button, 
-  .header--image-bg .main-menu__close-button {
-    top: 13px;
-  }
-
   .main-menu--mobile ul {
     padding-top: 65px;
     padding-bottom: 0;
@@ -5307,14 +5265,14 @@ article.articles-section__text p {
 
   /* *** Header *** */
 
-  /* .header {
+  .header {
     min-height: 568px;
     padding-top: 31px;
     background-image: url(../images/bg_mobile.jpg);
     -webkit-background-size: cover;
     background-size: cover;
   }
-  
+
   .header--image-bg {
     min-height: 100px;
     padding-top: 29px;
@@ -5322,50 +5280,50 @@ article.articles-section__text p {
     -webkit-background-size: cover;
     background-size: cover;
   }
-  
+
   .logo {
     position: static;
     width: 260px;
     margin: 0 auto;
   }
-  
+
   .header--image-bg .logo {
     margin-left: 0;
     padding-top: 0;
   }
-  
+
   .header--image-bg .logo--mobile {
     width: 210px;
   }
-  
+
   .main-menu__open-button,
   .main-menu__close-button {
     top: -11px;
     right: 0px;
   }
-  
+
   .header--image-bg .main-menu__open-button, 
   .header--image-bg .main-menu__close-button {
     top: 13px;
   }
-  
+
   .main-menu--mobile ul {
     padding-top: 65px;
     padding-bottom: 0;
   }
-  
+
   .main-menu ul {
     overflow-y: hidden;
   }
-  
+
   .main-menu__item {
     font-size: 15px;
   }
-  
+
   .main-menu li, 
   .main-menu li:nth-child(5) {
     margin-bottom: 20px;
-  } */
+  }
   
   /* *** Content *** */
 
