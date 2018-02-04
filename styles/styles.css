@@ -1484,7 +1484,7 @@ input[type="submit"]:focus {
 
 .schedule strong {
   display: inline-block;
-  width: 162px;
+  width: 200px;
   font-family: 'museo_sans_cyrl900';
   margin-right: 30px;
 }
@@ -3427,6 +3427,7 @@ article.articles-section__text p {
     display: block;
     width: 152px;
     height: 40px;
+    min-height: 40px;
     line-height: 40px;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -3857,7 +3858,7 @@ article.articles-section__text p {
   /* Schedule */
 
   .schedule {
-    margin-bottom: 86px;
+    margin-bottom: 60px;
   }
 
   .schedule h1 {
@@ -4818,13 +4819,14 @@ article.articles-section__text p {
   }
 
   .seminars-list__item a {
-    font-size: 18px;
-    line-height: 22px;
+    width: 300px;
+    /* font-size: 18px;
+    line-height: 22px; */
   }
 
-  .seminars-list__item .entry-button {
+  /* .seminars-list__item .entry-button {
     display: none;
-  }
+  } */
 
   .seminars-tile__item {
     background-position: 98% 0;
@@ -5578,10 +5580,10 @@ article.articles-section__text p {
     border-top: none;
   }
 
-  .seminars-list__item a {
+  /* .seminars-list__item a {
     font-size: 18px;
     line-height: 22px;
-  }
+  } */
 
   .seminars-list__item .entry-button {
     display: none;
