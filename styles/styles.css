@@ -5179,6 +5179,11 @@ article.articles-section__text p {
     padding-top: 5px; */
   }
 
+  .container--online-reader {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .online-reader__content {
     height: 87%;
   }
