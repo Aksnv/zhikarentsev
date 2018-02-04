@@ -4758,6 +4758,10 @@ article.articles-section__text p {
 
   /* *** Header *** */
 
+  .main-menu ul {
+    overflow-y: scroll;
+  }
+
   /* *** Content *** */
 
   .slider {
@@ -5195,7 +5199,7 @@ article.articles-section__text p {
 
   .online-reader__content--small h3 {
     line-height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   .online-reader__content p {
