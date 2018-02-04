@@ -4637,6 +4637,10 @@ article.articles-section__text p {
     padding-right: 20px;
   }
 
+  .popup--online-reader {
+    padding-top: 22px;
+  }
+
   .online-reader__header {
     margin-bottom: 48px;
   }
@@ -4700,6 +4704,10 @@ article.articles-section__text p {
   }
 
   /* *** Online reader *** */
+
+  .popup--online-reader {
+    padding-top: 22px;
+  }
 
   .online-reader__content {
     height: 87%;
