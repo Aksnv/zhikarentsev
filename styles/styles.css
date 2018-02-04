@@ -5218,14 +5218,17 @@ article.articles-section__text p {
 
   .online-reader__content--small h3, .online-reader__content--small p {
     font-size: 17px;
+    line-height: 30px;
   }
 
   .online-reader__content--small h3 {
+    font-size: 17px;
     line-height: 30px;
     margin-bottom: 30px;
   }
 
   .online-reader__content p {
+    font-size: 17px;
     line-height: 30px;
   }
 
