@@ -173,7 +173,7 @@ $(document).ready(function() {
 /* Distance seminars */
 
 $(window).resize(function() {
-  if ($(".container").css("width") == "280px") {
+  if ($(".container").css("width") <= "568px") {
     $(".distance-button").text("Сайт дистанционного обучения");
   } else {
     $(".distance-button").text("Перейти на сайт дистанционного обучения");
@@ -181,7 +181,7 @@ $(window).resize(function() {
 });
 
 $(document).ready(function() {
-  if ($(".container").css("width") == "280px") {
+  if ($(".container").css("width") <= "568px") {
     $(".distance-button").text("Сайт дистанционного обучения");
   } else {
     $(".distance-button").text("Перейти на сайт дистанционного обучения");
