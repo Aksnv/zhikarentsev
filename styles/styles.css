@@ -5184,7 +5184,7 @@ article.articles-section__text p {
   }
 
   .online-reader__content--small h3, .online-reader__content--small p {
-    font-size: 17px;
+    font-size: 17px!important;
   }
 
   .online-reader__content--small h3 {
