@@ -5180,8 +5180,9 @@ article.articles-section__text p {
   }
 
   .container--online-reader {
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 280px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
   }
 
   .online-reader__content {
