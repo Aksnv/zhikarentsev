@@ -4773,7 +4773,7 @@ article.articles-section__text p {
   }
 
   .main-menu ul {
-    overflow-y: hidden;
+    overflow-y: scroll;
   }
 
   .main-menu__item {
