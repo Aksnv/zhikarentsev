@@ -4758,6 +4758,10 @@ article.articles-section__text p {
 
   /* *** Header *** */
 
+  .main-menu--mobile ul {
+    padding-bottom: 30px;
+  }
+
   .main-menu ul {
     overflow-y: scroll;
   }
