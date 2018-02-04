@@ -3401,6 +3401,8 @@ article.articles-section__text p {
   }
 
   .seminars-wrapper {
+    width: 768px;
+    margin: 0 auto;
     margin-bottom: 67px;
   }
 
@@ -3418,7 +3420,16 @@ article.articles-section__text p {
   }
 
   .seminars-list__item {
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 12px;
     padding-left: 32px;
+  }
+
+  .seminars-list__item a {
+    display: inline-block;
+    width: 500px;
+    line-height: 26px;
   }
 
   .seminars-list__item .entry-button {
@@ -4732,18 +4743,6 @@ article.articles-section__text p {
 
   .seminar-review {
     height: 775px;
-  }
-
-  .seminars-list__item {
-    height: auto;
-    padding-top: 16px;
-    padding-bottom: 12px;
-  }
-
-  .seminars-list__item a {
-    display: inline-block;
-    width: 500px;
-    line-height: 26px;
   }
 
   .review-form--visible .container {
