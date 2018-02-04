@@ -3949,7 +3949,9 @@ article.articles-section__text p {
   }
 
   .news-article {
-    margin-bottom: 99px;
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 74px;
   }
 
   .news-article h1 {
@@ -4874,7 +4876,9 @@ article.articles-section__text p {
   }
 
   .news-article {
-    margin-bottom: 72px;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 70px;
   }
 
   .news-article h1 {
@@ -4887,6 +4891,10 @@ article.articles-section__text p {
 
   .news-article .news-item__text p {
     margin-bottom: 30px;
+  }
+
+  .news-article .news-item__text p:last-child {
+    margin-bottom: 10px;
   }
 
   .news-article .news-item__image {
