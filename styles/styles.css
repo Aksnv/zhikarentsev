@@ -5223,14 +5223,7 @@ article.articles-section__text p {
   }
 
   .online-reader__content--small h3 {
-    font-size: 17px;
-    line-height: 30px;
     margin-bottom: 10px;
-  }
-
-  .online-reader__content p {
-    font-size: 17px;
-    line-height: 30px;
   }
 
   /* .online-reader__pagination, 
@@ -6442,18 +6435,14 @@ article.articles-section__text p {
     padding-bottom: 0;
   }
 
-  .online-reader__content h3 {
-    line-height: 30px;
-    margin-bottom: 30px;
-  }
-
-  .online-reader__content p {
-    line-height: 30px;
-  }
-
   .online-reader__content--small p {
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .online-reader__content--small h3 {
+    line-height: 30px;
+    margin-bottom: 30px;
   }
 
   .online-reader__content span.br {
