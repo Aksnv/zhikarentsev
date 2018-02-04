@@ -5183,8 +5183,12 @@ article.articles-section__text p {
     height: 87%;
   }
 
+  .online-reader__content h3, .online-reader__content p {
+    font-size: 17px;
+  }
+
   .online-reader__content--small h3, .online-reader__content--small p {
-    font-size: 17px!important;
+    font-size: 17px;
   }
 
   .online-reader__content--small h3 {
