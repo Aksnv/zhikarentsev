@@ -6356,7 +6356,7 @@ article.articles-section__text p {
   }
 
   .online-reader__content {
-    height: 87%;
+    height: 86%;
     padding-bottom: 0;
   }
 
@@ -6373,10 +6373,10 @@ article.articles-section__text p {
     display: inline;
   }
 
-  .online-reader__pagination, 
+  /* .online-reader__pagination, 
   .online-reader__pagination input {
     font-size: 10px;
-  }
+  } */
 
 }
 
