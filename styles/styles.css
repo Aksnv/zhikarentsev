@@ -4921,6 +4921,13 @@ article.articles-section__text p {
     margin-bottom: 10px;
   }
 
+  /* Forum */
+
+  .forum h1 {
+    padding-top: 42px;
+    margin-bottom: 20px;
+  }
+
   /* People */
 
   .people {
@@ -5983,6 +5990,10 @@ article.articles-section__text p {
 
   .forum h1 {
     padding-top: 42px;
+  }
+
+  .body--forum .content {
+    background-color: #f6e7bc;
   }
 
   /* Pagination */
