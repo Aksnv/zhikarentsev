@@ -119,7 +119,7 @@ $(window).resize(function() {
 });
 
 $(window).resize(function() {
-  if ($(".container").css("width") == "280px") {
+  if ($(".container").css("width") <= "568px") {
     $(".tabs-seminars__item--list").text("Списком");
   } else {
     $(".tabs-seminars__item--list").text("Показывать списком");
@@ -127,7 +127,7 @@ $(window).resize(function() {
 });
 
 $(document).ready(function() {
-  if ($(".container").css("width") == "280px") {
+  if ($(".container").css("width") <= "568px") {
     $(".tabs-seminars__item--list").text("Списком");
   } else {
     $(".tabs-seminars__item--list").text("Показывать списком");
@@ -135,7 +135,7 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-  if ($(".container").css("width") == "280px") {
+  if ($(".container").css("width") <= "568px") {
     $(".tabs-seminars__item--tile").text("Плиткой");
   } else {
     $(".tabs-seminars__item--tile").text("Показывать плиткой");
@@ -143,7 +143,7 @@ $(window).resize(function() {
 });
 
 $(document).ready(function() {
-  if ($(".container").css("width") == "280px") {
+  if ($(".container").css("width") <= "568px") {
     $(".tabs-seminars__item--tile").text("Плиткой");
   } else {
     $(".tabs-seminars__item--tile").text("Показывать плиткой");
