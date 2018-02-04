@@ -5203,8 +5203,8 @@ article.articles-section__text p {
   }
 
   .online-reader__content--small p {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 11px;
+    line-height: 14px;
   }
 
   /* .online-reader__pagination, 
@@ -6407,7 +6407,7 @@ article.articles-section__text p {
   }
 
   .online-reader__content {
-    height: 70%;
+    height: 75%;
     padding-bottom: 0;
   }
 
