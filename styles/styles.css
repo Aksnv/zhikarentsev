@@ -4654,17 +4654,17 @@ article.articles-section__text p {
     /* padding-bottom: 40px; */
   }
 
-  .online-reader__content--small h3 {
+  /* .online-reader__content--small h3 {
     line-height: 24px;
   }
-
+  
   .online-reader__content--normal h3 {
     line-height: 30px;
   }
-
+  
   .online-reader__content--large h3 {
     line-height: 34px;
-  }
+  } */
 
   .online-reader__content {
     column-count: 1;
@@ -6434,6 +6434,10 @@ article.articles-section__text p {
     height: 75%;
     padding-bottom: 0;
   }
+
+  /* .online-reader__content h3 {
+    margin-bottom: 10px;
+  } */
 
   /* .online-reader__content--small p {
     font-size: 17px;
