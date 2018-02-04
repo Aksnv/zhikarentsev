@@ -4632,6 +4632,11 @@ article.articles-section__text p {
 
   /* *** Online reader *** */
 
+  .container--online-reader {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .online-reader__header {
     margin-bottom: 48px;
   }
