@@ -7663,6 +7663,10 @@ article.articles-section__text p {
 
   /* *** Entry & feedback forms *** */
 
+  .popup--feedback-form h1 {
+    margin-bottom: 40px;
+  }
+
   .entry-form__submit, 
   .feedback-form__submit {
     margin-bottom: 46px;
@@ -7674,9 +7678,9 @@ article.articles-section__text p {
     margin-bottom: 30px;
   }
 
-  .feedback-form input[type="text"].feedback-form__message-theme {
+  /* .feedback-form input[type="text"].feedback-form__message-theme {
     margin-bottom: 0;
-  }
+  } */
 
 
 }
