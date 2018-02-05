@@ -7674,4 +7674,9 @@ article.articles-section__text p {
     margin-bottom: 30px;
   }
 
+  .feedback-form input[type="text"].feedback-form__message-theme {
+    margin-bottom: 0;
+  }
+
+
 }
