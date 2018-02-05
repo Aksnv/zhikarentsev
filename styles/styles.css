@@ -2549,6 +2549,11 @@ article.articles-section__text p {
   cursor: pointer;
 }
 
+.popup--entry-form,
+.popup--feedback-form {
+  overflow-x: hidden;
+}
+
 .popup--entry-form h1 {
   margin-bottom: 36px;
 }
