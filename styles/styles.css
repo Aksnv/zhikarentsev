@@ -4924,7 +4924,7 @@ article.articles-section__text p {
   .main-menu__open-button,
   .main-menu__close-button {
     top: -11px;
-    right: 11px;
+    right: 20px;
   }
 
   .header--image-bg .main-menu__open-button, 
