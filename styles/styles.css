@@ -3388,6 +3388,8 @@ article.articles-section__text p {
 
   .slider {
     left: calc(50% - 582px);
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* Seminars & сonsultations */
