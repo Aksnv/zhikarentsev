@@ -7663,9 +7663,15 @@ article.articles-section__text p {
 
   /* *** Entry & feedback forms *** */
 
+  .entry-form__submit, 
+  .feedback-form__submit {
+    margin-bottom: 46px;
+  }
+
   .entry-form p, 
   .feedback-form p {
     position: static;
+    margin-bottom: 30px;
   }
 
 }
