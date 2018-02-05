@@ -4826,6 +4826,10 @@ article.articles-section__text p {
     width: 768px;
   }
 
+  .entry-form textarea {
+    margin-bottom: 65px;
+  }
+
   /* .review-form input[type="text"], 
   .review-form textarea {
     width: 680px;
