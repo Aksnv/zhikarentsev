@@ -4985,6 +4985,7 @@ article.articles-section__text p {
     position: static;
     left: 0;
     width: 280px;
+    height: 520px;
     margin: 0 auto;
     padding-top: 46px;
   }
@@ -6197,10 +6198,6 @@ article.articles-section__text p {
   } */
   
   /* *** Content *** */
-
-  .slider {
-    height: 520px;
-  }
 
   /* .content {
     padding-top: 0;
