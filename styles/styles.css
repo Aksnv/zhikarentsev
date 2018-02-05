@@ -7432,3 +7432,17 @@ article.articles-section__text p {
   }
 
 }
+
+
+/* *** Adaptive styles (height less than 769px) *** */
+
+@media screen and (max-height: 700px) {
+
+  /* *** Content *** */
+
+  .slider-content__item a {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+}
