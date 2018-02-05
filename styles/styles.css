@@ -4924,7 +4924,7 @@ article.articles-section__text p {
   .main-menu__open-button,
   .main-menu__close-button {
     top: -11px;
-    right: 0px;
+    right: 11px;
   }
 
   .header--image-bg .main-menu__open-button, 
@@ -6140,6 +6140,12 @@ article.articles-section__text p {
 
   .main-menu ul {
     overflow-y: hidden;
+  }
+
+  .main-menu__open-button,
+  .main-menu__close-button {
+    top: -11px;
+    right: 0;
   }
 
   /* .header {
