@@ -6198,8 +6198,8 @@ article.articles-section__text p {
   
   /* *** Content *** */
 
-  .content {
-    min-height: auto;
+  .slider {
+    min-height: 350px;
   }
 
   /* .content {
