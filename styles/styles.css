@@ -3377,12 +3377,12 @@ article.articles-section__text p {
     position: absolute;
     left: calc(50% - 196px);
     bottom: -90px;
-    z-index: 13;
-  }
-
-  .content--mobile .seminars-list__item .entry-button {
     z-index: 12;
   }
+
+  /* .content--mobile .seminars-list__item .entry-button {
+    z-index: 12;
+  } */
 
   .content--mobile .schedule .entry-button {
     z-index: 1;
@@ -4781,6 +4781,17 @@ article.articles-section__text p {
   }
 
   /* *** Header *** */
+
+  .content--mobile .entry-button {
+    position: absolute;
+    left: calc(50% - 196px);
+    bottom: -90px;
+    z-index: 13;
+  }
+
+  .content--mobile .seminars-list__item .entry-button {
+    z-index: 12;
+  }
 
   /* *** Content *** */
 
