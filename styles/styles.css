@@ -6199,7 +6199,7 @@ article.articles-section__text p {
   /* *** Content *** */
 
   .slider {
-    min-height: 350px;
+    height: 350px;
   }
 
   /* .content {
