@@ -7661,4 +7661,11 @@ article.articles-section__text p {
     line-height: 36px;
   }
 
+  /* *** Entry & feedback forms *** */
+
+  .entry-form p, 
+  .feedback-form p {
+    position: static;
+  }
+
 }
