@@ -3254,6 +3254,11 @@ article.articles-section__text p {
     padding-right: 20px;
   }
 
+  .footer--white-bg .container--footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .breadcrumbs {
     padding-top: 21px;
   }
