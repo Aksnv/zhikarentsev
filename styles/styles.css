@@ -1301,6 +1301,7 @@ input[type="submit"]:focus {
   line-height: 50px;
   background-color: transparent;
   border: none;
+  border-radius: 0;
   border-bottom: 1px solid #aba39e;
 }
 
