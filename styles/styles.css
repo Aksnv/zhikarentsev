@@ -3250,6 +3250,9 @@ article.articles-section__text p {
   .content */ {
     width: 1024px;
     margin: 0 auto;
+  }
+
+  .container--footer {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -6194,6 +6197,10 @@ article.articles-section__text p {
   } */
   
   /* *** Content *** */
+
+  .content {
+    min-height: auto;
+  }
 
   /* .content {
     padding-top: 0;
