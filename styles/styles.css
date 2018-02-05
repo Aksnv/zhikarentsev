@@ -3872,9 +3872,9 @@ article.articles-section__text p {
   }
 
   .review-form__reset {
-    background: none;
-    background-color: #f1d4ca;
-    border-radius: 5px;
+    background: none!important;
+    background-color: #f1d4ca!important;
+    border-radius: 5px!important;
   }
 
   .review-form__capcha {
