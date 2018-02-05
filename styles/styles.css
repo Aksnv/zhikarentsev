@@ -3871,8 +3871,8 @@ article.articles-section__text p {
     margin-top: 140px;
   }
 
-  .review-form__reset,
-  .review-form input[type="reset"] {
+  .review-form__reset {
+    -webkit-appearance: none;
     background: none!important;
     background-color: #f1d4ca!important;
     border-radius: 5px!important;
