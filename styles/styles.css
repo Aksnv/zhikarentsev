@@ -3388,7 +3388,8 @@ article.articles-section__text p {
 
   /* Seminars & сonsultations */
 
-  .seminar {
+  .seminar,
+  .consultations {
     overflow: hidden;
     width: 768px;
     margin: 0 auto;
@@ -3584,19 +3585,24 @@ article.articles-section__text p {
     background-image: url("../images/tile/mobile/24.jpg");
   }
 
+  .consultations {
+    width: 768px;
+    margin: 0 auto;
+  }
+
   .consultations h1 {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
     padding-top: 59px;
   }
 
   .consultations-wrapper {
-    margin-bottom: 84px;
+    margin-bottom: 59px;
   }
 
   .consultations-promo {
     width: 100%;
     margin-bottom: 53px;
-    padding-top: 21px;
+    padding-top: 0;
     padding-left: 40px;
     padding-right: 20px;
   }
@@ -5200,6 +5206,11 @@ article.articles-section__text p {
     margin-right: 10px;
   }
 
+  .consultations {
+    width: 280px;
+    margin: 0 auto;
+  }
+
   .consultations h1 {
     margin-bottom: 34px;
     padding-top: 42px;
@@ -5211,7 +5222,7 @@ article.articles-section__text p {
 
   .consultations-promo {
     margin-bottom: 62px;
-    padding-top: 27px;
+    padding-top: 6px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -5259,6 +5270,7 @@ article.articles-section__text p {
     padding-right: 0;
   }
 
+  .consultations-contacts--page p:last-child span.br,
   .consultations-contacts span.br > strong,
   .consultations-contacts a {
     display: block;
