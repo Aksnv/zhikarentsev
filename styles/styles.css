@@ -1130,7 +1130,7 @@ input[type="submit"]:focus {
 
 .seminar-schedule {
   text-align: left;
-  margin-bottom: 62px;
+  margin-bottom: 58px;
 }
 
 .seminar-schedule h2 {
@@ -1141,7 +1141,7 @@ input[type="submit"]:focus {
   width: 638px;
   font-family: 'museo_sans_cyrl100';
   font-size: 20px;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
   color: #2a3a4b;
 }
 
@@ -3387,6 +3387,13 @@ article.articles-section__text p {
 
   /* Seminars & сonsultations */
 
+  .seminar {
+    overflow: hidden;
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 93px;
+  }
+
   .tabs-title {
     margin-bottom: 13px;
     padding-top: 59px;
@@ -3704,8 +3711,13 @@ article.articles-section__text p {
   }
 
   .seminar-video__block--left img {
-    width: 100%;
+    /* width: 100%;
+    height: 393px; */
+    /* width: auto; */
+    width: 688px;
+    max-width: 688px;
     height: 393px;
+    max-height: 393px;
   }
 
   .seminar-video__block--left a::before {
@@ -3731,6 +3743,11 @@ article.articles-section__text p {
     padding-top: 12px;
   }
 
+  .seminar .seminar-schedule .seminars-list__item {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .seminar-schedule .seminars-list__item {
     padding-left: 40px;
   }
@@ -3751,6 +3768,10 @@ article.articles-section__text p {
   .seminar-reviews h3::before, 
   .seminar-reviews h3::after {
     width: 23%;
+  }
+
+  .seminar-reviews p:last-child {
+    margin-bottom: 0;
   }
 
   .seminar-reviews--visible .popup__close-button {
@@ -3775,7 +3796,8 @@ article.articles-section__text p {
   } */
 
   .seminar-review {
-    height: 690px;
+    /* height: 690px; */
+    height: 775px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -4745,6 +4767,10 @@ article.articles-section__text p {
     height: 775px;
   }
 
+  .seminar-review--visible {
+    height: auto;
+  }
+
   .review-form--visible .container {
     width: 768px;
   }
@@ -4964,7 +4990,8 @@ article.articles-section__text p {
   }
 
   .seminar {
-    margin-bottom: 84px;
+    width: 280px;
+    margin-bottom: 66px;
   }
 
   .seminar h1 {
@@ -5004,7 +5031,10 @@ article.articles-section__text p {
   }
 
   .seminar-video__block--left img {
+    width: 280px;
+    max-width: 280px;
     height: 159px;
+    max-height: 159px;
   }
 
   .seminar-video__block--left a::before {
@@ -5019,6 +5049,10 @@ article.articles-section__text p {
     line-height: 24px;
   }
 
+  .seminar-video + p > strong {
+    display: block;
+  }
+
   .seminar-schedule h2 {
     font-size: 25px;
     line-height: 30px;
@@ -5026,10 +5060,15 @@ article.articles-section__text p {
     padding-left: 0;
   }
 
-  .seminar-schedule .seminars-list__item {
+  .seminar-schedule h2 span.br {
+    display: inline;
+  }
+
+  .seminar .seminar-schedule .seminars-list__item {
     line-height: 24px;
     padding-top: 13px;
     padding-left: 0;
+    padding-bottom: 13px;
   }
 
   .seminar-schedule .seminars-list__item .entry-button {
@@ -5039,7 +5078,7 @@ article.articles-section__text p {
   }
 
   .seminar-schedule {
-    margin-bottom: 53px;
+    margin-bottom: 50px;
   }
 
   .seminar-schedule a {
@@ -5055,6 +5094,10 @@ article.articles-section__text p {
   .seminar-reviews h3::before, 
   .seminar-reviews h3::after {
     display: none;
+  }
+
+  .seminar-reviews p:last-child {
+    margin-bottom: 17px;
   }
 
   .add-review-button {
@@ -5126,7 +5169,7 @@ article.articles-section__text p {
 
   .review-form--visible .review-form__capcha p {
     position: absolute;
-    bottom: -43px;
+    bottom: -60px;
     left: 5px;
   }
 
