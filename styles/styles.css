@@ -3815,8 +3815,10 @@ article.articles-section__text p {
   .review-form {
     position: relative; 
     padding-bottom: 58px;
-    padding-left: 40px;
-    padding-right: 40px;
+    /* padding-left: 40px;
+    padding-right: 40px; */
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .review-form--visible {
@@ -3824,6 +3826,8 @@ article.articles-section__text p {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
     padding-top: 69px;
@@ -4780,13 +4784,13 @@ article.articles-section__text p {
   }
 
   .review-form--visible .container {
-    width: 680px;
+    width: 768px;
   }
 
-  .review-form input[type="text"], 
+  /* .review-form input[type="text"], 
   .review-form textarea {
     width: 680px;
-  }
+  } */
 
   /* *** Online reader *** */
 
