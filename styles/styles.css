@@ -2695,6 +2695,7 @@ article.articles-section__text p {
   line-height: 50px;
   border: none;
   border-bottom: 1px solid #aba39e;
+  border-radius: 0;
 }
 
 .entry-form textarea,
@@ -7645,13 +7646,6 @@ article.articles-section__text p {
   .feedback-form__submit {
     margin-bottom: 46px;
   }
-
-}
-
-
-@media screen and (max-height: 769px) and (max-width: 567px) {
-
-
 
 }
 
