@@ -4868,6 +4868,11 @@ article.articles-section__text p {
     margin: 0 auto;
   }
 
+  .container--footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .breadcrumbs {
     font-size: 15px;
     margin-bottom: 8px;
