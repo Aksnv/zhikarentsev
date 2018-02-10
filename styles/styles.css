@@ -6309,7 +6309,8 @@ article.articles-section__text p {
   /* *** Header *** */
 
   .main-menu--mobile ul {
-    padding-top: 65px;
+    /*padding-top: 65px;*/
+    padding-top: 45px;
     padding-bottom: 0;
   }
 
