@@ -5155,7 +5155,7 @@ article.articles-section__text p {
   .seminars-tile__item--horizontal, 
   .seminars-tile__item--vertical a, 
   .seminars-tile__item--horizontal a {
-    left: -144px;
+    left: calc(50% - 284px);
     /* width: 280px;  */
     width: 568px; 
   }
