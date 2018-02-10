@@ -4994,7 +4994,8 @@ article.articles-section__text p {
 
   .main-menu li, 
   .main-menu li:nth-child(5) {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    margin-bottom: 15px;
   }
 
   /* *** Content *** */
