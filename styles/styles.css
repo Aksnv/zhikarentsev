@@ -5020,7 +5020,8 @@ article.articles-section__text p {
   .entry-button {
     position: absolute;
     /* top: -110px; */
-    top: 427px;
+    /* top: 427px; */
+    top: 360px;
     left: calc(50% - 140px);
     width: 280px;
     line-height: 16px;
