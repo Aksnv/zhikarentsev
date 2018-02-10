@@ -7623,7 +7623,7 @@ article.articles-section__text p {
   .entry-form p, 
   .feedback-form p {
     position: absolute;
-    right: 0;
+    right: 40px;
     bottom: 12px;
   }
 
@@ -7642,7 +7642,7 @@ article.articles-section__text p {
   }
 
   .entry-form textarea {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
 }
