@@ -522,6 +522,7 @@ input[type="submit"]:focus {
 }
 
 .seminars-list {
+  display: none;
   text-align: left;
   margin-bottom: 140px;
 }
@@ -574,7 +575,7 @@ input[type="submit"]:focus {
 }
 
 .seminars-tile {
-  display: none;
+  /* display: none; */
   margin-bottom: 140px;
 }
 
