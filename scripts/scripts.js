@@ -29,6 +29,7 @@ $(".main-menu__close-button").click(function() {
 $(window).scroll(function() {
   $(".main-menu__close-button").hide();
   $(".main-menu__open-button").show();
+  $(".header--image-bg .entry-button").hide();
 });
 
 
