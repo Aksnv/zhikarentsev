@@ -5023,7 +5023,7 @@ article.articles-section__text p {
   }
 
   .main-menu--mobile .entry-button {
-    top: 380px;
+    top: 360px;
   }
 
   .content--mobile .entry-button {
@@ -6310,7 +6310,7 @@ article.articles-section__text p {
 
   .main-menu--mobile ul {
     /*padding-top: 65px;*/
-    padding-top: 45px;
+    padding-top: 25px;
     padding-bottom: 0;
   }
 
