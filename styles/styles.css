@@ -4979,7 +4979,8 @@ article.articles-section__text p {
   }
 
   .main-menu--mobile ul {
-    padding-top: 65px;
+    /* padding-top: 65px; */
+    padding-top: 45px;
     padding-bottom: 80px;
   }
 
@@ -5022,7 +5023,7 @@ article.articles-section__text p {
   }
 
   .main-menu--mobile .entry-button {
-    top: 400px;
+    top: 380px;
   }
 
   .content--mobile .entry-button {
