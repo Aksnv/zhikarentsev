@@ -334,6 +334,10 @@ input[type="submit"]:focus {
   display: inline;
 }
 
+.header--image-bg .entry-button {
+  display: none;
+}
+
 .slider {
   position: absolute;
   left: 0;
@@ -3398,6 +3402,15 @@ article.articles-section__text p {
     z-index: 1;
   }
 
+  .header--image-bg .main-menu--mobile .entry-button {
+    display: block;
+  }
+
+  .main-menu--mobile .entry-button {
+    top: 630px;
+    z-index: 13;
+  }
+
   .content--mobile .entry-button {
     position: absolute;
     left: calc(50% - 196px);
@@ -5005,6 +5018,10 @@ article.articles-section__text p {
     width: 280px;
     line-height: 16px;
     margin-top: 0;
+  }
+
+  .main-menu--mobile .entry-button {
+    top: 400px;
   }
 
   .content--mobile .entry-button {
