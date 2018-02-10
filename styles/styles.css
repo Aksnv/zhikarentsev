@@ -7723,20 +7723,19 @@ article.articles-section__text p {
     margin-bottom: 40px;
   }
 
-  .entry-form__submit, 
+  /* .entry-form__submit, 
   .feedback-form__submit {
     margin-bottom: 46px;
-  }
+  } */
 
-  .entry-form p, 
+  /* .entry-form p, 
   .feedback-form p {
     position: static;
     margin-bottom: 30px;
-  }
+  } */
 
   /* .feedback-form input[type="text"].feedback-form__message-theme {
     margin-bottom: 0;
   } */
-
 
 }
