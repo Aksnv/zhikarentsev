@@ -4992,6 +4992,10 @@ article.articles-section__text p {
     font-size: 15px;
   }
 
+  .main-menu__item--active::after {
+    bottom: -4px;
+  }
+
   .main-menu li, 
   .main-menu li:nth-child(5) {
     /* margin-bottom: 20px; */
