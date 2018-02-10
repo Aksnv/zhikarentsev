@@ -3313,7 +3313,8 @@ article.articles-section__text p {
     width: 100%;
     height: 100%;
     padding-left: 0;
-    padding-top: 90px;
+    /* padding-top: 90px; */
+    padding-top: 70px;
     background-color: #2a3a4b;
     z-index: 13;
   }
@@ -3407,7 +3408,7 @@ article.articles-section__text p {
   }
 
   .main-menu--mobile .entry-button {
-    top: 630px;
+    top: 620px;
     z-index: 13;
   }
 
