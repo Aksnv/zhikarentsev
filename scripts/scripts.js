@@ -14,6 +14,7 @@ $(".main-menu__open-button").click(function() {
   $(".content").addClass("content--mobile");
   $(".main-menu ul").show();
   $(".main-menu__close-button").show();
+  $(".header--image-bg .entry-button").show();
   $("body").css("overflowY", "hidden");
 });
 
