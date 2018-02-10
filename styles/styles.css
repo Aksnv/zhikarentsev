@@ -4978,6 +4978,7 @@ article.articles-section__text p {
     padding-bottom: 0;
     background-color: #fff;
     color: #2a3a4b;
+    overflow-x: hidden;
   }
 
   .entry-button {
@@ -5171,10 +5172,10 @@ article.articles-section__text p {
     line-height: 36px;
   }
 
-  .seminars-tile__item--horizontal span, 
+  /* .seminars-tile__item--horizontal span, 
   .seminars-tile__item--vertical span {
     left: 15px;
-  }
+  } */
 
   .seminar {
     width: 280px;
@@ -6422,11 +6423,17 @@ article.articles-section__text p {
   .seminars-tile__item--horizontal, 
   .seminars-tile__item--vertical a, 
   .seminars-tile__item--horizontal a {
-    width: 280px;
+    left: calc(50% - 180px);
+    /* width: 280px; */
+    width: 360px;
   }
 
   .seminars-list__item {
     padding-left: 0;
+  }
+
+  .seminars-tile__item span {
+    width: 265px;
   }
 
   .seminars-list__item .entry-button {
