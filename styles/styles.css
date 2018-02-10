@@ -6428,6 +6428,10 @@ article.articles-section__text p {
     width: 360px;
   }
 
+  .seminars-tile__block--left .seminars-tile__item--vertical {
+    left: calc(50% - 180px);
+  }
+
   .seminars-list__item {
     padding-left: 0;
   }
