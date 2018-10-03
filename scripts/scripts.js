@@ -33,6 +33,54 @@ $(window).scroll(function() {
   $(".header--image-bg .entry-button").hide();
 });
 
+$(".main-menu__item--about").click(function(e) {
+  e.preventDefault();
+});
+
+
+/* Submenu */
+
+$(".main-menu__item").mouseover(function() {
+  if ($(this).hasClass("main-menu__item--about")) {
+    $(this).addClass("main-menu__item--active");
+    $(".main-menu__submenu--about").addClass("main-menu__submenu--active");
+    $(".main-menu__item--seminars").removeClass("main-menu__item--active");
+    $(".main-menu__submenu--seminars").removeClass("main-menu__submenu--active");
+  } else if ($(this).hasClass("main-menu__item--seminars")) {
+    $(this).addClass("main-menu__item--active");
+    $(".main-menu__submenu--seminars").addClass("main-menu__submenu--active");
+    $(".main-menu__item--about").removeClass("main-menu__item--active");
+    $(".main-menu__submenu--about").removeClass("main-menu__submenu--active");
+  } else {
+    $(".main-menu__item--about").removeClass("main-menu__item--active");
+    $(".main-menu__submenu--about").removeClass("main-menu__submenu--active");
+    $(".main-menu__item--seminars").removeClass("main-menu__item--active");
+    $(".main-menu__submenu--seminars").removeClass("main-menu__submenu--active");
+  }
+});
+
+$(".main-menu__submenu--about").mouseover(function(e) {
+  e.stopPropagation();
+  $(".main-menu__item--about").addClass("main-menu__item--active");
+  $(".main-menu__submenu--about").addClass("main-menu__submenu--active");
+});
+
+$(".main-menu__submenu--about").mouseout(function() {
+  $(".main-menu__item--about").removeClass("main-menu__item--active");
+  $(".main-menu__submenu--about").removeClass("main-menu__submenu--active");
+});
+
+$(".main-menu__submenu--seminars").mouseover(function(e) {
+  e.stopPropagation();
+  $(".main-menu__item--seminars").addClass("main-menu__item--active");
+  $(".main-menu__submenu--seminars").addClass("main-menu__submenu--active");
+});
+
+$(".main-menu__submenu--seminars").mouseout(function() {
+  $(".main-menu__item--seminars").removeClass("main-menu__item--active");
+  $(".main-menu__submenu--seminars").removeClass("main-menu__submenu--active");
+});
+
 
 /* Slider */
 

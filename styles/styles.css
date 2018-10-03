@@ -228,6 +228,7 @@ input[type="submit"]:focus {
 }
 
 .main-menu li {
+  position: relative;
   margin-right: 15px;
 }
 
@@ -265,6 +266,7 @@ input[type="submit"]:focus {
   color: #f17a4d;
 }
 
+.main-menu__item:hover::after,
 .main-menu__item--active::after {
   position: absolute;
   left: 0;
@@ -278,6 +280,60 @@ input[type="submit"]:focus {
 .main-menu__open-button,
 .main-menu__close-button {
   display: none;
+}
+
+ul.main-menu__submenu {
+  position: absolute;
+  top: 49px;
+  display: none;
+  width: 198px;
+  min-height: 152px;
+  text-align: center;
+  padding-top: 36px;
+  padding-left: 0;
+  padding-bottom: 36px;
+  background-color: #2a3a4b;
+} 
+
+ul.main-menu__submenu--about {
+  left: -75px;
+}
+
+ul.main-menu__submenu--seminars {
+  left: -54px;
+}
+
+ul.main-menu__submenu--active {
+  display: block;
+} 
+
+ul.main-menu__submenu::before {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  content: "";
+  display: block;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #2a3a4b;
+  transform: translate(-50%, 0);
+}
+
+.main-menu__submenu li {
+  display: block;
+  margin-right: 0;
+}
+
+.main-menu__submenu-item {
+  display: inline-block;
+  font-family: 'geometrialight';
+  font-size: 16px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-menu__submenu-item:hover {
+  color: #f17a4d;
 }
 
 .logo {
