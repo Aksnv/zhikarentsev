@@ -293,6 +293,7 @@ ul.main-menu__submenu {
   padding-left: 0;
   padding-bottom: 36px;
   background-color: #2a3a4b;
+  z-index: 2;
 } 
 
 ul.main-menu__submenu--about {
@@ -332,7 +333,8 @@ ul.main-menu__submenu::before {
   color: #fff;
 }
 
-.main-menu__submenu-item:hover {
+.main-menu__submenu-item:hover,
+.main-menu__submenu-item--active {
   color: #f17a4d;
 }
 

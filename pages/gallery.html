@@ -16,8 +16,21 @@
     <div class="container">
       <nav class="main-menu">
         <ul>
-          <li><a href="about.html" class="main-menu__item main-menu__item--about">О нас</a></li>
-          <li><a href="seminars.html" class="main-menu__item main-menu__item--seminars main-menu__item--active">Семинары</a></li>
+          <li>
+            <a href="" class="main-menu__item main-menu__item--about main-menu__item--active">О нас</a>
+            <ul class="main-menu__submenu main-menu__submenu--about">
+              <li><a href="about.html" class="main-menu__submenu-item main-menu__submenu-item--about">О Школе Мира</a></li>
+              <li><a href="gallery.html" class="main-menu__submenu-item main-menu__submenu-item--gallery main-menu__submenu-item--active">Фотогалерея</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" class="main-menu__item main-menu__item--seminars">Семинары</a>
+            <ul class="main-menu__submenu main-menu__submenu--seminars">
+              <li><a href="seminars.html" class="main-menu__submenu-item main-menu__submenu-item--seminars">Семинары</a></li>
+              <li><a href="consultations.html" class="main-menu__submenu-item main-menu__submenu-item--consultations">Консультации</a></li>
+              <li><a href="reviews.html" class="main-menu__submenu-item main-menu__submenu-item--gallery">Отзывы</a></li>
+            </ul>
+          </li>
           <li><a href="consultations.html" class="main-menu__item main-menu__item--consultations">Консультации</a></li>
           <li><a href="forum.html" class="main-menu__item main-menu__item--forum">Форум</a></li>
           <li><a href="schedule.html" class="main-menu__item main-menu__item--schedule">Расписание</a></li>
@@ -40,263 +53,124 @@
   </header>
   <div class="content">
     <div class="container">
-      <div class="tabs-title">
-        <div class="tabs-title__item tabs-title__item--seminars tabs-title__item--active">Наши семинары</div>
-        <div class="tabs-title__item tabs-title__item--consultations">Консультации</div>
-      </div>
-
-      <div class="seminars-wrapper">
-        <p>Вы можете познакомиться с описанием предлагаемых семинаров Школы мира и выбрать тот, <span class="br">который вам более близок в данный момент времени.</span></p>
-        <div class="tabs-seminars">
-          <div class="tabs-seminars__item tabs-seminars__item--tile tabs-seminars__item--active">Показывать плиткой</div>
-          <div class="tabs-seminars__item tabs-seminars__item--list">Показывать списком</div>
-        </div>
-        <section class="seminars-list">
-          <ul>
-            <li class="seminars-list__item">
-              <a href="seminar_1.html">Обретение Внутренней Силы</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Ключ к свободе. Типы характеров человека</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Метод Единорог</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Самоисцеление</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Базовый Мастер-курс</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Как Создавать Деньги</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Дело Вашей Жизни</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Диалоги Голосов I - V</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Диалог Голосов I</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Диалог Голосов II</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Диалог Голосов III</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Диалог Голосов IV</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Диалог Голосов V</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Диалог Голосов VI</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">ЖИ — Энергия Жизни</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Мужчина и Женщина</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Мужчина и Женщина 2</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Знакомство с Женщиной</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Путь мужчины - 1</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Лабиринты Ума</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Лабиринты Ума - 2</a>
-              <button class="entry-button">Записаться на семинар</button>
-              </li>
-            <li class="seminars-list__item">
-              <a href="#">Сказка как путь души</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Тайна Москвы</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Горе и Злочастие (Птица-Душа)</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Позвоночник — основа Жизни</a>
-              <button class="entry-button">Записаться на семинар</button>
-             </li>
-            <li class="seminars-list__item">
-              <a href="#">Старославянский язык — знакомство с двойственным числом</a>
-              <button class="entry-button">Записаться на семинар</button>
-             </li>
-            <li class="seminars-list__item">
-              <a href="#">Основы старославянского языка</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Миром правит Желание — Радость и Сладость Жизни</a>
-              <button class="entry-button">Записаться на семинар</button>
-             </li>
-            <li class="seminars-list__item">
-              <a href="#">Открытое Пространство</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-            <li class="seminars-list__item">
-              <a href="#">Дева Обида — Дорога в Разум или Как Стать Богатым</a>
-              <button class="entry-button">Записаться на семинар</button>
-            </li>
-          </ul>
-        </section>
-      </div>
-
-      <section class="seminars-tile">
-          <div class="seminars-tile__block seminars-tile__block--right">            
-            <div class="seminars-tile__item seminars-tile__item--1 seminars-tile__item--horizontal">
-              <a href="seminar_1.html"><span>Обретение Внутренней Силы</span></a>
-            </div>
-            <div class="seminars-tile__item seminars-tile__item--2 seminars-tile__item--horizontal">
-              <a href="#"><span>Лабиринты Ума</span></a>
-            </div>
-            <div class="seminars-tile__item seminars-tile__item--3 seminars-tile__item--vertical">
-              <a href="#"><span>Лабиринты Ума II</span></a>
-            </div>
+      <div class="breadcrumbs">О нас</div>
+      <article class="seminar">
+        <h1>Фотогалерея</h1>
+        <section class="seminar-recourse">
+          <div class="seminar-recourse__block seminar-recourse__block--left">
+            <p>«Друзья! Я вновь начинаю давать семинар Обретение Внутренней Силы, но уже в обновлённом виде. <span class="br">Чем отличается новый семинар от старого? Истами.</span> К каждой из тем я прикрепил Исты – это те Первообразы, которые хранятся в душе и имеют огненную природу. <span class="br">Если жить вдоль Ист, то жизнь станет приносить наслаждение. Именно потому, что Исты были искажены в детстве, жизнь для человека превращается потом в ад. Теперь, составляя новые мысли, вы можете ориентироваться на Исты, они вас поведут по жизни. Внешнее Равно Внутреннему. Всем, кто проходил уже ОВС, я рекомендую посетить его ещё раз»</span></p>
           </div>
-          <div class="seminars-tile__block seminars-tile__block--left">
-            <div class="seminars-tile__item seminars-tile__item--4 seminars-tile__item--vertical">
-              <a href="#"><span>Ключ к свободе. Типы характеров человека</span></a>
-            </div>
-            <div class="seminars-tile__item seminars-tile__item--5 seminars-tile__item--horizontal">
-              <a href="#"><span>Тайна Москвы</span></a>
-            </div>
-            <div class="seminars-tile__item seminars-tile__item--6 seminars-tile__item--horizontal">
-              <a href="#"><span>Горе и Злочастие (Птица-Душа)</span></a>
-            </div>
-          </div>
-          <div class="seminars-tile__block seminars-tile__block--right">
-            <div class="seminars-tile__item seminars-tile__item--7 seminars-tile__item--horizontal">
-              <a href="#"><span>Мужчина и Женщина</span></a>
-            </div>
-            <div class="seminars-tile__item seminars-tile__item--8 seminars-tile__item--horizontal">
-              <a href="#"><span>Мужчина и Женщина 2</span></a>
-            </div>
-            <div class="seminars-tile__item seminars-tile__item--9 seminars-tile__item--vertical">
-              <a href="#"><span>Путь Мужчины I</span></a>
-            </div>            
-          </div>
-          <div class="seminars-tile__block seminars-tile__block--left">
-            <div class="seminars-tile__item seminars-tile__item--10 seminars-tile__item--vertical">
-              <a href="#"><span>Самоисцеление</span></a>
-            </div>
-            <div class="seminars-tile__item seminars-tile__item--11 seminars-tile__item--horizontal">
-              <a href="#"><span>Старославянский язык — знакомство с двойственным числом</span></a>
-            </div>
-            <div class="seminars-tile__item seminars-tile__item--12 seminars-tile__item--horizontal">
-              <a href="#"><span>Миром правит Желание — Радость и Сладость Жизни</span></a>
-            </div>
-          </div>
-          <div class="seminars-tile__block seminars-tile__block--right">
-            <div class="seminars-tile__item seminars-tile__item--13 seminars-tile__item--horizontal">
-              <a href="#"><span>Дева Обида — Дорога в Разум или Как Стать Богатым</span></a>
-            </div>
-            <div class="seminars-tile__item seminars-tile__item--14 seminars-tile__item--horizontal">
-              <a href="#"><span>Дело Вашей Жизни</span></a>
-            </div>
-            <div class="seminars-tile__item seminars-tile__item--15 seminars-tile__item--vertical">
-              <a href="#"><span>Как Создавать Деньги</span></a>
-            </div>            
-          </div>
-          <div class="seminars-tile__block seminars-tile__block--left">
-            <div class="seminars-tile__item seminars-tile__item--16 seminars-tile__item--vertical">
-              <a href="#"><span>Позвоночник — основа Жизни</span></a>
-            </div>
-            <div class="seminars-tile__item seminars-tile__item--17 seminars-tile__item--horizontal">
-              <a href="#"><span>Сказка как путь души</span></a>
-            </div>
-            <div class="seminars-tile__item seminars-tile__item--18 seminars-tile__item--horizontal">
-              <a href="#"><span>Открытое Пространство</span></a>
-            </div>
-          </div>
-          <div class="seminars-tile__block seminars-tile__block--right">
-            <div class="seminars-tile__item seminars-tile__item--19 seminars-tile__item--horizontal">
-              <a href="#"><span>Диалоги Голосов I - V</span></a>
-            </div>
-            <div class="seminars-tile__item seminars-tile__item--20 seminars-tile__item--horizontal">
-              <a href="#"><span>ЖИ — Энергия Жизни</span></a>
-            </div>
-            <div class="seminars-tile__item seminars-tile__item--21 seminars-tile__item--vertical">
-              <a href="#"><span>Диалог Голосов IV</span></a>
-            </div>            
-          </div>
-          <div class="seminars-tile__block seminars-tile__block--left">
-            <div class="seminars-tile__item seminars-tile__item--22 seminars-tile__item--vertical">
-              <a href="#"><span>Основы старославянского языка</span></a>
-            </div>
-            <div class="seminars-tile__item seminars-tile__item--23 seminars-tile__item--horizontal">
-              <a href="#"><span>Знакомство с Женщиной</span></a>
-            </div>
-            <div class="seminars-tile__item seminars-tile__item--24 seminars-tile__item--horizontal">
-              <a href="#"><span>Базовый Мастер-курс</span></a>
-            </div>
+          <div class="seminar-recourse__block seminar-recourse__block--right">
+            <img src="../images/pages/people/zhikarentsev.png">
+            <p>Владимир Жикаренцев</p>
           </div>
         </section>
-
-      <div class="consultations-wrapper">
-        <div class="consultations-promo">
-          <p>Вы потеряли чувство близости с родными? <span class="br">Часто ваша жизнь кажется скучной и повторяющейся?</span> <span class="br">Вы потеряли способность быть творческим и не чувствуете себя живым? Чувствуете себя не в силах изменить свою жизнь?</span> <span class="br">Не отчаивайтесь, выход есть!</span></p>
-          <p>Мы поможем вам обрести себя, открыть глаза на чудный мир вокруг, вернуть любовь в вашу жизнь!</p>
-        </div>
-        
-        <section class="consultations-list">
-          <h2>В зависимости от ситуации, вы можете выбрать:</h2>
-          <div class="consultations-list__block consultations-list__block--left">
+        <section class="seminar-content">
+          <h2>Какой ум, такая и жизнь.</h2>
+          <p>«Люди хотят управлять жизнью, но где взять силу, способную сделать это? Мысль. Мысль – та самая Внутренняя Сила, данная нам с рождения, и владеть ею хороший тон, признак образованного, духовного, владеющего своей жизнью человека.</p>
+          <p>Я веду семинары  более двадцати лет и не устаю удивляться тому, как работает мысль: легко, надёжно, метко. Таково свойство мысли: то, к чему мы прикасаемся мыслью, меняется, иногда быстро, мгновенно, иногда медленно, но перемены всегда входят в жизнь, когда мы готовы. Спросите себя: Всё ли меня удовлетворяет в моей жизни? Готов ли я меняться?</p>
+          <p>Да? Тогда добро пожаловать на семинар. Вы научитесь создавать мысли и направлять их в ту сферу жизни, в которой хотите перемен. Всё, что вы хотите получить от жизни, можно создать с помощью мысли, используя метод Обретение Внутренней Силы. Раньше владение энергией мысли было уделом избранных, сейчас она доступна каждому, кто готов взять ответственность за свою жизнь на себя.»</p>
+          <p>Используя Метод Обретения Внутренней Силы, вы приобретаете силы действовать эффективно в любой сфере жизни и в любой ситуации! Семинар закончится, а Метод  ОВС останется с вами навсегда.</p>
+          <p>Хорошо будет, если вы прочитаете перед семинаром мою книгу <a href="#" class="inline-link">«Путь к Свободе. Как изменить свою жизнь».</a></p>
+          <div class="seminar-video">
+            <div class="seminar-video__block seminar-video__block--left">
+              <a href="#"><img src="../images/pages/seminars/video.png"></a>
+            </div>
+            <div class="seminar-video__block seminar-video__block--right">
+              <p>Видеопрезентация семинара ОВС.</p>
+            </div>
+          </div>
+          <p><strong>Группы</strong> состоят из 10-18 человек.<br> <strong>Продолжительность</strong> семинара — 2 дня, суббота с 11 до 20 часов, воскресенье с 11 до 19 часов.<br> Для участия в семинаре  желательно прочтение первой книги В.В Жикаренцева <a href="#" class="inline-link">«Путь к свободе. Как изменить свою жизнь»</a></p>
+          <p>Семинар ОВС является базовым для прохождения других семинаров Школы Мира. Посмотрите расписание, выберите удобные место и дату проведения и записывайтесь.</p>
+          <p>Не видите семинар в расписании, но хотите участвовать?<br> Пошлите заявку на участие в Москве, Санкт-Петербурге.</p>
+        </section>
+        <section class="seminar-schedule">
+          <h2>Расписание семинаров <span class="br">Обретение Внутренней Силы</span></h2>
             <ul>
-              <li>Индивидуальное консультирование;</li>
-              <li>Консультирование по методу «Диалог Голосов»;</li>
-              <li>Консультирование семейных пар;</li>
-              <li>Консультирование детей (с 13 лет);</li>
-              <li>Консультирование детей и родителей;</li>
-              <li>Скайп-консультации;</li>
-              <li>Консультирование с использованием Лабиринтов.</li>
+              <li class="seminars-list__item">
+                <strong>23 - 24 сентября</strong>
+                <span>Москва</span>
+                <button class="entry-button">Записаться на семинар</button>
+              </li>
+              <li class="seminars-list__item">
+                <strong>14 - 15 октября</strong>
+                <span>Екатеринбург</span>
+                <button class="entry-button">Записаться на семинар</button>
+              </li>
+              <li class="seminars-list__item">
+                <strong>21 - 22 октября</strong>
+                <span>Санкт-Петербург</span>
+                <button class="entry-button">Записаться на семинар</button>
+              </li>
+              <li class="seminars-list__item">
+                <strong>28 - 29 октября</strong>
+                <span>Нальчик</span>
+                <button class="entry-button">Записаться на семинар</button>
+              </li>
             </ul>
-          </div>
-          <div class="consultations-list__block consultations-list__block--right">
-            <img src="../images/pages/seminars/labyrinth.png" alt="Labyrinth">
-          </div>
+            <a href="seminars.html" class="inline-link">Вернуться к списку семинаров</a>
         </section>
-
-        <div class="consultations-contacts">
-          <p><strong>Консультации проводят</strong> лично Владимир Васильевич и Марина Геннадьевна Жикаренцевы. Записаться на консультацию, а также узнать дополнительную информацию <span class="br">вы можете по телефонам: в&nbsp;Санкт&nbsp;Петербурге: <strong>8-911-110-63-33</strong></span> <span class="br">в Москве: <strong>(495) 741-25-75</strong></span></p>
-          <p>E-mail: в Санкт-Петербурге: <a href="mailto:shkolamira.spb@gmail.com">shkolamira.spb@gmail.com</a> <span class="br">в&nbsp;Москве:&nbsp;<a href="mailto:shkolamira@gmail.com">shkolamira@gmail.com</a></span></p>
-        </div>
-      </div>
+        <section class="seminar-reviews">
+          <button class="popup__close-button"></button>
+          <h3>Отзывы о семинаре</h3>
+          <button class="add-review-button">Оставить отзыв</button>
+          <form name="review-form" action="#" method="POST" class="review-form">
+            <div class="container">
+              <h3>Отзыв о семинаре</h3>
+              <div class="review-form__wrapper">
+                <input type="text" name="review-form__name" class="review-form__name">
+                <label>Фамилия и имя</label>
+              </div>
+              <!-- <div class="review-form__wrapper">
+                <input type="text" name="review-form__text" class="review-form__text">
+                <label>Текст отзыва *</label>
+              </div> -->
+              <div class="review-form__wrapper review-form__wrapper--textarea">
+                <textarea name="review-form__text" class="review-form__text"></textarea>
+                <label>Текст отзыва *</label>
+              </div>
+              <div class="review-form__capcha">
+                <img src="../images/pages/seminars/capcha.png">
+                <div class="review-form__wrapper">
+                  <input type="text" name="review-form__symbols" class="review-form__symbols">
+                  <label>Символы с картинки *</label>
+                </div>
+                <p><span>*</span> &mdash; поля, обязательные для заполнения</p>
+              </div> 
+              <input type="reset" name="review-form__reset" class="review-form__reset" value="Отмена">
+              <input type="submit" name="review-form__submit" class="entry-button review-form__submit" value="Отправить">
+            </div>           
+          </form>
+          <article class="seminar-review">
+            <strong>Кира Ушакова</strong>
+            <p>(2012 г.)</p>
+            <p>….Оказывается ЖИЗНЬ может начаться и после 50. И не просто начаться, но и засиять новыми необыкновенными красками.</p>
+            <p>История 1.</p>
+            <p>Мужа не стало более 5 лет назад. Пережить его «уход» казалось невозможным. Стала «таять», силы жизни покидали меня, ведь мы жили и все делали друг для друга… Из дома не выходила, дети наняли сиделку...</p>
+            <p>Моя подруга с детства настояла как-то добраться на консультацию к Жи, ведь моими проводниками в жизни с 1995 года были его книги. Я их понимала, принимала и успешно использовала представленные методы на практике. Задачка по Жизни и Смерти оказалась мне не под силу. На консультацию меня везли в полуобморочном состоянии.<br> Жи вынес свой вердикт – я смогу «выехать» и вернуться к жизни только опираясь на базовую вселенскую силу между Мужчиной и Женщиной. Другого - не дано в моей ситуации. Мне надо срочно искать себе пару.</p>
+            <p>Этот рецепт казался мне несбыточным. Мужчин я просто не замечала, да еще и в моем возрасте! Какие могут быть поиски? Где? В интернете, что ли? Молодые девчонки страдают от одиночества. И я туда же. Было грустно и смешно. Путь подсказал Жи.  Дал несколько простых упражнений, которые показали, что я еще Живая и что не все потеряно. Я имею шанс восстановиться. Возвращалась с консультации,  не держась за подругу. На ногах стояла почти уверенно.</p>
+            <p>Найти в себе Женщину оказалось очень приятно и интересно, т.к. результаты получала практически мгновенно. Главное- разрешила себе быть с мужчиной!  Через несколько дней пошла на работу. Сначала на пару часов в день, затем уже - на полный.  Стала получать многозначительные знаки внимания от мужчин, причем разных возрастов- от 30 до 60.  Это подтвердило и укрепило мой путь. Все это подогревалось еще и интересом-« А что же дальше?».</p>
+            <p>У меня не было времени долго ждать. Стала активно посещать и ПРОЖИВАТЬ интересующие меня семинары, особенно по теме Мужчины и Женщины. Получила много потрясающих открытий, встретила здесь много интересных людей, которые тоже помогали мне решать мои проблемы. ЖИЗНЬ стала не просто нового качества, но и очень занимательной. Стала много ВИДЕТЬ: что я делаю со своей ЖИЗНЬЮ и со своими близкими людьми. Стало получаться «уравновешивать» ситуации. Семинары мне дали те инструменты, которые я не могла освоить, читая книги. Главное – Я РАЗРЕШИЛА себе быть СЧАСТЛИВОЙ!</p>
+            <p>Очень интересно сработал метод «создания пустоты» для появления Мужчины. Я перестала заниматься «мужскими делами», типа стройки, ремонта, забивания гвоздей. Мне это уже было не интересно. Перестала спать посреди двуспальной кровати: положила две подушки рядом, сама спала с одной стороны, другая оставалась пустой. Почистила все шкафы в квартире - спокойно выкинула и раздала половину вещей, оставила только самые любимые. То есть, я освободила вторую половину жилища для Мужчины. Купила в Икее набор специальных мужских вешалок в гардероб и тумбочку для мужского белья. Эти пустые места я больше не занимала. Я активно ждала появления Мужчины. Из русских народных сказок «Король Дроздобород», «Царевна Несмеяна» и т.п. (по подсказке опять же Жи) известно – кто первый свободный откроет дверь – это есть суженный. Я знала, что прийдет тот, кого я заслужила сегодня, и я смогу с ним построить ЖИЗНЬ. Именно ему надо будет подарить  свое тепло, ласку и любовь. Надо его ОТОГРЕТЬ. Это мой путь. И я к нему ГОТОВА.</p>
+            <p>После «операции» по чистке шкафов МУЖЧИНА не заставил себя долго ждать. ОН появился ровно через две недели. Сказал, что хочет быть мне МУЖЕМ….</p>
+            <p>История 2.</p>
+            <p>Итак,…. Продолжим.</p>
+            <p>Пришел ко мне Мужчина с Большой буквы, Великий. Рациональный, деловой, умный, общительный, обаятельный, с серьезным деловым послужным списком. Из военных, «в годах». Зовут его Владимир. Потянулись друг к другу с первой встречи.  К построению совместной семьи подошли по-деловому. Практически бизнес-план нарисовали. Благо-дело - оба финансисты.  Он 15 лет назад развелся с женой и жил все это время один в московской квартире. Мы сопоставили основные наши интересы и взгляды на Жизнь, оказалось – сходимся. Оба готовы были развивать отношения и помогать в этом друг другу.</p>
+            <p>Взаимопомощь состояла в том, что мы постоянно проговаривали свои мысли. Кто как думает по интересующему вопросу. Так мы состыковывали свои цели, интересы, видение мира.  Так, например, для него главной темой в жизни есть РАБОТА, а для меня- мои внуки, дети и здоровье. Решили это учитывать. Это была стратегия. Тактикой мы избрали правило – никаких претензий друг к другу. Все делаем только добровольно. Основная цель – Радоваться, наслаждаться Жизнью. Мечтали вместе путешествовать по м иру. Все условия для этого вроде бы есть, не хватает самой «малости» - доверия, чувств, душевного трепета и конечно же ЛЮБВИ, взаимной.</p>
+            <p>Мешало  этой программе одно очень важное  его ограничивающее убеждение, что все Женщины – СТЕРВЫ, но он готов со мною попробовать поменять его. Как я  переоценила свои силы! Но тогда я сознательно приняла этот вызов и готова была нашей совместной Жизнью показать ему нормальную, заботливую, любящую русскую Женщину. Я же хожу на семинары, я уже много знаю о себе, о своей Женщине, кое-что умею. То есть – я этого очень ЖЕЛАЛА.</p>
+            <p>У него превалирует мазохистский и жесткий тип характеров,  а у меня – психопатический и жесткий.  «Гремучая смесь» - не правда ли? В первый же месяц он запретил мне ходить на семинары. Я подчинилась, надеясь на то, что Владимир скоро сам разберется в их пользе, но пришлось долго ждать.</p>
+            <p>Прожили мы вместе почти три года. Первый год прошел со знаком ПЛЮС. Мы притерлись достаточно мягко. Несколько раз приходилось отрабатывать на практике отпускание ОБИДЫ. С ним же обсуждала «крючки», на которые я попадалась. Я старалась смиряться и принимать ЭТУ ЖИЗНЬ.  Мы хотели быть вместе, и мы  менялись. Нам было интересно. У нас был хороший секс. Появились даже чувства (у меня, по крайней мере). Мы играли как дети, заботились друг о друге. Но мы СТАРАЛИСЬ. До полного ДОВЕРИЯ так и не дошло, СЕРДЦЕ не открыли. Не удалось мне растопить  этот  айсберг.</p>
+            <p>Позднее, когда в квартире не осталось даже маленького уголка моего личного пространства, когда у меня регулярно стало повышаться  артериальное давление, я увидела, что запуталась и это может плохо кончиться. Я огляделась, все бросила и помчалась на семинар ОВС  к Марине.  У Володи я разрешения уже не спросила.</p>
+            <p>На ОВС я увидела, как я все СТАРАЮСЬ, как я жду от него и от себя того ДОВЕРИЯ, которое было у меня с моим Первым мужем, как я Володю постоянно СРАВНИВАЮ с Первым и как я себе и ему лгу и как себя предаю. Нельзя требовать и ждать  от Другого мужчины повторения  Первого. Все они разные, и все хороши-плохи по-своему. И еще,  у меня маловато силенок противостоять  целой военной Системе, которая его взрастила. Он ВОИН – один в поле, как кремень.</p>
+            <p>После ухода Володи у меня давление нормализовалось на третий день.  К сожалению, оно повысилось у него, и он около месяца болел. До этого момента он никогда не замечал у себя  подобных симптомов. Ну, разве я не СТЕРВА? Еще какая! Мужика чуть не загубила! На прощальной встрече мы искренне (наконец-то!)  вспоминали прожитое вместе время и просили прощения, и благодарили друг друга за ВСЕ!</p>
+            <p>Уже на выходе из ресторана он сказал: «Я сделал серьезный вывод в жизни – я больше с женщинами в такие ИГРЫ не играю, баста!». Я спросила: «А как там, на счет СТЕРВ, все по-старому?». Он ответил: «Почти… Все бабы – СТЕРВЫ, но к тебе это не относится!».</p>
+            <p>Сегодня я уже могу ВЫЖИТЬ в любых условиях. Но одна не хочу. Хочу ЛЮБИТЬ и быть ЛЮБИМОЙ.</p>
+            <p>Кира Ушакова</p>
+          </article>
+          <button class="review-visible">Показать полностью</button>
+          <button class="review-invisible">Свернуть отзыв</button>
+        </section>
+      </article>
     </div>
     
   </div>
@@ -319,7 +193,6 @@
           <li><a href="#" class="social-links__item social-links__item--tw">Twitter</a></li>
           <li><a href="#" class="social-links__item social-links__item--fb">Facebook</a></li>
           <li><a href="#" class="social-links__item social-links__item--yt">Youtube</a></li>
-          <li><a href="#" class="social-links__item social-links__item--tg">Telegram</a></li>
         </ul>
       </div>
     </div>

@@ -37,6 +37,10 @@ $(".main-menu__item--about").click(function(e) {
   e.preventDefault();
 });
 
+$(".main-menu__item--seminars").click(function(e) {
+  e.preventDefault();
+});
+
 
 /* Submenu */
 
