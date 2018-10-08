@@ -4201,6 +4201,40 @@ article.articles-section__text p {
     margin-top: 70px;
   }
 
+  /* Gallery */
+
+  .seminar--gallery h1 {
+    margin-bottom: 47px;
+  }
+
+  .seminar--gallery .seminars-tile {
+    margin-bottom: 0;
+  }
+
+  .seminar--gallery .seminars-tile__item {
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .seminar--gallery .seminars-tile__item--vertical,
+  .seminar--gallery .seminars-tile__item--vertical a {
+    width: 352px;
+    height: 496px;
+  }
+
+  .seminar--gallery .seminars-tile__item--vertical:nth-child(3n + 3) {
+    margin-right: 3px;
+  }
+
+  .seminar--gallery .seminars-tile__item--vertical:nth-child(2n + 2) {
+    margin-right: 0;
+  }
+
+  .seminar--gallery .seminars-tile__item span {
+    left: 29px;
+    width: 320px;
+  }
+
   /* Forum */
 
   .forum h1 {
