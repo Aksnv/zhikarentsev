@@ -3730,6 +3730,7 @@ article.articles-section__text p {
   }
 
   .seminars-list__item {
+    display: block;
     height: auto;
     padding-top: 16px;
     padding-bottom: 12px;
@@ -3740,6 +3741,20 @@ article.articles-section__text p {
     display: inline-block;
     width: 500px;
     line-height: 26px;
+  }
+
+  .seminars-list__item div {
+    display: block;
+    width: 100%;
+  }
+
+  .seminars-list__item div > span {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .seminars-list__item div > span:first-child {
+    width: 200px;
   }
 
   .seminars-list__item .entry-button {
