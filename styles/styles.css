@@ -1591,6 +1591,69 @@ ul.main-menu__submenu::before {
   padding-top: 79px;
 }
 
+/* Gallery */
+
+.seminar--gallery h1 {
+  margin-bottom: 46px;
+}
+
+.seminar--gallery .seminars-tile__item::after {
+  border-radius: 3px;
+}
+
+.seminar--gallery .seminars-tile {
+  font-size: 0;
+}
+
+.seminar--gallery .seminars-tile__item--1 {
+  background-image: url("../images/pages/gallery/01.jpg");
+}
+
+.seminar--gallery .seminars-tile__item--2 {
+  background-image: url("../images/pages/gallery/02.jpg");
+}
+
+.seminar--gallery .seminars-tile__item--3 {
+  background-image: url("../images/pages/gallery/03.jpg");
+}
+
+.seminar--gallery .seminars-tile__item--4 {
+  background-image: url("../images/pages/gallery/04.jpg");
+}
+
+.seminar--gallery .seminars-tile__item--5 {
+  background-image: url("../images/pages/gallery/05.jpg");
+}
+
+.seminar--gallery .seminars-tile__item--6 {
+  background-image: url("../images/pages/gallery/06.jpg");
+}
+
+.seminar--gallery .seminars-tile__item--vertical {
+  display: inline-block;
+  vertical-align: top;
+  width: 388px;
+  height: 546px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+.seminar--gallery .seminars-tile__item--vertical a {
+  width: 388px;
+  height: 546px;
+}
+
+.seminar--gallery .seminars-tile__item--vertical:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.seminar--gallery .seminars-tile__item span {
+  bottom: 29px;
+  font-family: 'loraitalic';
+  font-size: 20px;
+  line-height: 33px;
+}
+
 /* Schedule */
 
 .schedule {
