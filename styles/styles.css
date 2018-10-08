@@ -596,6 +596,8 @@ ul.main-menu__submenu::before {
 
 .seminars-list__item {
   position: relative;
+  display: table;
+  width: 100%;
   height: 55px;
   padding-left: 21px;
   border-top: 1px solid #fce4dc;
@@ -615,6 +617,30 @@ ul.main-menu__submenu::before {
 
 .seminars-list__item--active a:hover {
   color: #f0774e;
+}
+
+.seminars-list__item div {
+  /* display: inline-block;
+  vertical-align: top; */
+  display: table-cell;
+  vertical-align: middle;
+  width: 240px;
+}
+
+.seminars-list__item div:last-child {
+  width: 290px;
+}
+
+.seminars-list__item div > span {
+  display: block;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.seminars-list__item div > span > a {
+  display: inline;
+  font-size: 15px;
+  line-height: 22px;
 }
 
 .seminars-list__item .entry-button {
@@ -1681,9 +1707,8 @@ ul.main-menu__submenu::before {
 
 .schedule strong {
   display: inline-block;
-  width: 200px;
+  width: 180px;
   font-family: 'museo_sans_cyrl900';
-  margin-right: 30px;
 }
 
 .schedule a {
