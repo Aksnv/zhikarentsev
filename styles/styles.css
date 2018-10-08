@@ -5826,6 +5826,44 @@ article.articles-section__text p {
     width: 257px;
   }
 
+  /* Gallery */
+
+  .seminar--gallery h1 {
+    margin-bottom: 32px;
+  }
+
+  .seminar--gallery .seminars-tile__item {
+    margin-bottom: 4px;
+    background-position: 0 0;
+  }
+      
+  .seminar--gallery .seminars-tile__item--vertical,
+  .seminar--gallery .seminars-tile__item--vertical a {
+    left: 0;
+    width: 280px;
+    height: 394px;
+  }
+
+  .seminar--gallery .seminars-tile__item--vertical:nth-child(n) {
+    margin-right: 0;
+  }
+
+  /* .seminar--gallery .seminars-tile__item--vertical:nth-child(3n + 3) {
+    margin-right: 3px;
+  }
+  
+  .seminar--gallery .seminars-tile__item--vertical:nth-child(2n + 2) {
+    margin-right: 0;
+  }
+  
+   */
+
+   .seminar--gallery .seminars-tile__item span {
+    left: 19px;
+    bottom: 19px;
+    width: 255px;
+  }
+
   /* News */
 
   .news {
