@@ -1238,7 +1238,8 @@ ul.main-menu__submenu::before {
 }
 
 .seminar-schedule ul {
-  width: 638px;
+  /* width: 638px; */
+  width: 903px;
   font-family: 'museo_sans_cyrl100';
   font-size: 20px;
   margin-bottom: 16px;
@@ -1249,11 +1250,32 @@ ul.main-menu__submenu::before {
   line-height: 54px;
 }
 
+.seminar .seminars-list__item {
+  padding-left: 27px;
+}
+
 .seminar-schedule strong {
   display: inline-block;
   width: 258px;
   font-family: 'museo_sans_cyrl900';
   margin-right: 30px;
+}
+
+.seminar .seminar-schedule strong {
+  width: 262px;
+}
+
+.seminar .seminar-schedule span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.seminar .seminar-schedule strong + span {
+  width: 198px;
+}
+
+.seminar .seminar-schedule span > a {
+  margin-left: 0;
 }
 
 .seminar-schedule .seminars-list__item .entry-button {
