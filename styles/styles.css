@@ -3986,6 +3986,11 @@ article.articles-section__text p {
     margin-left: 40px;
   }
 
+  .seminar aside {
+    width: 637px;
+    margin-bottom: 57px;
+  }
+
   .seminar-reviews h3::before, 
   .seminar-reviews h3::after {
     width: 23%;
@@ -4113,6 +4118,24 @@ article.articles-section__text p {
 
   .review-form__capcha p {
     text-align: center;
+  }
+
+  /* About */ 
+
+  .seminar--about .seminar-recourse__block--left {
+    width: 680px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding-top: 10px;
+  }
+
+  .seminar--about li {
+    width: 665px;
+  }
+
+  .seminar--about p + strong, 
+  .seminar--about ol + strong {
+    margin-top: 70px;
   }
 
   /* Forum */
