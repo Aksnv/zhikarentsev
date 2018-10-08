@@ -243,8 +243,8 @@ input[type="submit"]:focus {
   z-index: 1;
 }
 
-.main-menu li:last-child,
-.main-menu li:nth-child(3) {
+.main-menu li:last-child/* ,
+.main-menu li:nth-child(3) */ {
   margin-right: 0;
 }
 
@@ -257,16 +257,18 @@ input[type="submit"]:focus {
   color: #fff;
 }
 
-.main-menu__item--consultations {
+.main-menu__item--main {
   display: none;
 }
 
 .main-menu__item:hover,
+.main-menu__item--current,
 .main-menu__item--active {
   color: #f17a4d;
 }
 
 .main-menu__item:hover::after,
+.main-menu__item--current::after,
 .main-menu__item--active::after {
   position: absolute;
   left: 0;
@@ -1233,6 +1235,22 @@ ul.main-menu__submenu::before {
   margin-left: 18px;
 }
 
+.seminar aside {
+  width: 1090px; 
+  font-family: 'loraitalic';
+  font-size: 20px;
+  line-height: 33px;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 51px;
+  margin-bottom: 55px;
+  padding-top: 7px;
+  padding-left: 49px;
+  padding-bottom: 10px;
+  color: black;
+  border-left: 2px solid #f17a4d; 
+}
+
 .seminar-reviews {
   text-align: center;
 }
@@ -1522,6 +1540,55 @@ ul.main-menu__submenu::before {
 
 .review-invisible {
   display: none;
+}
+
+/* About */
+
+.seminar--about h1 {
+  margin-bottom: 74px;
+}
+
+.seminar--about h3,
+.seminar--about strong {
+  font-family: 'museo_sans_cyrl900';
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 36px;
+  color: black;
+}
+
+.seminar--about strong {
+  display: block;
+  margin-bottom: 14px;
+  color: #2a3a4b;
+}
+
+.seminar--about p + strong,
+.seminar--about ol + strong {
+  margin-top: 78px;
+}
+
+.seminar--about ol {
+  font-family: 'museo_sans_cyrl100';
+  font-size: 20px;
+  line-height: 32px;
+  list-style-type: decimal;
+  margin-bottom: 32px;
+  color: #2a3a4b;
+}
+
+.seminar--about li {
+  width: 800px;
+  font-family: 'museo_sans_cyrl900';
+  margin-left: 23px;
+}
+
+.seminar--about li > span {
+  font-family: 'museo_sans_cyrl100';
+}
+
+.seminar--about .seminar-recourse__block--left {
+  padding-top: 79px;
 }
 
 /* Schedule */
@@ -3390,6 +3457,18 @@ article.articles-section__text p {
     z-index: 13;
   }
 
+  .main-menu--mobile ul.main-menu__submenu {
+    position: relative;
+    min-height: auto;
+    padding-top: 28px;
+    padding-bottom: 12px;
+    background-color: transparent;
+  }
+
+  .main-menu--mobile ul.main-menu__submenu::before {
+    display: none;
+  }
+
   .main-menu ul {
     display: none;
   }
@@ -3405,12 +3484,27 @@ article.articles-section__text p {
     font-size: 22px;
   }
 
-  .main-menu__item--consultations {
+  .main-menu__item--main {
     display: inline-block;
   }
 
+  .main-menu__item:hover::after, 
+  .main-menu__item--current::after,
   .main-menu__item--active::after {
     bottom: -8px;
+  }
+
+  .main-menu__submenu li {
+    margin-bottom: 0;
+  }
+
+  .main-menu__submenu-item {
+    font-size: 20px;
+    color: #b3b5b8;
+  }
+
+  .main-menu__submenu-item--active {
+    color: #f17a4d;
   }
 
   .main-menu__open-button,
@@ -5061,6 +5155,11 @@ article.articles-section__text p {
     padding-bottom: 80px;
   }
 
+  .main-menu--mobile ul.main-menu__submenu {
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+
   .main-menu ul {
     overflow-y: scroll;
   }
@@ -5069,6 +5168,8 @@ article.articles-section__text p {
     font-size: 15px;
   }
 
+  .main-menu__item:hover::after, 
+  .main-menu__item--current::after,
   .main-menu__item--active::after {
     bottom: -4px;
   }
@@ -5077,6 +5178,15 @@ article.articles-section__text p {
   .main-menu li:nth-child(5) {
     /* margin-bottom: 20px; */
     margin-bottom: 15px;
+  }
+
+  .main-menu__submenu li {
+    margin-bottom: 0;
+  }
+
+  .main-menu__submenu-item {
+    font-size: 16px;
+    line-height: 30px;
   }
 
   /* *** Content *** */
