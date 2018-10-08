@@ -5533,9 +5533,24 @@ article.articles-section__text p {
     line-height: 22px;
   } 
 
+  .seminars-list__item > div {
+    width: 300px;
+  }
+
+  .seminars-list__item > div:last-child {
+    width: 498px;
+  }
+
   .seminars-list__item .entry-button {
     display: none;
   } 
+
+  .seminars-list__item--schedule .entry-button {
+    display: block;
+    position: static;
+    width: 498px;
+    margin-top: 15px;
+  }
 
   .seminars-tile {
     margin-bottom: 33px;
@@ -5888,16 +5903,6 @@ article.articles-section__text p {
     margin-right: 0;
   }
 
-  /* .seminar--gallery .seminars-tile__item--vertical:nth-child(3n + 3) {
-    margin-right: 3px;
-  }
-  
-  .seminar--gallery .seminars-tile__item--vertical:nth-child(2n + 2) {
-    margin-right: 0;
-  }
-  
-   */
-
    .seminar--gallery .seminars-tile__item span {
     left: 19px;
     bottom: 19px;
@@ -5987,6 +5992,12 @@ article.articles-section__text p {
   .forum h1 {
     padding-top: 42px;
     margin-bottom: 20px;
+  }
+
+  /* Schedule */
+
+  .schedule a {
+    margin-bottom: 11px;
   }
 
   /* People */
@@ -7374,11 +7385,14 @@ article.articles-section__text p {
     padding-bottom: 20px;
   }
 
+  .seminars-list__item > div,
+  .seminars-list__item > div:last-child {
+    width: 280px;
+  }
+
   .seminars-list__item--schedule .entry-button {
     display: block;
-    position: static;
-    width: 100%;
-    margin-top: 11px;
+    width: 280px;
   }
 
   /* Forum */
