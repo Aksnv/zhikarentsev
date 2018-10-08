@@ -507,7 +507,7 @@ ul.main-menu__submenu::before {
 
 /* Seminars & сonsultations */
 
-.tabs-title {
+/* .tabs-title {
   display: inline-block;
   vertical-align: top;
   padding-top: 107px;
@@ -532,6 +532,12 @@ ul.main-menu__submenu::before {
 
 .tabs-title__item--seminars {
   margin-right: 42px;
+} */
+
+.seminars h1 {
+  text-align: center;
+  margin-bottom: 41px;
+  padding-top: 107px;
 }
 
 .seminars-wrapper p {
@@ -3696,17 +3702,22 @@ article.articles-section__text p {
     margin-bottom: 93px;
   }
 
-  .tabs-title {
+  /* .tabs-title {
     margin-bottom: 13px;
     padding-top: 59px;
   }
-
+  
   .tabs-title__item--seminars {
     margin-right: 0;
   }
-
+  
   .tabs-title__item--consultations {
     display: none;
+  } */
+
+  .seminars h1 {
+    margin-bottom: 35px;
+    padding-top: 59px;
   }
 
   .seminars-wrapper {
@@ -5461,13 +5472,18 @@ article.articles-section__text p {
 
   /* Seminars & consultations */
 
-  .tabs-title {
+  /* .tabs-title {
     padding-top: 42px;
   }
-
+  
   .tabs-title__item {
     font-size: 30px;
     line-height: 36px;
+  } */
+
+  .seminars h1 {
+    margin-bottom: 34px;
+    padding-top: 42px;
   }
 
   .seminars-wrapper,
@@ -5542,7 +5558,11 @@ article.articles-section__text p {
   }
 
   .seminars-list__item .entry-button {
-    display: none;
+    /* display: none; */
+    position: static;
+    display: block;
+    width: 280px;
+    margin-top: 16px;
   } 
 
   .seminars-list__item--schedule .entry-button {
@@ -6928,7 +6948,7 @@ article.articles-section__text p {
   }
 
   .seminars-list__item .entry-button {
-    display: none;
+    /* display: none; */
   }
 
   /* .tabs-title {
