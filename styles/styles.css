@@ -5750,10 +5750,18 @@ article.articles-section__text p {
     padding-bottom: 13px;
   }
 
+  .seminar .seminars-list__item div {
+    margin-top: 3px;
+  }
+
   .seminar-schedule .seminars-list__item .entry-button {
     position: static;
     width: 100%;
     margin-top: 16px;
+  }
+
+  .seminar .seminar-schedule .seminars-list__item .entry-button {
+    margin-top: 12px;
   }
 
   .seminar-schedule {
