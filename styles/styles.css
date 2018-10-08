@@ -5526,6 +5526,16 @@ article.articles-section__text p {
     margin-left: 0;
   }
 
+  .seminar aside {
+    width: 100%;
+    font-size: 18px;
+    margin-left: 0;
+    margin-top: 32px;
+    margin-bottom: 36px;
+    padding-left: 29px;
+    padding-bottom: 8px;
+  }
+
   .seminar-reviews h3 {
     font-size: 30px;
     line-height: 36px;
@@ -5691,6 +5701,32 @@ article.articles-section__text p {
   .consultations-contacts span.br > strong,
   .consultations-contacts a {
     display: block;
+  }
+
+  /* About */
+
+  .seminar--about .seminar-recourse__block--left {
+    width: 280px;
+    margin-bottom: 39px;
+    padding-top: 0;
+  }
+
+  .seminar--about h3, 
+  .seminar--about strong {
+    margin-bottom: 27px;
+  }
+
+  .seminar--about strong {
+    margin-bottom: 15px;
+  }
+
+  .seminar--about p + strong, 
+  .seminar--about ol + strong {
+    margin-top: 48px;
+  }
+
+  .seminar--about li {
+    width: 257px;
   }
 
   /* News */
