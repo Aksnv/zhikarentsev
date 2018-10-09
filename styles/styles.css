@@ -537,7 +537,7 @@ ul.main-menu__submenu::before {
 .seminars h1 {
   text-align: center;
   margin-bottom: 41px;
-  padding-top: 107px;
+  /* padding-top: 107px; */
 }
 
 .seminars-wrapper p {
@@ -875,7 +875,7 @@ ul.main-menu__submenu::before {
 .consultations h1 {
   text-align: center;
   margin-bottom: 41px;
-  padding-top: 107px;
+  /* padding-top: 107px; */
 }
 
 .consultations-wrapper {
@@ -1325,6 +1325,10 @@ ul.main-menu__submenu::before {
   border-left: 2px solid #f17a4d; 
 }
 
+.seminar--reviews h1 {
+  margin-bottom: 44px;
+}
+
 .seminar-reviews {
   text-align: center;
 }
@@ -1375,7 +1379,28 @@ ul.main-menu__submenu::before {
   text-align: left;
   font-size: 20px;
   line-height: 32px;
-  margin-bottom: 34px;
+  margin-bottom: 3px;
+  color: #000;
+}
+
+.seminar-reviews em,
+.seminar-reviews time {
+  display: block;
+  font-family: 'museo_sans_cyrl100';
+  font-size: 15px;
+  line-height: 24px;
+  text-align: left;
+  font-style: normal;
+  color: #2a3a4b;
+}
+
+.seminar-reviews time {
+  margin-bottom: 40px;
+}
+
+.seminar-reviews em > a {
+  text-decoration: none;
+  color: #f0774e;
 }
 
 .seminar-reviews p {
@@ -1388,8 +1413,15 @@ ul.main-menu__submenu::before {
 }
 
 .seminar-review {
+  clear: both;
   overflow-y: hidden;
-  height: 595px;
+  /*height: 595px;*/
+  height: 292px;
+  margin-top: 51px;
+}
+
+.seminar-reviews .seminar-review:first-child {
+  margin-top: 0;
 }
 
 .seminar-review--visible {
@@ -1607,7 +1639,7 @@ ul.main-menu__submenu::before {
   background-color: transparent;
   color: #f0774e;
   border: none;
-  border-bottom: 1px dashed #f0774e;
+  /* border-bottom: 1px dashed #f0774e; */
   outline: none;
   cursor: pointer;
 }
@@ -1615,6 +1647,21 @@ ul.main-menu__submenu::before {
 .review-invisible {
   display: none;
 }
+
+.seminar--reviews .pagination {
+  /* float: left; */
+  text-align: left;
+  margin-top: 73px;
+}
+
+.seminar--reviews .add-review-button {
+  /* float: right; */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 240px;
+  margin-bottom: 0;
+}  
 
 /* About */
 
@@ -3759,7 +3806,7 @@ article.articles-section__text p {
 
   .seminars h1 {
     margin-bottom: 35px;
-    padding-top: 59px;
+    /* padding-top: 59px; */
   }
 
   .seminars-wrapper {
@@ -3962,7 +4009,7 @@ article.articles-section__text p {
 
   .consultations h1 {
     margin-bottom: 35px;
-    padding-top: 59px;
+    /* padding-top: 59px; */
   }
 
   .consultations-wrapper {
@@ -5550,7 +5597,7 @@ article.articles-section__text p {
 
   .seminars h1 {
     margin-bottom: 34px;
-    padding-top: 42px;
+    /* padding-top: 42px; */
   }
 
   .seminars-wrapper,
@@ -5887,7 +5934,7 @@ article.articles-section__text p {
 
   .consultations h1 {
     margin-bottom: 34px;
-    padding-top: 42px;
+    /* padding-top: 42px; */
   }
 
   .consultations-wrapper {
