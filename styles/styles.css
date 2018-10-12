@@ -5323,7 +5323,12 @@ article.articles-section__text p {
   }
 
   .seminar-review {
-    height: 775px;
+    /* height: 775px; */
+    height: 253px;
+  }
+
+  .seminar--reviews .add-review-button {
+    right: 42px;
   }
 
   .seminar-review--visible {
@@ -5852,6 +5857,10 @@ article.articles-section__text p {
     padding-bottom: 8px;
   }
 
+  .seminar--reviews h1 {
+    margin-bottom: 30px;
+  }
+
   .seminar-reviews h3 {
     font-size: 30px;
     line-height: 36px;
@@ -5862,6 +5871,19 @@ article.articles-section__text p {
     display: none;
   }
 
+  .seminar-reviews em > a {
+    display: block;
+  }
+
+  .seminar-reviews time {
+    margin-bottom: 17px;
+  }
+
+  .seminar--reviews .seminar-reviews p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
   .seminar-reviews p:last-child {
     margin-bottom: 17px;
   }
@@ -5870,8 +5892,14 @@ article.articles-section__text p {
     width: 100%;
   }
 
+  .seminar--reviews .add-review-button {
+    right: 163px;
+  }
+
   .seminar-review {
-    height: 1500px;
+    /* height: 1500px; */
+    height: 430px;
+    margin-top: 70px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -5883,6 +5911,8 @@ article.articles-section__text p {
   .review-visible, 
   .review-invisible {
     margin-right: 0;
+    margin-left: 0;
+    padding-top: 11px;
   }
 
   .review-form--visible {
@@ -6350,6 +6380,12 @@ article.articles-section__text p {
 
   .pagination {
     margin-bottom: 69px;
+  }
+
+  .seminar--reviews .pagination {
+    margin-top: 75px;
+    margin-left: 0;
+    margin-bottom: 79px;
   }
 
   /* Library */
@@ -7093,6 +7129,10 @@ article.articles-section__text p {
 
   .seminars-list__item .entry-button {
     /* display: none; */
+  }
+
+  .seminar--reviews .add-review-button {
+    right: 21px;
   }
 
   /* .tabs-title {
