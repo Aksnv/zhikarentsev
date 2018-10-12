@@ -4219,6 +4219,10 @@ article.articles-section__text p {
     margin-bottom: 57px;
   }
 
+  .seminar--reviews h1 {
+    margin-bottom: 45px;
+  }
+
   .seminar-reviews h3::before, 
   .seminar-reviews h3::after {
     width: 23%;
@@ -4226,6 +4230,10 @@ article.articles-section__text p {
 
   .seminar-reviews p:last-child {
     margin-bottom: 0;
+  }
+
+  .seminar-reviews time {
+    margin-bottom: 30px;
   }
 
   .seminar-reviews--visible .popup__close-button {
@@ -4251,7 +4259,9 @@ article.articles-section__text p {
 
   .seminar-review {
     /* height: 690px; */
-    height: 775px;
+    /* height: 775px; */
+    height: 253px;
+    margin-top: 90px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -4262,7 +4272,10 @@ article.articles-section__text p {
 
   .review-visible, 
   .review-invisible {
-    margin-right: 40px;
+    float: left;
+    /* margin-right: 40px; */
+    margin-left: 40px;
+    padding-top: 20px;
   }
 
   .review-form {
@@ -4346,6 +4359,15 @@ article.articles-section__text p {
 
   .review-form__capcha p {
     text-align: center;
+  }
+
+  .seminar--reviews .pagination {
+    margin-top: 111px;
+    margin-left: 40px;
+  }
+
+  .seminar--reviews .add-review-button {
+    right: 170px;
   }
 
   /* About */ 
