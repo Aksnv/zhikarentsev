@@ -5913,6 +5913,10 @@ article.articles-section__text p {
     margin-bottom: 30px;
   }
 
+  .seminar--review h1 {
+    margin-bottom: 35px;
+  }
+
   .seminar-reviews h3 {
     font-size: 30px;
     line-height: 36px;
@@ -5931,9 +5935,17 @@ article.articles-section__text p {
     margin-bottom: 17px;
   }
 
+  .seminar-review time {
+    margin-bottom: 13px;
+  }
+
   .seminar--reviews .seminar-reviews p {
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .seminar--review .seminar-reviews p {
+    margin-bottom: 30px;
   }
 
   .seminar-reviews p:last-child {
@@ -5948,9 +5960,14 @@ article.articles-section__text p {
     right: 163px;
   }
 
+  .seminar--review .add-review-button {
+    position: static;
+    margin-left: 20px;
+  }
+
   .seminar-review {
     /* height: 1500px; */
-    height: 430px;
+    height: 428px;
     margin-top: 70px;
     padding-left: 0;
     padding-right: 0;
@@ -5971,6 +5988,12 @@ article.articles-section__text p {
     margin-right: 0;
     margin-left: 0;
     padding-top: 11px;
+  }
+
+  .seminar--review .review-link {
+    margin-top: 0;
+    margin-bottom: 39px;
+    padding-top: 0;
   }
 
   .review-form--visible {
