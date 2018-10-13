@@ -467,7 +467,7 @@ $(".review-form textarea").focus(function() {
   $(this).removeClass("invalid-value");
 });
 
-$(".review-visible").click(function() {
+/*$(".review-visible").click(function() {
   $(this).hide();
   $(".seminar-review").addClass("seminar-review--visible");
   $(".review-invisible").show();
@@ -477,7 +477,7 @@ $(".review-invisible").click(function() {
   $(this).hide();
   $(".seminar-review").removeClass("seminar-review--visible");
   $(".review-visible").show();
-});
+});*/
 
 
 /* Library */

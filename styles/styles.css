@@ -1329,8 +1329,16 @@ ul.main-menu__submenu::before {
   margin-bottom: 44px;
 }
 
+.seminar--review h1 {
+  margin-bottom: 50px;
+}
+
 .seminar-reviews {
   text-align: center;
+}
+
+.seminar--review .seminar-reviews {
+  text-align: left;
 }
 
 .seminar-reviews h3 {
@@ -1394,6 +1402,11 @@ ul.main-menu__submenu::before {
   color: #2a3a4b;
 }
 
+.seminar--review .seminar-reviews em, 
+.seminar--review .seminar-reviews time {
+  text-align: center;
+}
+
 .seminar-reviews time {
   margin-bottom: 40px;
 }
@@ -1418,6 +1431,10 @@ ul.main-menu__submenu::before {
   /*height: 595px;*/
   height: 292px;
   margin-top: 51px;
+}
+
+.seminar--review .seminar-review {
+  height: auto;
 }
 
 .seminar-reviews .seminar-review:first-child {
@@ -1628,7 +1645,7 @@ ul.main-menu__submenu::before {
   background-color: #f0c5b6;
 }
 
-.review-visible,
+/* .review-visible,
 .review-invisible {
   float: right;
   display: inline-block;
@@ -1639,13 +1656,31 @@ ul.main-menu__submenu::before {
   background-color: transparent;
   color: #f0774e;
   border: none;
-  /* border-bottom: 1px dashed #f0774e; */
+  border-bottom: 1px dashed #f0774e; 
   outline: none;
   cursor: pointer;
 }
 
 .review-invisible {
   display: none;
+} */
+
+.review-link {
+  float: right;
+  display: inline-block;
+  vertical-align: top;
+  font-family: 'museo_sans_cyrl300';
+  font-size: 15px;
+  text-decoration: none;
+  color: #f0774e;
+}
+
+.seminar--review .review-link {
+  float: none;
+  font-size: 20px;
+  line-height: 32px;
+  text-decoration: underline;
+  margin-top: 74px;
 }
 
 .seminar--reviews .pagination {
@@ -1661,7 +1696,11 @@ ul.main-menu__submenu::before {
   bottom: 0;
   width: 240px;
   margin-bottom: 0;
-}  
+}
+
+.seminar--review .add-review-button {
+  bottom: -10px;
+}
 
 /* About */
 
@@ -4270,10 +4309,15 @@ article.articles-section__text p {
     height: auto;
   }
 
-  .review-visible, 
+  /* .review-visible, 
   .review-invisible {
     float: left;
-    /* margin-right: 40px; */
+    margin-left: 40px;
+    padding-top: 20px;
+  } */
+
+  .review-link {
+    float: left;
     margin-left: 40px;
     padding-top: 20px;
   }
@@ -5908,8 +5952,14 @@ article.articles-section__text p {
     height: auto;
   }
 
-  .review-visible, 
+  /* .review-visible, 
   .review-invisible {
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 11px;
+  } */
+
+  .review-link {
     margin-right: 0;
     margin-left: 0;
     padding-top: 11px;
