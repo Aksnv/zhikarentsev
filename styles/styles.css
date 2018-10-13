@@ -4262,6 +4262,10 @@ article.articles-section__text p {
     margin-bottom: 45px;
   }
 
+  .seminar--review h1 {
+    margin-bottom: 30px;
+  }
+
   .seminar-reviews h3::before, 
   .seminar-reviews h3::after {
     width: 23%;
@@ -4320,6 +4324,10 @@ article.articles-section__text p {
     float: left;
     margin-left: 40px;
     padding-top: 20px;
+  }
+
+  .seminar--review .review-link {
+    margin-top: 51px;
   }
 
   .review-form {
