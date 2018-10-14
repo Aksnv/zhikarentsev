@@ -2916,8 +2916,14 @@ article.articles-section__text p {
 }
 
 .popup--entry-form,
-.popup--feedback-form {
+.popup--feedback-form,
+.popup--gallery {
   overflow-x: hidden;
+}
+
+.popup--gallery {
+  padding-top: 29px;
+  background-color: #2b3a4a;
 }
 
 .popup--entry-form h1 {
@@ -2926,6 +2932,79 @@ article.articles-section__text p {
 
 .popup--feedback-form h1 {
   margin-bottom: 113px;
+}
+
+.popup--gallery h1 {
+  font-family: 'geometriamedium';
+  font-size: 15px;
+  line-height: 32px;
+  margin-bottom: 41px;
+  color: #fff;
+}
+
+.popup--gallery .popup__close-button {
+  background-position: -108px -112px;
+}
+
+.popup--gallery .gallery__image {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.popup--gallery .gallery__image img {
+  display: block;
+  max-width: 1170px;
+  max-height: 877px;
+}
+
+.popup--gallery p {
+  font-family: 'geometriamedium';
+  font-size: 13px;
+  line-height: 90px;
+  color: #fff;
+}
+
+.gallery__button {
+  position: absolute;
+  top: calc(50% - 25px);
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #f79149;
+  border-radius: 25px;
+}
+
+.gallery__button--back {
+  left: -100px;
+}
+
+.gallery__button--forward {
+  right: -100px;
+}
+
+.gallery__button::before {
+  position: absolute;
+  top: 16px;
+  left: 19px;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 15px;
+  background-image: url(../images/sprite.png);
+  background-position: -120px -40px;
+}
+
+.gallery__button--forward::before {
+  transform: rotate(180deg);
+}
+
+.gallery__button:hover {
+  background-color: #f79149;
+  color: #fff;
+  cursor: pointer;
 }
 
 /* *** Entry & feedback forms *** */
@@ -5939,7 +6018,8 @@ article.articles-section__text p {
     margin-bottom: 13px;
   }
 
-  .seminar--reviews .seminar-reviews p {
+  .seminar--reviews .seminar-reviews p,
+  .seminar-review p {
     font-size: 17px;
     line-height: 30px;
   }
@@ -6855,7 +6935,8 @@ article.articles-section__text p {
     padding: 0 10px;
   }
 
-  .popup--entry-form h1 {
+  .popup--entry-form h1,
+  .popup--gallery h1 {
     margin-bottom: 24px;
   }
 
@@ -8323,6 +8404,10 @@ article.articles-section__text p {
 
   .popup--online-reader {
     padding-top: 22px;
+  }
+
+  .popup--gallery {
+    padding-top: 29px;
   }
 
   /* *** Entry & feedback forms *** */

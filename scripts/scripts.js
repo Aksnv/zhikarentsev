@@ -243,6 +243,19 @@ $(document).ready(function() {
 });
 
 
+/* Gallery */
+
+$(".gallery-button").click(function() {
+  $(".popup--gallery").addClass("popup--active");
+  $("body").css("overflowY", "hidden");
+});
+
+$(".popup__close-button").click(function() {
+  $(".popup--gallery").removeClass("popup--active");
+  $("body").css("overflowY", "scroll");
+});
+
+
 /* Entry form */
 
 $(".entry-button").click(function() {
