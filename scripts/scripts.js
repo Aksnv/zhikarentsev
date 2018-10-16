@@ -255,6 +255,47 @@ $(".popup__close-button").click(function() {
   $("body").css("overflowY", "scroll");
 });
 
+$(".gallery__button--forward").click(function() {
+  for (var i = 0; i < $(".gallery__image-item").length; i++) {
+    if ($($(".gallery__image-item")[i]).hasClass("gallery__image-item--active")) {
+      var num = i;
+      if (num === 2) {
+        num = -1;
+      }
+    }
+    $($(".gallery__image-item")[i]).removeClass("gallery__image-item--active");
+  }
+  $($(".gallery__image-item")[num + 1]).addClass("gallery__image-item--active");
+  $(".gallery__image-number").text(num + 2);
+});
+
+$(".gallery__button--back").click(function() {
+  for (var i = 0; i < $(".gallery__image-item").length; i++) {
+    if ($($(".gallery__image-item")[i]).hasClass("gallery__image-item--active")) {
+      var num = i;
+      if (num === 0) {
+        num = 3;
+      }
+    }
+    $($(".gallery__image-item")[i]).removeClass("gallery__image-item--active");
+  }
+  $($(".gallery__image-item")[num - 1]).addClass("gallery__image-item--active");
+  $(".gallery__image-number").text(num);
+});
+
+
+/* Gallery touch view */
+
+/*var hammer = new Hammer(document.querySelector('.carousel'));
+var $carousel = $(".carousel").carousel({"interval":0});
+hammer.get("swipe");
+hammer.on("swipeleft", function(){
+    $carousel.carousel("next");
+});
+hammer.on("swiperight", function(){
+    $carousel.carousel("prev");
+});*/
+
 
 /* Entry form */
 
@@ -338,14 +379,17 @@ $(".entry-form input[type='email']").focus(function() {
 $(".entry-form__select").blur(function() {
   if ($(".jq-selectbox__select-text").text() == "Семинар *") {
     $(".entry-form .jq-selectbox").addClass("invalid-value");
+    $(".entry-form .jq-selectbox").removeClass("valid-value");
   } else {
     $(".entry-form .jq-selectbox").removeClass("invalid-value");
+    $(".entry-form .jq-selectbox").addClass("valid-value");
   }
 });
 
 $(".entry-form__select").change(function() {
   if ($(".jq-selectbox__select-text").text() != "Семинар *") {
     $(".entry-form .jq-selectbox").removeClass("invalid-value");
+    $(".entry-form .jq-selectbox").addClass("valid-value");
   }
 });
 
@@ -421,7 +465,7 @@ $(".feedback-form textarea").focus(function() {
 
 /* Seminar reviews */
 
-$(".add-review-button").click(function() {
+/*$(".add-review-button").click(function() {
   $(this).hide();
   $(".review-form").addClass("review-form--visible");
   $(".seminar-reviews").addClass("seminar-reviews--visible");
@@ -446,7 +490,7 @@ $(".seminar-reviews .popup__close-button").click(function() {
   if ($(".container").css("width") != "1170px") {
     $("body").css("overflowY", "scroll");
   }
-});
+});*/
 
 $(".review-form input[type='text']").blur(function() {
   if (this.value != "") {
@@ -454,9 +498,9 @@ $(".review-form input[type='text']").blur(function() {
   } else {
     $(this).next().removeClass("review-form__label");
     $(this).addClass("invalid-value");
-    if ($(this).hasClass("review-form__name")) {
+    /*if ($(this).hasClass("review-form__name")) {
       $(this).removeClass("invalid-value");
-    }
+    }*/
   }
 });
 
@@ -491,6 +535,30 @@ $(".review-invisible").click(function() {
   $(".seminar-review").removeClass("seminar-review--visible");
   $(".review-visible").show();
 });*/
+
+function reviewFormShow() {
+  $(".review-form").css("display", "block");
+  $(".jq-selectbox__select-text").text("Семинар *");
+};
+
+setTimeout(reviewFormShow, 100);
+
+$(".review-form__select").blur(function() {
+  if ($(".jq-selectbox__select-text").text() == "Семинар *") {
+    $(".review-form .jq-selectbox").addClass("invalid-value");
+    $(".review-form .jq-selectbox").removeClass("valid-value");
+  } else {
+    $(".review-form .jq-selectbox").removeClass("invalid-value");
+    $(".review-form .jq-selectbox").addClass("valid-value");
+  }
+});
+
+$(".review-form__select").change(function() {
+  if ($(".jq-selectbox__select-text").text() != "Семинар *") {
+    $(".review-form .jq-selectbox").removeClass("invalid-value");
+    $(".review-form .jq-selectbox").addClass("valid-value");
+  }
+});
 
 
 /* Library */

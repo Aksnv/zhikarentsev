@@ -1456,6 +1456,7 @@ ul.main-menu__submenu::before {
   line-height: 46px;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   margin-bottom: 28px;
   background-color: transparent;
   color: #f79149;
@@ -1473,7 +1474,8 @@ ul.main-menu__submenu::before {
 
 .review-form {
   overflow: hidden;
-  display: none;
+  display: none; 
+  /* display: block; */
   margin-bottom: 78px;
   padding-top: 55px;
   padding-bottom: 18px;
@@ -1483,9 +1485,9 @@ ul.main-menu__submenu::before {
   border-radius: 5px;
 }
 
-.review-form--visible {
+/* .review-form--visible {
   display: block;
-}
+} */
 
 .review-form__wrapper {
   position: relative;
@@ -1496,7 +1498,91 @@ ul.main-menu__submenu::before {
 
 .review-form__wrapper--textarea {
   padding-top: 13px;
-}  
+}
+
+.review-form .jq-selectbox {
+  position: relative;
+  display: block;
+  /* width: 100%; */
+  width: 663px;
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  /* margin-bottom: 65px; */
+  background-color: transparent;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #aba39e;
+}
+
+.review-form .jq-selectbox.invalid-value {
+  border-bottom: 1px solid #e25555;
+}
+
+.review-form .jq-selectbox.invalid-value::before {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  content: "Выберите семинар";
+  display: block;
+  font-family: 'proxima_nova_ltlight';
+  font-size: 14px;
+  color: #e25555;
+}
+
+.review-form .jq-selectbox.valid-value::before {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  content: "Семинар *";
+  display: block;
+  font-family: 'proxima_nova_ltlight';
+  font-size: 14px;
+  color: #000;
+}
+
+.review-form .jq-selectbox__select-text, 
+.review-form .jq-selectbox__select-text.placeholder {
+  font-family: 'proxima_nova_ltlight';
+  font-size: 20px;
+  padding-left: 0;
+}
+
+.review-form .jq-selectbox__dropdown {
+  top: 40px;
+}
+
+.review-form .jq-selectbox__dropdown, 
+.review-form .jq-selectbox__dropdown ul {
+  width: 663px;
+  max-height: 252px!important;
+}
+
+.review-form .jq-selectbox li {
+  min-height: 42px;
+  font-family: 'proxima_nova_ltlight';
+  font-size: 20px;
+  line-height: 42px;
+  background-color: #f6f3f2;
+  border-bottom: none;
+}
+
+.review-form .jq-selectbox li:hover {
+  background-color: #f7c29d;
+}
+
+.review-form .jq-selectbox::after {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  content: "";
+  display: block;
+  width: 19px;
+  height: 10px;
+  background-image: url(../images/sprite.png);
+  background-position: -2px -51px;
+  transform: rotate(0deg);
+}
 
 .review-form input[type="text"],
 .review-form textarea {
@@ -1510,6 +1596,11 @@ ul.main-menu__submenu::before {
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #aba39e;
+}
+
+.review-form input[type="text"].review-form__name {
+  width: 326px;
+  margin-right: 47px;
 }
 
 .review-form textarea {
@@ -1580,7 +1671,8 @@ ul.main-menu__submenu::before {
   float: left;
   width: 340px;
   margin-right: 258px;
-  padding-top: 148px;
+  /* padding-top: 148px; */
+  padding-top: 19px;
 }
 
 .review-form__capcha .review-form__wrapper,
@@ -1618,7 +1710,8 @@ ul.main-menu__submenu::before {
 .review-form__reset {
   float: left;
   width: 210px;
-  margin-top: 138px;
+  /* margin-top: 138px; */
+  margin-top: 9px;
 }
 
 .review-form__reset {
@@ -1630,7 +1723,7 @@ ul.main-menu__submenu::before {
   text-transform: uppercase;
   margin: 0 auto;
   margin-right: 20px;
-  margin-top: 138px;
+  margin-top: 9px;
   background: none;
   background-color: #f1d4ca;
   color: #000;
@@ -1638,6 +1731,7 @@ ul.main-menu__submenu::before {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  outline: none;
 }
 
 .review-form__reset:hover {
@@ -1681,6 +1775,10 @@ ul.main-menu__submenu::before {
   line-height: 32px;
   text-decoration: underline;
   margin-top: 74px;
+}
+
+.review-form + .review-link {
+  margin-top: 0;
 }
 
 .seminar--reviews .pagination {
@@ -2948,13 +3046,20 @@ article.articles-section__text p {
 
 .popup--gallery .gallery__image {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
   margin-bottom: 18px;
 }
 
-.popup--gallery .gallery__image img {
-  display: block;
+.popup--gallery .gallery__image-item {
+  display: none;
   max-width: 1170px;
   max-height: 877px;
+  margin: 0 auto;
+}
+
+.popup--gallery .gallery__image-item--active {
+  display: block;
 }
 
 .popup--gallery p {
@@ -3064,6 +3169,17 @@ article.articles-section__text p {
   font-family: 'proxima_nova_ltlight';
   font-size: 14px;
   color: #e25555;
+}
+
+.entry-form .jq-selectbox.valid-value::before {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  content: "Семинар *";
+  display: block;
+  font-family: 'proxima_nova_ltlight';
+  font-size: 14px;
+  color: #000;
 }
 
 .entry-form .jq-selectbox::after {
@@ -8374,6 +8490,42 @@ article.articles-section__text p {
 
 }
 
+/* *** Adaptive styles (height less than 1011px) *** */
+
+@media screen and (max-height: 1011px) {
+
+  /* *** Popup *** */
+
+  .popup--gallery .gallery__image-item {
+    max-height: 801px;
+  }
+
+}
+
+/* *** Adaptive styles (height less than 948px) *** */
+
+@media screen and (max-height: 948px) {
+
+  /* *** Popup *** */
+
+  .popup--gallery .gallery__image-item {
+    max-height: 738px;
+  }
+
+}
+
+/* *** Adaptive styles (height less than 843px) *** */
+
+@media screen and (max-height: 843px) {
+
+  /* *** Popup *** */
+
+  .popup--gallery .gallery__image-item {
+    max-height: 633px;
+  }
+
+}
+
 
 /* *** Adaptive styles (height less than 769px) *** */
 
@@ -8408,6 +8560,10 @@ article.articles-section__text p {
 
   .popup--gallery {
     padding-top: 29px;
+  }
+
+  .popup--gallery .gallery__image-item {
+    max-height: 548px;
   }
 
   /* *** Entry & feedback forms *** */
