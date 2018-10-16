@@ -3830,6 +3830,12 @@ article.articles-section__text p {
     padding-right: 0;
   }
 
+  .container--review {
+    width: 680px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
   .breadcrumbs {
     padding-top: 21px;
   }
@@ -3976,9 +3982,9 @@ article.articles-section__text p {
   }
 
   .entry-button {
-    position: absolute;
+    /*position: absolute;
     top: 237px;
-    left: calc(50% - 191px);
+    left: calc(50% - 191px);*/
     /* margin-top: 137px; */
     /* margin-top: 237px; */
     margin-top: 0;
@@ -4525,8 +4531,13 @@ article.articles-section__text p {
     margin-top: 51px;
   }
 
+  .review-form + .review-link {
+    margin-top: 0;
+  }
+
   .review-form {
-    position: relative; 
+    position: relative;
+    margin-bottom: 50px; 
     padding-bottom: 58px;
     /* padding-left: 40px;
     padding-right: 40px; */
@@ -4577,16 +4588,25 @@ article.articles-section__text p {
     display: none;
   } 
 
-  .review-form input[type="text"], 
-  .review-form textarea {
+  .review-form input[type="text"],
+  .review-form input[type="text"].review-form__name,
+  .review-form textarea,
+  .review-form .jq-selectbox,
+  .review-form .jq-selectbox__dropdown, 
+  .review-form .jq-selectbox__dropdown ul {
     width: 680px;
+  }
+
+  .review-form input[type="text"].review-form__name {
+    margin-right: 0;
   }
 
   .review-form__submit, 
   .review-form__reset {
     float: none;
     display: inline-block;
-    margin-top: 140px;
+    /* margin-top: 140px; */
+    margin-top: 24px;
   }
 
   .review-form__reset {
@@ -4598,10 +4618,13 @@ article.articles-section__text p {
 
   .review-form__capcha {
     overflow: visible;
-    position: absolute;
+    /* position: absolute;
     left: calc(50% - 170px);
-    bottom: 143px;
-    padding-top: 0;
+    bottom: 143px; */
+    float: none;
+    /* padding-top: 0; */
+    margin: 0 auto;
+    padding-top: 16px;
   }
 
   .review-form__capcha p {
