@@ -3011,6 +3011,11 @@ article.articles-section__text p {
   border: none;
   outline: none;
   cursor: pointer;
+  z-index: 2;
+}
+
+.popup--gallery .popup__close-button {
+  top: 33px;
 }
 
 .popup--entry-form,
@@ -3892,7 +3897,7 @@ article.articles-section__text p {
     display: none;
   }
 
-  .main-menu ul {
+  .main-menu > ul {
     display: none;
   }
 
@@ -4696,6 +4701,10 @@ article.articles-section__text p {
     width: 320px;
   }
 
+  .gallery__button {
+    display: none;
+  }
+
   /* Forum */
 
   .forum h1 {
@@ -5430,6 +5439,18 @@ article.articles-section__text p {
     background-position: -104px -91px;
   }
 
+  .popup--gallery .popup__close-button {
+    background-position: -80px -91px;
+  }
+
+  .popup--gallery h1 {
+    margin-bottom: 9px;
+  }
+
+  .popup--gallery p {
+    line-height: 16px;
+  }
+
   /* *** Entry & feedback forms *** */
 
   .entry-form__wrapper--city {
@@ -5583,6 +5604,10 @@ article.articles-section__text p {
     left: calc(50% - 196px);
     bottom: -90px;
     z-index: 13;
+  }
+
+  .content--mobile .entry-button.review-form__submit {
+    position: static;
   }
 
   .content--mobile .seminars-list__item .entry-button {
@@ -6184,7 +6209,7 @@ article.articles-section__text p {
     margin-bottom: 30px;
   }
 
-  .seminar-reviews p:last-child {
+  .seminar-reviews .review-form__capcha p:last-child {
     clear: both;
     font-size: 14px;
     margin-bottom: 17px;
@@ -8410,6 +8435,10 @@ article.articles-section__text p {
     right: 20px;
   }
 
+  .popup--gallery .popup__close-button {
+    top: 33px;
+  }
+
   /* *** Entry & feedback forms *** */
 
   /* .tabs-form {
@@ -8700,6 +8729,10 @@ article.articles-section__text p {
 }
 
 @media screen and (max-height: 769px) and (max-width: 1180px) {
+
+  .popup--gallery .gallery__image-item {
+    max-height: 620px;
+  }
   
   /* *** Entry & feedback forms *** */
 
@@ -8719,6 +8752,10 @@ article.articles-section__text p {
 
 
 @media screen and (max-height: 769px) and (max-width: 1023px) {
+
+  .popup--gallery .gallery__image-item {
+    max-height: 575px;
+  }
   
   /* *** Entry & feedback forms *** */
 
@@ -8747,6 +8784,10 @@ article.articles-section__text p {
     color: #2a3a4b;
   }
 
+  .popup--gallery .gallery__image-item {
+    max-height: 425px;
+  }
+
   /* *** Entry & feedback forms *** */
 
   .popup--feedback-form h1 {
@@ -8771,6 +8812,15 @@ article.articles-section__text p {
   .entry-form__submit, 
   .feedback-form__submit {
     margin-bottom: 46px;
+  }
+
+}
+
+
+@media screen and (max-height: 769px) and (max-width: 567px) {
+
+  .popup--gallery .gallery__image-item {
+    max-height: 209px;
   }
 
 }

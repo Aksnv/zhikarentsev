@@ -2,9 +2,9 @@
 
 $(window).resize(function() {
   if ($(".container").css("width") == "1170px") {
-    $(".main-menu ul").show();
+    $(".main-menu > ul").show();
   } else {
-    $(".main-menu ul").hide();
+    $(".main-menu > ul").hide();
   }
 });
 
@@ -12,7 +12,7 @@ $(".main-menu__open-button").click(function() {
   $(this).hide();
   $(".main-menu").addClass("main-menu--mobile");
   $(".content").addClass("content--mobile");
-  $(".main-menu ul").show();
+  $(".main-menu > ul").show();
   $(".main-menu__close-button").show();
   $(".header--image-bg .entry-button").show();
   $("body").css("overflowY", "hidden");
@@ -22,7 +22,7 @@ $(".main-menu__close-button").click(function() {
   $(this).hide();
   $(".main-menu").removeClass("main-menu--mobile");
   $(".content").removeClass("content--mobile");
-  $(".main-menu ul").hide();
+  $(".main-menu > ul").hide();
   $(".main-menu__open-button").show();
   $("body").css("overflowY", "scroll");
 });
@@ -44,53 +44,67 @@ $(".main-menu__item--seminars").click(function(e) {
 
 /* Submenu */
 
-/*$(window).resize(function() {
-  if ($(".container").css("width") == "1170px") {
-    $("ul.main-menu__submenu").hide();
-  } else {
-    $("ul.main-menu__submenu").show();
-  }
-});*/
-
 $(".main-menu__item").mouseover(function() {
-  if ($(this).hasClass("main-menu__item--about")) {
-    $(this).addClass("main-menu__item--active");
-    $(".main-menu__submenu--about").addClass("main-menu__submenu--active");
-    $(".main-menu__item--seminars").removeClass("main-menu__item--active");
-    $(".main-menu__submenu--seminars").removeClass("main-menu__submenu--active");
-  } else if ($(this).hasClass("main-menu__item--seminars")) {
-    $(this).addClass("main-menu__item--active");
-    $(".main-menu__submenu--seminars").addClass("main-menu__submenu--active");
-    $(".main-menu__item--about").removeClass("main-menu__item--active");
-    $(".main-menu__submenu--about").removeClass("main-menu__submenu--active");
-  } else {
-    $(".main-menu__item--about").removeClass("main-menu__item--active");
-    $(".main-menu__submenu--about").removeClass("main-menu__submenu--active");
-    $(".main-menu__item--seminars").removeClass("main-menu__item--active");
-    $(".main-menu__submenu--seminars").removeClass("main-menu__submenu--active");
+  if ($(".container").css("width") == "1170px") {
+    if ($(this).hasClass("main-menu__item--about")) {
+      $(this).addClass("main-menu__item--active");
+      $(".main-menu__submenu--about").addClass("main-menu__submenu--active");
+      $(".main-menu__item--seminars").removeClass("main-menu__item--active");
+      $(".main-menu__submenu--seminars").removeClass("main-menu__submenu--active");
+    } else if ($(this).hasClass("main-menu__item--seminars")) {
+      $(this).addClass("main-menu__item--active");
+      $(".main-menu__submenu--seminars").addClass("main-menu__submenu--active");
+      $(".main-menu__item--about").removeClass("main-menu__item--active");
+      $(".main-menu__submenu--about").removeClass("main-menu__submenu--active");
+    } else {
+      $(".main-menu__item--about").removeClass("main-menu__item--active");
+      $(".main-menu__submenu--about").removeClass("main-menu__submenu--active");
+      $(".main-menu__item--seminars").removeClass("main-menu__item--active");
+      $(".main-menu__submenu--seminars").removeClass("main-menu__submenu--active");
+    }
   }
 });
 
 $(".main-menu__submenu--about").mouseover(function(e) {
-  e.stopPropagation();
-  $(".main-menu__item--about").addClass("main-menu__item--active");
-  $(".main-menu__submenu--about").addClass("main-menu__submenu--active");
+  if ($(".container").css("width") == "1170px") {
+    e.stopPropagation();
+    $(".main-menu__item--about").addClass("main-menu__item--active");
+    $(".main-menu__submenu--about").addClass("main-menu__submenu--active");
+  }
 });
 
 $(".main-menu__submenu--about").mouseout(function() {
-  $(".main-menu__item--about").removeClass("main-menu__item--active");
-  $(".main-menu__submenu--about").removeClass("main-menu__submenu--active");
+  if ($(".container").css("width") == "1170px") {
+    $(".main-menu__item--about").removeClass("main-menu__item--active");
+    $(".main-menu__submenu--about").removeClass("main-menu__submenu--active");
+  }
 });
 
 $(".main-menu__submenu--seminars").mouseover(function(e) {
-  e.stopPropagation();
-  $(".main-menu__item--seminars").addClass("main-menu__item--active");
-  $(".main-menu__submenu--seminars").addClass("main-menu__submenu--active");
+  if ($(".container").css("width") == "1170px") {
+    e.stopPropagation();
+    $(".main-menu__item--seminars").addClass("main-menu__item--active");
+    $(".main-menu__submenu--seminars").addClass("main-menu__submenu--active");
+  }
 });
 
 $(".main-menu__submenu--seminars").mouseout(function() {
-  $(".main-menu__item--seminars").removeClass("main-menu__item--active");
-  $(".main-menu__submenu--seminars").removeClass("main-menu__submenu--active");
+  if ($(".container").css("width") == "1170px") {
+    $(".main-menu__item--seminars").removeClass("main-menu__item--active");
+    $(".main-menu__submenu--seminars").removeClass("main-menu__submenu--active");
+  }
+});
+
+$(".main-menu__item--about").click(function() {
+  if ($(".container").css("width") != "1170px") {
+    $(".main-menu__submenu--about").toggleClass("main-menu__submenu--active");
+  }
+});
+
+$(".main-menu__item--seminars").click(function() {
+  if ($(".container").css("width") != "1170px") {
+    $(".main-menu__submenu--seminars").toggleClass("main-menu__submenu--active");
+  }
 });
 
 
