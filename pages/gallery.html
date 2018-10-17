@@ -110,12 +110,14 @@
     <button class="popup__close-button"></button>
     <div class="container">
       <h1>Лабиринты В.Жикаренцева</h1>
-      <div class="gallery__image">
-        <img class="gallery__image-item gallery__image-item--1 gallery__image-item--active" src="../images/pages/gallery/full_screen/02.png">
-        <img class="gallery__image-item gallery__image-item--2" src="../images/pages/gallery/full_screen/02_1.jpg">
-        <img class="gallery__image-item gallery__image-item--3" src="../images/pages/gallery/full_screen/02_2.jpg">
-        <button class="gallery__button gallery__button--back"></button>
-        <button class="gallery__button gallery__button--forward"></button>
+      <div class="gallery__image" data-ride="carousel">
+        <div class="gallery__inner" role="listbox">
+          <img class="gallery__image-item gallery__image-item--1 gallery__image-item--active" src="../images/pages/gallery/full_screen/02.png">
+          <img class="gallery__image-item gallery__image-item--2" src="../images/pages/gallery/full_screen/02_1.jpg">
+          <img class="gallery__image-item gallery__image-item--3" src="../images/pages/gallery/full_screen/02_2.jpg">
+        </div>
+        <button class="gallery__button gallery__button--back" role="button" data-slide="prev"></button>
+        <button class="gallery__button gallery__button--forward" role="button" data-slide="next"></button>
       </div>
       <p><span class="gallery__image-number">1</span> из <span>3</span></p>
     </div>
@@ -123,7 +125,7 @@
 
 
 
-<!-- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -151,7 +153,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
- -->
+
 
 
   <!-- <script src="../scripts/jquery-3.2.1.min.js"></script> -->
