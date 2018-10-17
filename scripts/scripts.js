@@ -308,15 +308,15 @@ $(".gallery__button--back").click(function() {
 
 /* Gallery touch view */
 
-/*var hammer = new Hammer(document.querySelector('.carousel'));
-var $carousel = $(".carousel").carousel({"interval":0});
+var hammer = new Hammer(document.querySelector(".gallery__image"));
+var $carousel = $(".gallery__image").carousel({"interval":0});
 hammer.get("swipe");
 hammer.on("swipeleft", function(){
     $carousel.carousel("next");
 });
 hammer.on("swiperight", function(){
     $carousel.carousel("prev");
-});*/
+});
 
 
 /* Entry form */
