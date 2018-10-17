@@ -3982,9 +3982,9 @@ article.articles-section__text p {
   }
 
   .entry-button {
-    /*position: absolute;
+    position: absolute;
     top: 237px;
-    left: calc(50% - 191px);*/
+    left: calc(50% - 191px);
     /* margin-top: 137px; */
     /* margin-top: 237px; */
     margin-top: 0;
@@ -4607,6 +4607,10 @@ article.articles-section__text p {
     display: inline-block;
     /* margin-top: 140px; */
     margin-top: 24px;
+  }
+
+  .review-form__submit {
+    position: static;
   }
 
   .review-form__reset {
@@ -5666,7 +5670,8 @@ article.articles-section__text p {
     padding-right: 0;
   }
 
-  .container--form {
+  .container--form,
+  .container--review {
     width: 280px;
     margin: 0 auto;
   }
@@ -5784,6 +5789,10 @@ article.articles-section__text p {
     background-color: #fff;
     color: #2a3a4b;
     overflow-x: hidden;
+  }
+
+  .content--review {
+    background-color: #eeebea;
   }
 
   .entry-button {
@@ -6135,6 +6144,14 @@ article.articles-section__text p {
     margin-bottom: 35px;
   }
 
+  .seminar--review-form h1 {
+    margin-bottom: 31px;
+  }
+
+  .review-form__wrapper {
+    margin-bottom: 40px;
+  }
+
   .seminar-reviews h3 {
     font-size: 30px;
     line-height: 36px;
@@ -6168,6 +6185,8 @@ article.articles-section__text p {
   }
 
   .seminar-reviews p:last-child {
+    clear: both;
+    font-size: 14px;
     margin-bottom: 17px;
   }
 
@@ -6213,6 +6232,47 @@ article.articles-section__text p {
     margin-top: 0;
     margin-bottom: 39px;
     padding-top: 0;
+  }
+
+  .review-form {
+    padding-top: 7px;
+  }
+
+  .review-form input[type="text"], 
+  .review-form input[type="text"].review-form__name, 
+  .review-form textarea, 
+  .review-form .jq-selectbox, 
+  .review-form .jq-selectbox__dropdown, 
+  .review-form .jq-selectbox__dropdown ul {
+    width: 280px;
+    text-overflow: ellipsis;
+  }
+
+  .review-form__capcha {
+    width: 280px;
+  }
+
+  .review-form .review-form__capcha input[type="text"] {
+    width: 178px;
+  }
+
+  .review-form__capcha img {
+    margin-right: 14px;
+  }
+
+  .review-form .jq-selectbox li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .review-form textarea,
+  .review-form__capcha input[type="text"] + label {
+    font-size: 18px;
+  }
+
+  .review-form textarea {
+    line-height: 22px;
+    padding-bottom: 12px;
   }
 
   .review-form--visible {
@@ -6263,19 +6323,23 @@ article.articles-section__text p {
     margin-right: 15px;
   }
 
-  .review-form--visible .review-form__capcha p {
+  .review-form--visible .review-form__capcha p,
+  .review-form .review-form__capcha p {
     position: absolute;
     bottom: -60px;
     left: 5px;
   }
 
   .review-form--visible .review-form__submit, 
-  .review-form--visible .review-form__reset {
+  .review-form--visible .review-form__reset,
+  .review-form .review-form__submit, 
+  .review-form .review-form__reset {
     position: static;
     width: 130px;
   }
 
-  .review-form--visible .review-form__reset {
+  .review-form--visible .review-form__reset,
+  .review-form .review-form__reset {
     margin-right: 10px;
   }
 

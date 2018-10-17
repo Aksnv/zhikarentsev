@@ -44,6 +44,14 @@ $(".main-menu__item--seminars").click(function(e) {
 
 /* Submenu */
 
+/*$(window).resize(function() {
+  if ($(".container").css("width") == "1170px") {
+    $("ul.main-menu__submenu").hide();
+  } else {
+    $("ul.main-menu__submenu").show();
+  }
+});*/
+
 $(".main-menu__item").mouseover(function() {
   if ($(this).hasClass("main-menu__item--about")) {
     $(this).addClass("main-menu__item--active");
