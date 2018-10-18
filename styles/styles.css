@@ -8911,7 +8911,8 @@ article.articles-section__text p {
   }
 
   .popup--gallery .gallery__image-item {
-    max-height: 425px;
+    /* max-height: 425px; */
+    max-height: 209px;
   }
 
   /* *** Entry & feedback forms *** */
