@@ -8390,7 +8390,8 @@ article.articles-section__text p {
     color: #f17a4d;
   }
 
-  .footer__social-links li {
+  .footer__social-links li,
+  .footer--white-bg .footer__social-links li {
     margin-left: 10px;
     margin-right: 10px;
   }
