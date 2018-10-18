@@ -45,6 +45,7 @@ $(".main-menu__item--seminars").click(function(e) {
 /* Submenu */
 
 $(".main-menu__item").mouseover(function() {
+  $(this).addClass("main-menu__item--current");
   if ($(".container").css("width") == "1170px") {
     if ($(this).hasClass("main-menu__item--about")) {
       $(this).addClass("main-menu__item--active");
@@ -63,6 +64,10 @@ $(".main-menu__item").mouseover(function() {
       $(".main-menu__submenu--seminars").removeClass("main-menu__submenu--active");
     }
   }
+});
+
+$(".main-menu__item").mouseout(function() {
+  $(this).removeClass("main-menu__item--current");
 });
 
 $(".main-menu__submenu--about").mouseover(function(e) {
@@ -304,19 +309,6 @@ $(".gallery__button--back").click(function() {
   $($(".gallery__image-item")[num - 1]).addClass("gallery__image-item--active");
   $(".gallery__image-number").text(num);
 });
-
-
-/* Gallery touch view */
-
-/*var hammer = new Hammer(document.querySelector('.carousel'));
-var $carousel = $(".carousel").carousel({"interval":0});
-hammer.get("swipe");
-hammer.on("swipeleft", function(){
-    $carousel.carousel("next");
-});
-hammer.on("swiperight", function(){
-    $carousel.carousel("prev");
-});*/
 
 
 /* Entry form */
