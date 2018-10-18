@@ -3911,6 +3911,7 @@ article.articles-section__text p {
   }
 
   .main-menu__item {
+    height: auto;
     font-size: 22px;
   }
 
