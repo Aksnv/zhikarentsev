@@ -70,15 +70,11 @@ $(".main-menu__item").mouseover(function() {
       $(".main-menu__item--seminars").removeClass("main-menu__item--current");
       $(".main-menu__submenu--seminars").removeClass("main-menu__submenu--active");
     }
-  } else {
-    $(this).addClass("main-menu__item--current");
   }
 });
 
 $(".main-menu__item").mouseout(function() {
   if ($(".container").css("width") == "1170px") {
-    $(this).removeClass("main-menu__item--current");
-  } else {
     $(this).removeClass("main-menu__item--current");
   }
 });
