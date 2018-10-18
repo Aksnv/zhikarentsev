@@ -5749,6 +5749,10 @@ article.articles-section__text p {
     width: 680px;
   } */
 
+  .popup--gallery .gallery__image-item {
+    max-height: 500px;
+  }
+
   /* *** Online reader *** */
 
   .container--online-reader {
@@ -8896,9 +8900,9 @@ article.articles-section__text p {
 
 @media screen and (max-height: 769px) and (max-width: 1023px) {
 
-  .popup--gallery .gallery__image-item {
+  /* .popup--gallery .gallery__image-item {
     max-height: 500px;
-  }
+  } */
   
   /* *** Entry & feedback forms *** */
 
