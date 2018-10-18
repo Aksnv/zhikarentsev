@@ -5550,7 +5550,8 @@ article.articles-section__text p {
   }
 
   .popup--gallery p {
-    font-size: 13px;
+    font-family: 'geometriamedium';
+    font-size: 13px!important;
     line-height: 16px;
   }
 
