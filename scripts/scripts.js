@@ -308,16 +308,7 @@ $(".gallery__button--back").click(function() {
 
 /* Gallery touch view */
 
-/*var hammer = new Hammer(document.querySelector(".gallery__image"));
-var $carousel = $(".gallery__image").carousel({"interval":0});
-hammer.get("swipe");
-hammer.on("swipeleft", function(){
-    $carousel.carousel("next");
-});
-hammer.on("swiperight", function(){
-    $carousel.carousel("prev");
-});*/
-var hammer = new Hammer(document.querySelector('.carousel'));
+/*var hammer = new Hammer(document.querySelector('.carousel'));
 var $carousel = $(".carousel").carousel({"interval":0});
 hammer.get("swipe");
 hammer.on("swipeleft", function(){
@@ -325,7 +316,7 @@ hammer.on("swipeleft", function(){
 });
 hammer.on("swiperight", function(){
     $carousel.carousel("prev");
-});
+});*/
 
 
 /* Entry form */
@@ -856,21 +847,21 @@ $(".back-to-top").click(function() {
 });
 
 (function () {
-
-  var backToTopButton = document.querySelector(".back-to-top");
-  window.addEventListener("scroll", function(event) {
-    /*if ($(window).scrollTop() == 0) {
-      backToTopButton.classList.remove("back-to-top--visible");
-    } else {
-      backToTopButton.classList.add("back-to-top--visible");
-    }*/
-    if ($(window).scrollTop() + $(window).height() >= $(document).height() - 1) {
-      backToTopButton.classList.add("back-to-top--visible");
-    } else {
-      backToTopButton.classList.remove("back-to-top--visible");
+    var backToTopButton = document.querySelector(".back-to-top");
+    if (backToTopButton) {
+      window.addEventListener("scroll", function(event) {
+        /*if ($(window).scrollTop() == 0) {
+          backToTopButton.classList.remove("back-to-top--visible");
+        } else {
+          backToTopButton.classList.add("back-to-top--visible");
+        }*/
+        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 1) {
+          backToTopButton.classList.add("back-to-top--visible");
+        } else {
+          backToTopButton.classList.remove("back-to-top--visible");
+        }
+      });
     }
-  });
-
 }());
 
 
