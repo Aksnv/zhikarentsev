@@ -251,6 +251,7 @@ input[type="submit"]:focus {
 .main-menu__item {
   display: inline-block;
   position: relative;
+  height: 28px;
   font-size: 15px;
   text-transform: uppercase;
   text-decoration: none;
@@ -272,7 +273,8 @@ input[type="submit"]:focus {
 .main-menu__item--active::after {
   position: absolute;
   left: 0;
-  bottom: -10px;
+  /* bottom: -10px; */
+  bottom: 0;
   width: 100%;
   height: 4px;
   content: "";
