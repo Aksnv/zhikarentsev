@@ -3153,7 +3153,8 @@ article.articles-section__text p {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 18px;
+  /* margin-bottom: 18px; */
+  margin-bottom: 10px;
 }
 
 .popup--gallery .gallery__image-item {
@@ -5549,6 +5550,7 @@ article.articles-section__text p {
   }
 
   .popup--gallery p {
+    font-size: 13px;
     line-height: 16px;
   }
 
@@ -7278,6 +7280,7 @@ article.articles-section__text p {
   }
 
   .popup--gallery h1 {
+    margin-bottom: 10px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -8559,7 +8562,8 @@ article.articles-section__text p {
   .popup--gallery h1 {
     width: 190px;
     margin: auto;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
+    margin-bottom: 10px;
   }
 
   /* *** Entry & feedback forms *** */
