@@ -8897,7 +8897,7 @@ article.articles-section__text p {
 @media screen and (max-height: 769px) and (max-width: 1023px) {
 
   .popup--gallery .gallery__image-item {
-    max-height: 575px;
+    max-height: 550px;
   }
   
   /* *** Entry & feedback forms *** */
