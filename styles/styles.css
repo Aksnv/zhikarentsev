@@ -147,7 +147,7 @@ input[type="submit"]:focus {
 .content {
   position: relative;
   /* min-height: calc(100% - 237px); */
-  min-height: calc(100% - 282px);
+  min-height: calc(100% - 291px);
   text-align: center;
   padding-bottom: 68px;
 }
@@ -1584,6 +1584,10 @@ ul.main-menu__submenu::before {
   background-image: url(../images/sprite.png);
   background-position: -2px -51px;
   transform: rotate(0deg);
+}
+
+.review-form .jq-selectbox.opened::after {
+  transform: rotate(180deg);
 }
 
 .review-form input[type="text"],
@@ -5819,6 +5823,10 @@ article.articles-section__text p {
     overflow-x: hidden;
   }
 
+  .body--forum .content {
+    background-color: #f6e7bc;
+  }
+
   .content--review {
     background-color: #eeebea;
   }
@@ -5989,6 +5997,10 @@ article.articles-section__text p {
 
   .seminars-list__item:first-child {
     border-top: none;
+  }
+
+  .seminars-list__item--active {
+    background-color: transparent;
   }
 
   .seminars-list .seminars-list__item a {
@@ -7169,6 +7181,12 @@ article.articles-section__text p {
   .popup--entry-form h1,
   .popup--gallery h1 {
     margin-bottom: 24px;
+  }
+
+  .popup--gallery h1 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   .entry-form input[type="text"], 
@@ -8764,11 +8782,14 @@ article.articles-section__text p {
   
   /* *** Entry & feedback forms *** */
 
-  .entry-form p, .feedback-form p {
+  .entry-form p, 
+  .feedback-form p {
+    right: 0;
     font-size: 12px;
   }
 
-  .entry-form p > span, .feedback-form p > span {
+  .entry-form p > span, 
+  .feedback-form p > span {
     padding-top: 0;
   }
 
