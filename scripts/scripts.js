@@ -120,16 +120,12 @@ $(".main-menu__submenu--seminars").mouseout(function() {
 $(".main-menu__item--about").click(function() {
   if ($(".container").css("width") != "1170px") {
     $(".main-menu__submenu--about").toggleClass("main-menu__submenu--active");
-    $(this).addClass("main-menu__item--current");
-    $(".main-menu__item--seminars").removeClass("main-menu__item--current");
   }
 });
 
 $(".main-menu__item--seminars").click(function() {
   if ($(".container").css("width") != "1170px") {
     $(".main-menu__submenu--seminars").toggleClass("main-menu__submenu--active");
-    $(this).addClass("main-menu__item--current");
-    $(".main-menu__item--about").removeClass("main-menu__item--current");
   }
 });
 
