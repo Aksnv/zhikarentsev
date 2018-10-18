@@ -171,7 +171,7 @@
     hammer.on("swipeleft", function(){
         $carousel.carousel("next");
 
-        /*for (var i = 0; i < $(".gallery__image-item").length; i++) {
+        for (var i = 0; i < $(".gallery__image-item").length; i++) {
           if ($($(".gallery__image-item")[i]).hasClass("gallery__image-item--active")) {
             var num = i;
             if (num === 2) {
@@ -181,11 +181,24 @@
           $($(".gallery__image-item")[i]).removeClass("gallery__image-item--active");
         }
         $($(".gallery__image-item")[num + 1]).addClass("gallery__image-item--active");
-        $(".gallery__image-number").text(num + 2);*/
-  
+        $(".gallery__image-number").text(num + 2);
+
     });
     hammer.on("swiperight", function(){
         $carousel.carousel("prev");
+
+        for (var i = 0; i < $(".gallery__image-item").length; i++) {
+          if ($($(".gallery__image-item")[i]).hasClass("gallery__image-item--active")) {
+            var num = i;
+            if (num === 0) {
+              num = 3;
+            }
+          }
+          $($(".gallery__image-item")[i]).removeClass("gallery__image-item--active");
+        }
+        $($(".gallery__image-item")[num - 1]).addClass("gallery__image-item--active");
+        $(".gallery__image-number").text(num);
+
     });
   </script>
 </body>
