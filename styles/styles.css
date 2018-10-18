@@ -5550,8 +5550,6 @@ article.articles-section__text p {
   }
 
   .popup--gallery p {
-    font-family: 'geometriamedium';
-    font-size: 13px!important;
     line-height: 16px;
   }
 
@@ -8556,6 +8554,10 @@ article.articles-section__text p {
     right: 20px;
   }
 
+  .popup--gallery .container {
+    height: 100%;
+  }
+
   .popup--gallery .popup__close-button {
     top: 33px;
   }
@@ -8565,6 +8567,19 @@ article.articles-section__text p {
     margin: auto;
     /* margin-bottom: 24px; */
     margin-bottom: 10px;
+  }
+
+  .popup--gallery .gallery__image {
+    position: absolute;
+    top: calc(50% - 135px);
+    width: 100%;
+    left: 0;
+  }
+
+  .popup--gallery p {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
   }
 
   /* *** Entry & feedback forms *** */
