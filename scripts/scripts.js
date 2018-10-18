@@ -45,8 +45,8 @@ $(".main-menu__item--seminars").click(function(e) {
 /* Submenu */
 
 $(".main-menu__item").mouseover(function() {
-  $(this).addClass("main-menu__item--current");
   if ($(".container").css("width") == "1170px") {
+    $(this).addClass("main-menu__item--current");
     if ($(this).hasClass("main-menu__item--about")) {
       $(this).addClass("main-menu__item--active");
       $(".main-menu__submenu--about").addClass("main-menu__submenu--active");
@@ -67,7 +67,9 @@ $(".main-menu__item").mouseover(function() {
 });
 
 $(".main-menu__item").mouseout(function() {
-  $(this).removeClass("main-menu__item--current");
+  if ($(".container").css("width") == "1170px") {
+    $(this).removeClass("main-menu__item--current");
+  }
 });
 
 $(".main-menu__submenu--about").mouseover(function(e) {
