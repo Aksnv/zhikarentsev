@@ -8556,6 +8556,12 @@ article.articles-section__text p {
     top: 33px;
   }
 
+  .popup--gallery h1 {
+    width: 190px;
+    margin: auto;
+    margin-bottom: 24px;
+  }
+
   /* *** Entry & feedback forms *** */
 
   /* .tabs-form {
