@@ -8862,7 +8862,7 @@ article.articles-section__text p {
 
 }
 
-@media screen and (max-height: 843px) and (max-width: 1025px) {
+@media screen and (max-height: 1025px) and (max-width: 769px) {
   
   .popup--gallery .gallery__image {
     top: calc(50% - 250px);
