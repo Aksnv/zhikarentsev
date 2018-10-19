@@ -8862,6 +8862,18 @@ article.articles-section__text p {
 
 }
 
+@media screen and (max-height: 843px) and (max-width: 1025px) {
+  
+  .popup--gallery .gallery__image {
+    top: calc(50% - 250px);
+  }
+
+  .popup--gallery .gallery__image-item {
+    max-height: 500px;
+  }
+
+}
+
 @media screen and (max-height: 843px) and (max-width: 376px) {
   
   .popup--gallery .gallery__image {
