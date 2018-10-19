@@ -8980,11 +8980,11 @@ article.articles-section__text p {
 @media screen and (max-height: 769px) and (max-width: 1180px) {
 
   .popup--gallery .gallery__image {
-    top: calc(50% - 300px);
+    top: calc(50% - 225px);
   }
 
   .popup--gallery .gallery__image-item {
-    max-height: 600px;
+    max-height: 450px;
   }
   
   /* *** Entry & feedback forms *** */
@@ -9002,7 +9002,6 @@ article.articles-section__text p {
   }
 
 }
-
 
 @media screen and (max-height: 769px) and (max-width: 1023px) {
 
