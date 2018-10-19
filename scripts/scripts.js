@@ -291,6 +291,9 @@ $(".popup__close-button").click(function() {
 });
 
 $(".gallery__button--forward").click(function() {
+  for (var j = 0; j < $(".popup--gallery .item").length; j++) {
+    $($(".popup--gallery .item")[j]).removeClass("active");
+  }
   for (var i = 0; i < $(".gallery__image-item").length; i++) {
     if ($($(".gallery__image-item")[i]).hasClass("gallery__image-item--active")) {
       var num = i;
@@ -301,10 +304,14 @@ $(".gallery__button--forward").click(function() {
     $($(".gallery__image-item")[i]).removeClass("gallery__image-item--active");
   }
   $($(".gallery__image-item")[num + 1]).addClass("gallery__image-item--active");
+  $($(".popup--gallery .item")[num + 1]).addClass("active");
   $(".gallery__image-number").text(num + 2);
 });
 
 $(".gallery__button--back").click(function() {
+  for (var j = 0; j < $(".popup--gallery .item").length; j++) {
+    $($(".popup--gallery .item")[j]).removeClass("active");
+  }
   for (var i = 0; i < $(".gallery__image-item").length; i++) {
     if ($($(".gallery__image-item")[i]).hasClass("gallery__image-item--active")) {
       var num = i;
@@ -315,6 +322,7 @@ $(".gallery__button--back").click(function() {
     $($(".gallery__image-item")[i]).removeClass("gallery__image-item--active");
   }
   $($(".gallery__image-item")[num - 1]).addClass("gallery__image-item--active");
+  $($(".popup--gallery .item")[num - 1]).addClass("active");
   $(".gallery__image-number").text(num);
 });
 
