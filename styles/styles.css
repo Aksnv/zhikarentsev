@@ -1921,7 +1921,7 @@ ul.main-menu__submenu::before {
 /* Gallery carousel */
 
 .carousel-inner>.item>a>img,.carousel-inner>.item>img,.img-responsive {
-    /* display: block; */
+    display: block; 
     max-width: 100%;
     height: auto
 }
