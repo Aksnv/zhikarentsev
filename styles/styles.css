@@ -8996,11 +8996,11 @@ article.articles-section__text p {
   }
 
   .popup--gallery .gallery__image {
-    top: calc(50% - 125px);
+    top: calc(50% - 100px);
   }
 
   .popup--gallery .gallery__image-item {
-    max-height: 250px;
+    max-height: 200px;
   }
 
   /* *** Entry & feedback forms *** */
@@ -9034,7 +9034,12 @@ article.articles-section__text p {
 
 @media screen and (max-height: 769px) and (max-width: 567px) {
 
+  .popup--gallery .gallery__image {
+    top: calc(50% - 100px);
+  }
+
   .popup--gallery .gallery__image-item {
+    max-height: 200px;
   }
 
 }
