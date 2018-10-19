@@ -3142,7 +3142,7 @@ article.articles-section__text p {
 }
 
 .popup--gallery h1 {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   top: 0;
   left: 0;
@@ -3159,7 +3159,7 @@ article.articles-section__text p {
 }
 
 .popup--gallery .gallery__image {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   left: 0;
   top: calc(50% - 439px);
