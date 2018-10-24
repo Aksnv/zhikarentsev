@@ -10,6 +10,7 @@ $(window).resize(function() {
 
 $(".main-menu__open-button").click(function() {
   $(this).hide();
+  // $(".container").addClass("container--mobile");
   $(".main-menu").addClass("main-menu--mobile");
   $(".content").addClass("content--mobile");
   $(".main-menu > ul").show();
@@ -20,6 +21,7 @@ $(".main-menu__open-button").click(function() {
 
 $(".main-menu__close-button").click(function() {
   $(this).hide();
+  /*$(".container").removeClass("container--mobile");*/
   $(".main-menu").removeClass("main-menu--mobile");
   $(".content").removeClass("content--mobile");
   $(".main-menu > ul").hide();
@@ -118,6 +120,7 @@ $(".main-menu__item--about").click(function() {
 $(".main-menu__item--seminars").click(function() {
   if ($(".container").css("width") != "1170px") {
     $(".main-menu__submenu--seminars").toggleClass("main-menu__submenu--active");
+    $(".main-menu--mobile").toggleClass("main-menu--seminars");
   }
 });
 

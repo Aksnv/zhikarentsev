@@ -3943,6 +3943,10 @@ article.articles-section__text p {
     margin: 0 auto;
   }
 
+  /*.container--mobile {
+    width: 100%;
+  }*/
+
   .container--footer {
     padding-left: 20px;
     padding-right: 20px;
@@ -3991,24 +3995,26 @@ article.articles-section__text p {
   }
 
   .main-menu--mobile {
+    overflow-y: scroll;
     height: 662px;
   }
 
-  .main-menu--about {
+  /* .main-menu--about {
     height: 782px;
-  }
+  }  */
 
   .main-menu--mobile ul {
-    overflow-y: scroll;
-    position: fixed;
+    /* overflow-y: scroll; */
+    /* position: fixed; */
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     padding-left: 0;
     /* padding-top: 90px; */
     padding-top: 70px;
-    padding-bottom: 100px;
+    padding-bottom: 112px;
     background-color: #2a3a4b;
     z-index: 13;
   }
@@ -4131,17 +4137,26 @@ article.articles-section__text p {
   }
 
   .main-menu--mobile .entry-button {
-    position: relative;
+    /* position: relative;
+    top: 562px; */
     top: 562px;
-    left: auto;
+    /* left: auto; */
     /* top: 620px; */
     /* top: auto;
     bottom: 40px; */
     z-index: 13;
   }
 
-  .main-menu--about.main-menu--mobile .entry-button {
-    top: 682px;
+  .main-menu--about .entry-button {
+    top: 682px; 
+  }
+
+  .main-menu--seminars .entry-button {
+    top: 722px; 
+  }
+
+  .main-menu--about.main-menu--seminars .entry-button {
+    top: 842px; 
   }
 
   .content--mobile .entry-button {
@@ -5908,7 +5923,7 @@ article.articles-section__text p {
   .header {
     min-height: 568px;
     margin-bottom: 0;
-    padding-top: 31px;
+    /* padding-top: 31px; */
     background-image: url(../images/bg_mobile.jpg);
     -webkit-background-size: cover;
     background-size: cover;
@@ -5926,6 +5941,7 @@ article.articles-section__text p {
     position: static;
     width: 260px;
     margin: 0 auto;
+    padding-top: 30px;
   }
 
   .header--image-bg .logo {
@@ -5939,7 +5955,7 @@ article.articles-section__text p {
 
   .main-menu__open-button,
   .main-menu__close-button {
-    top: -11px;
+    top: 20px;
     right: 20px;
   }
 
@@ -7569,7 +7585,7 @@ article.articles-section__text p {
 
   .main-menu__open-button,
   .main-menu__close-button {
-    top: -11px;
+    top: 20px;
     right: 0;
   }
 
