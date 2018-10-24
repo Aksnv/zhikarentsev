@@ -9456,16 +9456,16 @@ article.articles-section__text p {
     height: 568px;
   }
 
-  .main-menu--about > ul {
-    height: 540px;
+  /* .main-menu--about > ul {
+    height: 568px;
   }
-
+  
   .main-menu--seminars > ul {
     height: 570px;
-  }
+  } */
 
   .main-menu--about.main-menu--seminars > ul {
-    height: 650px;
+    height: 610px;
   }
 
 }
