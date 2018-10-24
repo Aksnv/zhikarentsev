@@ -10,7 +10,7 @@ $(window).resize(function() {
 
 $(".main-menu__open-button").click(function() {
   $(this).hide();
-  // $(".container").addClass("container--mobile");
+  /*$(".container").addClass("container--mobile");*/
   $(".main-menu").addClass("main-menu--mobile");
   $(".content").addClass("content--mobile");
   $(".main-menu > ul").show();

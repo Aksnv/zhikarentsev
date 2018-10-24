@@ -4014,7 +4014,7 @@ article.articles-section__text p {
     padding-left: 0;
     /* padding-top: 90px; */
     padding-top: 70px;
-    padding-bottom: 112px;
+    padding-bottom: 120px;
     background-color: #2a3a4b;
     z-index: 13;
   }
@@ -5980,9 +5980,9 @@ article.articles-section__text p {
     padding-bottom: 5px;
   }
 
-  .main-menu ul {
+  /*.main-menu ul {
     overflow-y: scroll;
-  }
+  }*/
 
   .main-menu__item {
     font-size: 15px;
