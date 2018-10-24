@@ -111,6 +111,7 @@ $(".main-menu__submenu--seminars").mouseout(function() {
 $(".main-menu__item--about").click(function() {
   if ($(".container").css("width") != "1170px") {
     $(".main-menu__submenu--about").toggleClass("main-menu__submenu--active");
+    $(".main-menu--mobile").toggleClass("main-menu--about");
   }
 });
 
