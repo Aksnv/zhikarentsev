@@ -4073,7 +4073,8 @@ article.articles-section__text p {
 
   .main-menu__open-button,
   .main-menu__close-button {
-    position: absolute;
+    /*position: absolute;*/
+    position: fixed;
     background-image: url("../images/sprite.png");
     cursor: pointer;
   }
