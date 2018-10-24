@@ -9431,19 +9431,19 @@ article.articles-section__text p {
   }
 
   .main-menu--mobile > ul {
-    height: 460px;
+    height: 420px;
   }
 
   .main-menu--about > ul {
-    height: 540px;
+    height: 500px;
   }
 
   .main-menu--seminars > ul {
-    height: 570px;
+    height: 530px;
   }
 
   .main-menu--about.main-menu--seminars > ul {
-    height: 650px;
+    height: 610px;
   }
 
 }
