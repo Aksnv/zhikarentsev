@@ -9386,6 +9386,42 @@ article.articles-section__text p {
 
 }
 
+@media screen and (max-height: 360px) and (max-width: 640px) {
+
+  .main-menu--mobile,
+  .main-menu--mobile > ul,
+  .main-menu--about.main-menu--seminars > ul {
+    height: 360px;
+  }
+
+  .main-menu--mobile > ul {
+    height: 420px;
+  }
+
+  .main-menu--about > ul {
+    height: 500px;
+  }
+
+  .main-menu--seminars > ul {
+    height: 530px;
+  }
+
+  .main-menu--about.main-menu--seminars > ul {
+    height: 610px;
+  }
+
+}
+
+@media screen and (max-height: 640px) and (max-width: 360px) {
+
+  .main-menu--mobile,
+  .main-menu--mobile > ul,
+  .main-menu--about.main-menu--seminars > ul {
+    height: 640px;
+  }
+
+}
+
 @media screen and (max-height: 320px) and (max-width: 568px) {
 
   .main-menu--mobile,
@@ -9426,42 +9462,6 @@ article.articles-section__text p {
 
 }
 
-@media screen and (max-height: 360px) and (max-width: 640px) {
-
-  .main-menu--mobile,
-  .main-menu--mobile > ul,
-  .main-menu--about.main-menu--seminars > ul {
-    height: 360px;
-  }
-
-  .main-menu--mobile > ul {
-    height: 420px;
-  }
-
-  .main-menu--about > ul {
-    height: 500px;
-  }
-
-  .main-menu--seminars > ul {
-    height: 530px;
-  }
-
-  .main-menu--about.main-menu--seminars > ul {
-    height: 610px;
-  }
-
-}
-
-@media screen and (max-height: 640px) and (max-width: 360px) {
-
-  .main-menu--mobile,
-  .main-menu--mobile > ul,
-  .main-menu--about.main-menu--seminars > ul {
-    height: 640px;
-  }
-
-}
-
 @media screen and (max-height: 320px) and (max-width: 480px) {
 
   .main-menu--mobile,
@@ -9495,10 +9495,6 @@ article.articles-section__text p {
   .main-menu--about.main-menu--seminars > ul {
     height: 480px;
   }
-
-  /* .main-menu--mobile > ul {
-    height: 420px;
-  } */
 
   .main-menu--about > ul {
     height: 500px;
