@@ -10,7 +10,7 @@ $(window).resize(function() {
 
 $(".main-menu__open-button").click(function() {
   $(this).hide();
-  /*$(".container").addClass("container--mobile");*/
+  $(".container").addClass("container--mobile");
   $(".main-menu").addClass("main-menu--mobile");
   $(".content").addClass("content--mobile");
   $(".main-menu > ul").show();
@@ -21,7 +21,7 @@ $(".main-menu__open-button").click(function() {
 
 $(".main-menu__close-button").click(function() {
   $(this).hide();
-  /*$(".container").removeClass("container--mobile");*/
+  $(".container").removeClass("container--mobile");
   $(".main-menu").removeClass("main-menu--mobile");
   $(".content").removeClass("content--mobile");
   $(".main-menu > ul").hide();
