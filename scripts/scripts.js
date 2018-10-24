@@ -37,6 +37,7 @@ $(window).scroll(function() {
     $(".main-menu__open-button").show();
     $(".header--image-bg .entry-button").hide();
     $(".main-menu").removeClass("main-menu--mobile");
+    $(".main-menu > ul").hide();
   }
 });
 
