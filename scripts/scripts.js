@@ -34,6 +34,7 @@ $(window).scroll(function() {
   $(".main-menu__open-button").show();
   $(".header--image-bg .entry-button").hide();
   $(".main-menu").removeClass("main-menu--mobile");
+  $(".main-menu--mobile ul").hide();
 });
 
 $(".main-menu__item--about").click(function(e) {
