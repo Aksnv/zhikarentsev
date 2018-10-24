@@ -36,6 +36,17 @@ $(".main-menu__close-button").click(function() {
   $(".main-menu").removeClass("main-menu--mobile");
 });*/
 
+$(window).scroll(function() {
+  var currentScroll = 0;
+  var nextScroll = $(this).scrollTop();
+  if (nextScroll > currentScroll) {
+    $(".main-menu__close-button").hide();
+    $(".main-menu__open-button").show();
+    $(".header--image-bg .entry-button").hide();
+    $(".main-menu").removeClass("main-menu--mobile");
+  }
+});
+
 $(".main-menu__item--about").click(function(e) {
   e.preventDefault();
 });
