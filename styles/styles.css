@@ -7638,13 +7638,13 @@ article.articles-section__text p {
   .main-menu__open-button,
   .main-menu__close-button {
     top: 20px;
-    /* right: 0; */ 
-    right: 20px; 
+    right: 0; 
+    /* right: 20px; */
   }
 
-  /* .main-menu__close-button {
+  .main-menu__close-button {
     right: 20px;
-  } */
+  }
 
   /* .header {
     min-height: 568px;
