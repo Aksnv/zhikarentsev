@@ -9339,11 +9339,11 @@ article.articles-section__text p {
   }
 
   .popup--gallery .gallery__image-item {
-    max-height: 585px;
+    max-height: 545px;
   }
 
   .popup--gallery .gallery__image {
-    top: calc(50% - 293px);
+    top: calc(50% - 273px);
   }
 
 }
