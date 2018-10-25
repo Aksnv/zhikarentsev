@@ -8937,11 +8937,11 @@ article.articles-section__text p {
   /* *** Popup *** */
 
   .popup--gallery .gallery__image {
-    top: calc(50% - 400px);
+    top: calc(50% - 395px);
   }
 
   .popup--gallery .gallery__image-item {
-    max-height: 800px;
+    max-height: 790px;
   }
 
 }
@@ -9274,7 +9274,7 @@ article.articles-section__text p {
 
 }
 
-/* *** Main menu mobile *** */
+/* *** Main menu & gallery images mobile *** */
 
 @media screen and (max-height: 1366px) and (max-width: 1024px) {
 
@@ -9282,6 +9282,38 @@ article.articles-section__text p {
   .main-menu--mobile > ul,
   .main-menu--about.main-menu--seminars > ul {
     height: 1366px;
+  }
+
+  .popup--gallery .gallery__image-item {
+    max-height: 767px;
+  }
+
+  .popup--gallery .gallery__image {
+    top: calc(50% - 383px);
+  }
+
+}
+
+@media screen and (max-height: 1024px) and (max-width: 1366px) {
+
+  .popup--gallery .gallery__image-item {
+    max-height: 767px;
+  }
+
+  .popup--gallery .gallery__image {
+    top: calc(50% - 383px);
+  }
+
+}
+
+@media screen and (max-height: 800px) and (max-width: 1280px) {
+
+  .popup--gallery .gallery__image-item {
+    max-height: 690px;
+  }
+
+  .popup--gallery .gallery__image {
+    top: calc(50% - 345px);
   }
 
 }
@@ -9306,6 +9338,14 @@ article.articles-section__text p {
     height: 1048px;
   }
 
+  .popup--gallery .gallery__image-item {
+    max-height: 645px;
+  }
+
+  .popup--gallery .gallery__image {
+    top: calc(50% - 323px);
+  }
+
 }
 
 @media screen and (max-height: 1024px) and (max-width: 768px) {
@@ -9314,6 +9354,14 @@ article.articles-section__text p {
   .main-menu--mobile > ul,
   .main-menu--about.main-menu--seminars > ul {
     height: 1024px;
+  }
+
+  .popup--gallery .gallery__image-item {
+    max-height: 575px;
+  }
+
+  .popup--gallery .gallery__image {
+    top: calc(50% - 288px);
   }
 
 }
@@ -9338,6 +9386,14 @@ article.articles-section__text p {
     height: 604px;
   }
 
+  .popup--gallery .gallery__image-item {
+    max-height: 303px;
+  }
+
+  .popup--gallery .gallery__image {
+    top: calc(50% - 152px);
+  }
+
 }
 
 @media screen and (max-height: 736px) and (max-width: 414px) {
@@ -9346,6 +9402,18 @@ article.articles-section__text p {
   .main-menu--mobile > ul,
   .main-menu--about.main-menu--seminars > ul {
     height: 736px;
+  }
+
+  .popup--gallery .container {
+    width: 100%;
+  }
+
+  .popup--gallery .gallery__image-item {
+    max-height: 307px;
+  }
+
+  .popup--gallery .gallery__image {
+    top: calc(50% - 154px);
   }
 
 }
@@ -9374,6 +9442,14 @@ article.articles-section__text p {
     height: 920px;
   }
 
+  .popup--gallery .gallery__image-item {
+    max-height: 270px;
+  }
+
+  .popup--gallery .gallery__image {
+    top: calc(50% - 135px);
+  }
+
 }
 
 @media screen and (max-height: 812px) and (max-width: 375px) {
@@ -9382,6 +9458,18 @@ article.articles-section__text p {
   .main-menu--mobile > ul,
   .main-menu--about.main-menu--seminars > ul {
     height: 812px;
+  }
+
+  .popup--gallery .container {
+    width: 100%;
+  }
+
+  .popup--gallery .gallery__image-item {
+    max-height: 278px;
+  }
+
+  .popup--gallery .gallery__image {
+    top: calc(50% - 139px);
   }
 
 }
@@ -9410,6 +9498,14 @@ article.articles-section__text p {
     height: 610px;
   }
 
+  .popup--gallery .gallery__image-item {
+    max-height: 270px;
+  }
+
+  .popup--gallery .gallery__image {
+    top: calc(50% - 135px);
+  }
+
 }
 
 @media screen and (max-height: 667px) and (max-width: 375px) {
@@ -9418,6 +9514,18 @@ article.articles-section__text p {
   .main-menu--mobile > ul,
   .main-menu--about.main-menu--seminars > ul {
     height: 667px;
+  }
+
+  .popup--gallery .container {
+    width: 100%;
+  }
+
+  .popup--gallery .gallery__image-item {
+    max-height: 278px;
+  }
+
+  .popup--gallery .gallery__image {
+    top: calc(50% - 139px);
   }
 
 }
@@ -9446,6 +9554,14 @@ article.articles-section__text p {
     height: 610px;
   }
 
+  .popup--gallery .gallery__image-item {
+    max-height: 255px;
+  }
+
+  .popup--gallery .gallery__image {
+    top: calc(50% - 128px);
+  }
+
 }
 
 @media screen and (max-height: 640px) and (max-width: 360px) {
@@ -9454,6 +9570,18 @@ article.articles-section__text p {
   .main-menu--mobile > ul,
   .main-menu--about.main-menu--seminars > ul {
     height: 640px;
+  }
+
+  .popup--gallery .container {
+    width: 100%;
+  }
+
+  .popup--gallery .gallery__image-item {
+    max-height: 267px;
+  }
+
+  .popup--gallery .gallery__image {
+    top: calc(50% - 134px);
   }
 
 }
@@ -9482,6 +9610,14 @@ article.articles-section__text p {
     height: 610px;
   }
 
+  .popup--gallery .gallery__image-item {
+    max-height: 217px;
+  }
+
+  .popup--gallery .gallery__image {
+    top: calc(50% - 109px);
+  }
+
 }
 
 @media screen and (max-height: 568px) and (max-width: 320px) {
@@ -9494,6 +9630,18 @@ article.articles-section__text p {
 
   .main-menu--about.main-menu--seminars > ul {
     height: 610px;
+  }
+
+  .popup--gallery .container {
+    width: 100%;
+  }
+
+  .popup--gallery .gallery__image-item {
+    max-height: 237px;
+  }
+
+  .popup--gallery .gallery__image {
+    top: calc(50% - 119px);
   }
 
 }
@@ -9522,6 +9670,14 @@ article.articles-section__text p {
     height: 610px;
   }
 
+  .popup--gallery .gallery__image-item {
+    max-height: 220px;
+  }
+
+  .popup--gallery .gallery__image {
+    top: calc(50% - 110px);
+  }
+
 }
 
 @media screen and (max-height: 480px) and (max-width: 320px) {
@@ -9542,6 +9698,18 @@ article.articles-section__text p {
 
   .main-menu--about.main-menu--seminars > ul {
     height: 610px;
+  }
+
+  .popup--gallery .container {
+    width: 100%;
+  }
+
+  .popup--gallery .gallery__image-item {
+    max-height: 237px;
+  }
+
+  .popup--gallery .gallery__image {
+    top: calc(50% - 119px);
   }
 
 }
